@@ -1,0 +1,3 @@
+module.exports=[49575,a=>{"use strict";var b=a.i(7997);a.s(["default",0,function({children:a}){return(0,b.jsxs)("html",{lang:"en",children:[(0,b.jsxs)("head",{children:[(0,b.jsx)("link",{rel:"preconnect",href:"https://fonts.googleapis.com"}),(0,b.jsx)("link",{rel:"preconnect",href:"https://fonts.gstatic.com",crossOrigin:"anonymous"})]}),(0,b.jsx)("body",{children:(0,b.jsx)("div",{id:"root",children:a})})]})},"metadata",0,{title:"Surya Drishti - AI Powered Smart Surveillance",description:"Bilingual Custom Solar CCTV Configuration, custom designs, and smart surveillance options.",icons:{icon:"/favicon.svg"}}])},62243,a=>{a.n(a.i(49575))}];
+
+//# sourceMappingURL=src_app_layout_jsx_19jkzzi._.js.map
