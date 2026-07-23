@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { apiService } from '../services/apiService';
 import { useConfiguratorStore } from '../store/useConfiguratorStore';
 import { supabase } from '../utils/supabaseClient';
+import { t } from '../utils/translate';
 import { 
   BarChart3, ShoppingCart, Users, RefreshCw, Edit2, Check, 
   Trash2, Image, Plus, FolderCheck, Wrench, Settings, Copy, 
@@ -290,7 +291,7 @@ export default function AdminDashboard() {
           onClick={() => store.setActiveTab('home')}
           className="w-full mb-4 p-3.5 rounded-xl border border-electric-cyan/20 bg-electric-cyan/5 text-electric-cyan text-xs font-semibold hover:bg-electric-cyan/10 transition-all cursor-pointer flex items-center justify-center gap-2 font-space uppercase tracking-wider"
         >
-          <Home className="w-4 h-4 animate-pulse" /> <span className="font-kannada">ಮುಖ್ಯ ಪುಟ / Home Page</span>
+          <Home className="w-4 h-4 animate-pulse" /> {t("ಮುಖ್ಯ ಪುಟ / Home Page", store.language)}
         </button>
 
         <div className="p-4 rounded-2xl border border-white/5 bg-zinc-950/40 mb-4 flex items-center gap-3">

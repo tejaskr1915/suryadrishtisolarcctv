@@ -1,36 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { db } from '../utils/dbMock';
 import { useConfiguratorStore } from '../store/useConfiguratorStore';
+import { t, tStr } from '../utils/translate';
 import { Shield, Battery, Sun, HardDrive, Network, UploadCloud, CheckCircle2, ChevronRight, Clock, ShieldCheck, RefreshCw } from 'lucide-react';
-
-const renderBilingual = (text) => {
-  if (typeof text !== 'string') return text;
-  if (text.includes(' / ')) {
-    const [kn, en] = text.split(' / ');
-    return (
-      <>
-        <span className="font-kannada">{kn}</span>
-        <span className="text-zinc-500 font-light mx-1">/</span>
-        <span>{en}</span>
-      </>
-    );
-  }
-  return text;
-};
-
-const renderIssueType = (type) => {
-  const translations = {
-    'Camera': 'ಕ್ಯಾಮೆರಾ / Camera',
-    'Battery': 'ಬ್ಯಾಟರಿ / Battery',
-    'Solar': 'ಸೌರ ಫಲಕ / Solar',
-    'Recorder': 'ರೆಕಾರ್ಡರ್ / Recorder',
-    'Network': 'ನೆಟ್‌ವರ್ಕ್ / Network'
-  };
-  return renderBilingual(translations[type] || type);
-};
 
 export default function ServiceRequest() {
   const store = useConfiguratorStore();
+
+  const renderBilingual = (text) => t(text, store.language);
+
+  const renderIssueType = (type) => {
+    const translations = {
+      'Camera': 'ಕ್ಯಾಮೆರಾ / Camera',
+      'Battery': 'ಬ್ಯಾಟರಿ / Battery',
+      'Solar': 'ಸೌರ ಫಲಕ / Solar',
+      'Recorder': 'ರೆಕಾರ್ಡರ್ / Recorder',
+      'Network': 'ನೆಟ್‌ವರ್ಕ್ / Network'
+    };
+    return renderBilingual(translations[type] || type);
+  };
   const [activeReqs, setActiveReqs] = useState([]);
   const [selectedReq, setSelectedReq] = useState(null);
 
@@ -75,29 +63,29 @@ export default function ServiceRequest() {
     if (!req) return [];
     return [
       { 
-        step: <><span className="font-kannada">ಸಲ್ಲಿಸಲಾಗಿದೆ</span> / Submitted</>, 
-        label: <><span className="font-kannada">ಸೂಪಬೇಸ್‌ನಲ್ಲಿ ಟಿಕೆಟ್ ದಾಖಲಿಸಲಾಗಿದೆ</span> / Ticket Lodged in Supabase</>, 
-        desc: <><span className="font-kannada">ಬೆಂಬಲ ಚಾನಲ್‌ಗೆ ಎಚ್ಚರಿಕೆ ಅಧಿಸೂಚನೆಗಳನ್ನು ಕಳುಹಿಸಲಾಗಿದೆ.</span> / Alert notifications dispatched to support channel.</>, 
+        step: renderBilingual("ಸಲ್ಲಿಸಲಾಗಿದೆ / Submitted"), 
+        label: renderBilingual("ಸೂಪಬೇಸ್‌ನಲ್ಲಿ ಟಿಕೆಟ್ ದಾಖಲಿಸಲಾಗಿದೆ / Ticket Lodged in Supabase"), 
+        desc: renderBilingual("ಬೆಂಬಲ ಚಾನಲ್‌ಗೆ ಎಚ್ಚರಿಕೆ ಅಧಿಸೂಚನೆಗಳನ್ನು ಕಳುಹಿಸಲಾಗಿದೆ. / Alert notifications dispatched to support channel."), 
         done: true 
       },
       { 
-        step: <><span className="font-kannada">ನಿಯೋಜಿಸಲಾಗಿದೆ</span> / Assigned</>, 
-        label: <><span className="font-kannada">ತಾಂತ್ರಿಕ ಸಿಬ್ಬಂದಿಗೆ ನಿಯೋಜಿಸಲಾಗಿದೆ:</span> / Assigned to Technical Crew: {req.assignedTech}</>, 
+        step: renderBilingual("ನಿಯೋಜಿಸಲಾಗಿದೆ / Assigned"), 
+        label: <>{renderBilingual("ತಾಂತ್ರಿಕ ಸಿಬ್ಬಂದಿಗೆ ನಿಯೋಜಿಸಲಾಗಿದೆ: / Assigned to Technical Crew:")} {req.assignedTech}</>, 
         desc: req.assignedTech !== 'Unassigned' 
-          ? <><span className="font-kannada">ಸಿಬ್ಬಂದಿ ರವಾನೆ ಲಾಕ್ ಮಾಡಲಾಗಿದೆ. ಜಿಪಿಎಸ್ ನ್ಯಾವಿಗೇಷನ್ ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ.</span> / Crew dispatch locked. GPS navigation synced.</> 
-          : <><span className="font-kannada">ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ನಲ್ಲಿ ನಿಯೋಜನೆಗಾಗಿ ಕಾಯಲಾಗುತ್ತಿದೆ.</span> / Awaiting assignment in dashboard.</>, 
+          ? renderBilingual("ಸಿಬ್ಬಂದಿ ರವಾನೆ ಲಾಕ್ ಮಾಡಲಾಗಿದೆ. ಜಿಪಿಎಸ್ ನ್ಯಾವಿಗೇಷನ್ ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ. / Crew dispatch locked. GPS navigation synced.") 
+          : renderBilingual("ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ನಲ್ಲಿ ನಿಯೋಜನೆಗಾಗಿ ಕಾಯಲಾಗುತ್ತಿದೆ. / Awaiting assignment in dashboard."), 
         done: req.assignedTech !== 'Unassigned' 
       },
       { 
-        step: <><span className="font-kannada">ಪ್ರಗತಿಯಲ್ಲಿದೆ</span> / In Progress</>, 
-        label: <><span className="font-kannada">ಸಿಬ್ಬಂದಿ ಸೈಟ್ ಪರಿಶೀಲಿಸುತ್ತಿದ್ದಾರೆ</span> / Crew Troubleshooting Site</>, 
-        desc: <><span className="font-kannada">ತಂತ್ರಜ್ಞರು ಜೋಡಣೆ ಮತ್ತು ವೈರಿಂಗ್ ಮಾರ್ಗದರ್ಶಿಗಳನ್ನು ಪರಿಶೀಲಿಸುತ್ತಿದ್ದಾರೆ.</span> / Technician checking alignment and wiring guides.</>, 
+        step: renderBilingual("ಪ್ರಗತಿಯಲ್ಲಿದೆ / In Progress"), 
+        label: renderBilingual("ಸಿಬ್ಬಂದಿ ಸೈಟ್ ಪರಿಶೀಲಿಸುತ್ತಿದ್ದಾರೆ / Crew Troubleshooting Site"), 
+        desc: renderBilingual("ತಂತ್ರಜ್ಞರು ಜೋಡಣೆ ಮತ್ತು ವೈರಿಂಗ್ ಮಾರ್ಗದರ್ಶಿಗಳನ್ನು ಪರಿಶೀಲಿಸುತ್ತಿದ್ದಾರೆ. / Technician checking alignment and wiring guides."), 
         done: req.status === 'Resolved' || (req.status === 'In Progress') 
       },
       { 
-        step: <><span className="font-kannada">ಪರಿಹರಿಸಲಾಗಿದೆ</span> / Resolved</>, 
-        label: <><span className="font-kannada">ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಪರಿಶೀಲಿಸಲಾಗಿದೆ</span> / Diagnostics Verified</>, 
-        desc: <><span className="font-kannada">ರಿಮೋಟ್ ಪ್ರವೇಶವನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ. ಸಿಸ್ಟಮ್ ಸ್ವಾಯತ್ತತೆಯನ್ನು ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ.</span> / Remote access established. System autonomy synced.</>, 
+        step: renderBilingual("ಪರಿಹರಿಸಲಾಗಿದೆ / Resolved"), 
+        label: renderBilingual("ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಪರಿಶೀಲಿಸಲಾಗಿದೆ / Diagnostics Verified"), 
+        desc: renderBilingual("ರಿಮೋಟ್ ಪ್ರವೇಶವನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ. ಸಿಸ್ಟಮ್ ಸ್ವಾಯತ್ತತೆಯನ್ನು ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ. / Remote access established. System autonomy synced."), 
         done: req.status === 'Resolved' 
       }
     ];
@@ -110,13 +98,13 @@ export default function ServiceRequest() {
         {/* Title */}
         <div className="max-w-3xl mb-12">
           <span className="text-electric-cyan text-xs font-space uppercase tracking-widest block mb-2 font-semibold">
-            <span className="font-kannada">ನಿರ್ವಹಣೆ ಮತ್ತು ಬೆಂಬಲ</span> / Maintenance & Support
+            {renderBilingual("ನಿರ್ವಹಣೆ ಮತ್ತು ಬೆಂಬಲ / Maintenance & Support")}
           </span>
           <h1 className="text-4xl font-space font-light text-white leading-tight">
-            <span className="font-kannada">ಸೇವಾ ಟಿಕೆಟ್ ಡೆಸ್ಕ್</span> / Service Ticket Desk
+            {renderBilingual("ಸೇವಾ ಟಿಕೆಟ್ ಡೆಸ್ಕ್ / Service Ticket Desk")}
           </h1>
           <p className="text-zinc-400 font-light mt-1">
-            <span className="font-kannada">ಸಿಸ್ಟಮ್ ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಅನ್ನು ದಾಖಲಿಸಿ, ಆಫ್-ಗ್ರಿಡ್ ಮಾಡ್ಯೂಲ್‌ಗಳಲ್ಲಿ ತಾಂತ್ರಿಕ ಸಹಾಯವನ್ನು ವಿನಂತಿಸಿ ಅಥವಾ ಸಕ್ರಿಯ ನಿರ್ವಹಣೆ ಒಪ್ಪಂದದ ತಂತ್ರಜ್ಞರ ಪರಿಶೀಲನಾ ಪಟ್ಟಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ.</span> / Lodge system diagnostics, request technical help on off-grid modules, or track active maintenance contract technician checklists.
+            {renderBilingual("ಸಿಸ್ಟಮ್ ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಅನ್ನು ದಾಖಲಿಸಿ, ಆಫ್-ಗ್ರಿಡ್ ಮಾಡ್ಯೂಲ್‌ಗಳಲ್ಲಿ ತಾಂತ್ರಿಕ ಸಹಾಯವನ್ನು ವಿನಂತಿಸಿ ಅಥವಾ ಸಕ್ರಿಯ ನಿರ್ವಹಣೆ ಒಪ್ಪಂದದ ತಂತ್ರಜ್ಞರ ಪರಿಶೀಲನಾ ಪಟ್ಟಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. / Lodge system diagnostics, request technical help on off-grid modules, or track active maintenance contract technician checklists.")}
           </p>
         </div>
 
@@ -125,7 +113,7 @@ export default function ServiceRequest() {
           {/* LEFT PANEL: Lodge Service Request Form */}
           <div className="lg:col-span-6 glass-panel p-6 md:p-8 rounded-3xl border border-white/5 bg-zinc-950/40">
             <h3 className="text-xl text-white mb-6">
-              <span className="font-kannada">ಸೇವಾ ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸಿ</span> / Lodge Maintenance Request
+              {renderBilingual("ಸೇವಾ ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸಿ / Lodge Maintenance Request")}
             </h3>
             
             <form onSubmit={handleServiceFormSubmit} className="space-y-5">
@@ -133,7 +121,7 @@ export default function ServiceRequest() {
               {/* Select Issue Category */}
               <div>
                 <label className="text-[10px] text-zinc-500 uppercase tracking-widest font-space block mb-3">
-                  <span className="font-kannada">ಸಮಸ್ಯೆಯಿರುವ ಭಾಗ</span> / Target Issue Module
+                  {renderBilingual("ಸಮಸ್ಯೆಯಿರುವ ಭಾಗ / Target Issue Module")}
                 </label>
                 <div className="grid grid-cols-5 gap-2">
                   {[
@@ -164,12 +152,12 @@ export default function ServiceRequest() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-[9px] text-zinc-500 uppercase tracking-widest font-space block mb-1">
-                    <span className="font-kannada">ಪೂರ್ಣ ಹೆಸರು</span> / Full Name
+                    {renderBilingual("ಪೂರ್ಣ ಹೆಸರು / Full Name")}
                   </label>
                   <input
                     type="text"
                     required
-                    placeholder="ನೋಂದಾಯಿತ ಹೆಸರನ್ನು ನಮೂದಿಸಿ / Enter registered name"
+                    placeholder={tStr("ನೋಂದಾಯಿತ ಹೆಸರನ್ನು ನಮೂದಿಸಿ / Enter registered name", store.language)}
                     value={store.customerName}
                     onChange={(e) => store.setCustomerInfo({ customerName: e.target.value })}
                     className="w-full bg-zinc-900 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-electric-cyan"
@@ -177,12 +165,12 @@ export default function ServiceRequest() {
                 </div>
                 <div>
                   <label className="text-[9px] text-zinc-500 uppercase tracking-widest font-space block mb-1">
-                    <span className="font-kannada">ನೋಂದಾಯಿತ ಫೋನ್ ಸಂಖ್ಯೆ</span> / Registered Phone
+                    {renderBilingual("ನೋಂದಾಯಿತ ಫೋನ್ ಸಂಖ್ಯೆ / Registered Phone")}
                   </label>
                   <input
                     type="tel"
                     required
-                    placeholder="ನೋಂದಾಯಿತ ಫೋನ್ ಸಂಖ್ಯೆ / Registered phone number"
+                    placeholder={tStr("ನೋಂದಾಯಿತ ಫೋನ್ ಸಂಖ್ಯೆ / Registered phone number", store.language)}
                     value={store.customerPhone}
                     onChange={(e) => store.setCustomerInfo({ customerPhone: e.target.value })}
                     className="w-full bg-zinc-900 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-electric-cyan"
@@ -193,12 +181,12 @@ export default function ServiceRequest() {
               {/* Description */}
               <div>
                 <label className="text-[9px] text-zinc-500 uppercase tracking-widest font-space block mb-1">
-                  <span className="font-kannada">ಸಮಸ್ಯೆಯ ವಿವರಗಳು</span> / Issue Details
+                  {renderBilingual("ಸಮಸ್ಯೆಯ ವಿವರಗಳು / Issue Details")}
                 </label>
                 <textarea
                   required
                   rows="3"
-                  placeholder="ಸಮಸ್ಯೆಯ ವಿವರಗಳನ್ನು ವಿವರಿಸಿ (ಉದಾ. ರಾತ್ರಿ ಕ್ಯಾಮೆರಾ ಆಫ್ ಆಗುತ್ತದೆ, ಮಂಜು ಇರುವಾಗ ಸಂಪರ್ಕ ಕಡಿತಗೊಳ್ಳುತ್ತದೆ)... / Describe details of the glitch (e.g. camera loses power at night, connection drop during fog)..."
+                  placeholder={tStr("ಸಮಸ್ಯೆಯ ವಿವರಗಳನ್ನು ವಿವರಿಸಿ (ಉದಾ. ರಾತ್ರಿ ಕ್ಯಾಮೆರಾ ಆಫ್ ಆಗುತ್ತದೆ, ಮಂಜು ಇರುವಾಗ ಸಂಪರ್ಕ ಕಡಿತಗೊಳ್ಳುತ್ತದೆ)... / Describe details of the glitch (e.g. camera loses power at night, connection drop during fog)...", store.language)}
                   value={store.serviceDescription}
                   onChange={(e) => store.setServiceDescription(e.target.value)}
                   className="w-full bg-zinc-900 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none resize-none"
@@ -208,7 +196,7 @@ export default function ServiceRequest() {
               {/* File Attachment Upload */}
               <div>
                 <label className="text-[9px] text-zinc-500 uppercase tracking-widest font-space block mb-2.5">
-                  <span className="font-kannada">ಡಯಾಗ್ನೋಸ್ಟಿಕ್ ಮೀಡಿಯಾ ಅಪ್‌ಲೋಡ್</span> / Diagnostic Media Upload
+                  {renderBilingual("ಡಯಾಗ್ನೋಸ್ಟಿಕ್ ಮೀಡಿಯಾ ಅಪ್‌ಲೋಡ್ / Diagnostic Media Upload")}
                 </label>
                 
                 {store.serviceFiles.length > 0 && (
@@ -230,7 +218,7 @@ export default function ServiceRequest() {
 
                 <label className="w-full py-4 rounded-xl border border-dashed border-zinc-800 text-[10px] text-zinc-500 hover:text-white hover:border-zinc-700 font-space uppercase flex flex-col items-center justify-center gap-1.5 transition-all cursor-pointer">
                   <UploadCloud className="w-4 h-4" />
-                  <span><span className="font-kannada">ಚಿತ್ರಗಳು ಅಥವಾ ವೀಡಿಯೊಗಳನ್ನು ಆರಿಸಿ</span> / Choose Images or Videos</span>
+                  <span>{renderBilingual("ಚಿತ್ರಗಳು ಅಥವಾ ವೀಡಿಯೊಗಳನ್ನು ಆರಿಸಿ / Choose Images or Videos")}</span>
                   <input
                     type="file"
                     multiple
@@ -247,9 +235,9 @@ export default function ServiceRequest() {
                 className="w-full py-3.5 rounded-xl font-space text-xs font-semibold text-black bg-gradient-to-r from-electric-cyan to-electric-emerald hover:opacity-90 flex items-center justify-center gap-1.5 cursor-pointer mt-6"
               >
                 {store.isSubmitting ? (
-                  <><RefreshCw className="w-4 h-4 animate-spin" /> <span className="font-kannada">ಟಿಕೆಟ್ ಉಳಿಸಲಾಗುತ್ತಿದೆ...</span> / Saving ticket...</>
+                  <><RefreshCw className="w-4 h-4 animate-spin" /> renderBilingual("ಟಿಕೆಟ್ ಉಳಿಸಲಾಗುತ್ತಿದೆ... / Saving ticket...")</>
                 ) : (
-                  <><span className="font-kannada">ಟಿಕೆಟ್ ಸಲ್ಲಿಸಿ</span> / File Ticket</>
+                  <>renderBilingual("ಟಿಕೆಟ್ ಸಲ್ಲಿಸಿ / File Ticket")</>
                 )}
               </button>
             </form>
@@ -258,7 +246,7 @@ export default function ServiceRequest() {
           {/* RIGHT PANEL: Live Track Progress and Status Timelines */}
           <div className="lg:col-span-6 glass-panel p-6 md:p-8 rounded-3xl border border-white/5 bg-zinc-950/20">
             <h3 className="text-xl text-white mb-6 font-space">
-              <span className="font-kannada">ಸಕ್ರಿಯ ಟೆಲಿಮೆಟ್ರಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</span> / Track Active Telemetry
+              {renderBilingual("ಸಕ್ರಿಯ ಟೆಲಿಮೆಟ್ರಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ / Track Active Telemetry")}
             </h3>
 
             {selectedReq ? (
@@ -266,11 +254,11 @@ export default function ServiceRequest() {
                 <div className="flex justify-between items-start gap-4 pb-4 border-b border-zinc-900 mb-6">
                   <div>
                     <span className="text-[8px] font-space text-electric-cyan uppercase tracking-widest font-semibold">
-                      <span className="font-kannada">ಸೇವಾ ಟಿಕೆಟ್ ಐಡಿ</span> / Service Ticket ID
+                      {renderBilingual("ಸೇವಾ ಟಿಕೆಟ್ ಐಡಿ / Service Ticket ID")}
                     </span>
                     <h4 className="text-lg font-space font-medium text-white mt-0.5">{selectedReq.id}</h4>
                     <span className="text-[10px] text-zinc-500 font-space block mt-1">
-                      <span className="font-kannada">ಸಲ್ಲಿಸಿದ ದಿನಾಂಕ:</span> / Filed Date: {selectedReq.dateCreated}
+                      <>{renderBilingual("ಸಲ್ಲಿಸಿದ ದಿನಾಂಕ: / Filed Date:")} {selectedReq.dateCreated}</>
                     </span>
                   </div>
                   <span className={`px-2.5 py-1 rounded text-[10px] font-semibold font-space tracking-wider uppercase border ${
@@ -278,24 +266,24 @@ export default function ServiceRequest() {
                       ? 'border-electric-emerald/20 text-electric-emerald bg-electric-emerald/5'
                       : 'border-amber-400/20 text-amber-400 bg-amber-400/5'
                   }`}>
-                    {selectedReq.status === 'Resolved' ? <><span className="font-kannada">ಪರಿಹರಿಸಲಾಗಿದೆ</span> / Resolved</> :
-                     selectedReq.status === 'In Progress' ? <><span className="font-kannada">ಪ್ರಗತಿಯಲ್ಲಿದೆ</span> / In Progress</> :
-                     selectedReq.status === 'Assigned' ? <><span className="font-kannada">ನಿಯೋಜಿಸಲಾಗಿದೆ</span> / Assigned</> :
-                     <><span className="font-kannada">ಸಲ್ಲಿಸಲಾಗಿದೆ</span> / Submitted</>}
+                    {selectedReq.status === 'Resolved' ? renderBilingual("ಪರಿಹರಿಸಲಾಗಿದೆ / Resolved") :
+                     selectedReq.status === 'In Progress' ? renderBilingual("ಪ್ರಗತಿಯಲ್ಲಿದೆ / In Progress") :
+                     selectedReq.status === 'Assigned' ? renderBilingual("ನಿಯೋಜಿಸಲಾಗಿದೆ / Assigned") :
+                     renderBilingual("ಸಲ್ಲಿಸಲಾಗಿದೆ / Submitted")}
                   </span>
                 </div>
 
                 <div className="space-y-4 mb-8">
                   <div>
                     <span className="text-[9px] text-zinc-500 uppercase tracking-widest block mb-1">
-                      <span className="font-kannada">ಸಮಸ್ಯೆಯ ವಿವರಗಳು</span> / Issue Details ({renderIssueType(selectedReq.issueType)})
+                      <>{renderBilingual("ಸಮಸ್ಯೆಯ ವಿವರಗಳು / Issue Details")} ({renderIssueType(selectedReq.issueType)})</>
                     </span>
                     <p className="text-zinc-300 text-xs leading-relaxed font-light">{selectedReq.description}</p>
                   </div>
 
                   <div>
                     <span className="text-[9px] text-zinc-500 uppercase tracking-widest block mb-2">
-                      <span className="font-kannada">ಡಯಾಗ್ನೋಸ್ಟಿಕ್ ಲಗತ್ತುಗಳು</span> / Diagnostic Attachments
+                      {renderBilingual("ಡಯಾಗ್ನೋಸ್ಟಿಕ್ ಲಗತ್ತುಗಳು / Diagnostic Attachments")}
                     </span>
                     {selectedReq.attachments && selectedReq.attachments.length > 0 ? (
                       <div className="flex gap-2">
@@ -305,7 +293,7 @@ export default function ServiceRequest() {
                       </div>
                     ) : (
                       <span className="text-xs text-zinc-600 block">
-                        <span className="font-kannada">ಯಾವುದೇ ಡಯಾಗ್ನೋಸ್ಟಿಕ್ ಫೈಲ್‌ಗಳನ್ನು ಲಗತ್ತಿಸಲಾಗಿಲ್ಲ</span> / No diagnostic files attached
+                        renderBilingual("ಯಾವುದೇ ಡಯಾಗ್ನೋಸ್ಟಿಕ್ ಫೈಲ್‌ಗಳನ್ನು ಲಗತ್ತಿಸಲಾಗಿಲ್ಲ / No diagnostic files attached")
                       </span>
                     )}
                   </div>
@@ -314,7 +302,7 @@ export default function ServiceRequest() {
                 {/* Progress Stepper checklist timeline */}
                 <div className="border-t border-zinc-900 pt-6">
                   <span className="text-[9px] font-space uppercase text-zinc-500 tracking-wider block mb-5 font-semibold">
-                    <span className="font-kannada">ಲೈವ್ ಪ್ರಗತಿ</span> / Live Action Progress
+                    {renderBilingual("ಲೈವ್ ಪ್ರಗತಿ / Live Action Progress")}
                   </span>
                   
                   <div className="relative pl-6 space-y-6">
@@ -342,7 +330,7 @@ export default function ServiceRequest() {
               </div>
             ) : (
               <div className="text-center py-12 text-xs text-zinc-600">
-                <span className="font-kannada">ಯಾವುದೇ ಸಕ್ರಿಯ ನಿರ್ವಹಣೆ ಟಿಕೆಟ್ ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ. ಒಂದನ್ನು ನೋಂದಾಯಿಸಲು ಎಡಭಾಗದ ಫಾರ್ಮ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡಿ.</span> / No active maintenance ticket selected. Fill the left form to register one.
+                {renderBilingual("ಯಾವುದೇ ಸಕ್ರಿಯ ನಿರ್ವಹಣೆ ಟಿಕೆಟ್ ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ. ಒಂದನ್ನು ನೋಂದಾಯಿಸಲು ಎಡಭಾಗದ ಫಾರ್ಮ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡಿ. / No active maintenance ticket selected. Fill the left form to register one.")}
               </div>
             )}
 
@@ -350,7 +338,7 @@ export default function ServiceRequest() {
             {activeReqs.length > 0 && (
               <div className="border-t border-zinc-900 pt-6 mt-8 space-y-2">
                 <span className="text-[9px] text-zinc-500 uppercase font-space tracking-widest block mb-2 font-medium">
-                  <span className="font-kannada">ದಾಖಲಾದ ಟಿಕೆಟ್ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್</span> / Lodged Ticket Dashboard
+                  {renderBilingual("ದಾಖಲಾದ ಟಿಕೆಟ್ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ / Lodged Ticket Dashboard")}
                 </span>
                 {activeReqs.map(req => (
                   <div
@@ -365,10 +353,10 @@ export default function ServiceRequest() {
                     <div>
                       <span className="text-[10px] font-space font-medium text-white block">{req.customerName} ({renderIssueType(req.issueType)})</span>
                       <span className="text-[9px] text-zinc-500 mt-0.5 block">
-                        <span className="font-kannada">ಸ್ಥಿತಿ:</span> / Status: {req.status === 'Resolved' ? <><span className="font-kannada">ಪರಿಹರಿಸಲಾಗಿದೆ</span> / Resolved</> :
-                         req.status === 'In Progress' ? <><span className="font-kannada">ಪ್ರಗತಿಯಲ್ಲಿದೆ</span> / In Progress</> :
-                         req.status === 'Assigned' ? <><span className="font-kannada">ನಿಯೋಜಿಸಲಾಗಿದೆ</span> / Assigned</> :
-                         <><span className="font-kannada">ಸಲ್ಲಿಸಲಾಗಿದೆ</span> / Submitted</>}
+                        <>{renderBilingual("ಸ್ಥಿತಿ: / Status:")} {req.status === 'Resolved' ? renderBilingual("ಪರಿಹರಿಸಲಾಗಿದೆ / Resolved") :
+                         req.status === 'In Progress' ? renderBilingual("ಪ್ರಗತಿಯಲ್ಲಿದೆ / In Progress") :
+                         req.status === 'Assigned' ? renderBilingual("ನಿಯೋಜಿಸಲಾಗಿದೆ / Assigned") :
+                         renderBilingual("ಸಲ್ಲಿಸಲಾಗಿದೆ / Submitted")}</>
                       </span>
                     </div>
                     <ChevronRight className="w-4 h-4 text-zinc-600" />

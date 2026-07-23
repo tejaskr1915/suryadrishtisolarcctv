@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Shield, BatteryCharging, Sun, Compass, Radio, Users, CheckCircle2, ArrowRight } from 'lucide-react';
+import { useConfiguratorStore } from '../store/useConfiguratorStore';
+import { t } from '../utils/translate';
 
 export default function Hero({ onNavigate }) {
+  const store = useConfiguratorStore();
   const [solarAngle, setSolarAngle] = useState(32);
   const [batteryCharge, setBatteryCharge] = useState(78);
   const [isCharging, setIsCharging] = useState(true);
@@ -54,69 +57,87 @@ export default function Hero({ onNavigate }) {
       <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-zinc-950/35 to-zinc-950/80 z-0"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-zinc-950/50 z-0"></div>
 
-      <div className="max-w-7xl w-full mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         {/* Left Side: Copywriting & Stats wrapped in frosted glass panel to guarantee readability */}
-        <div className="lg:col-span-7 glass-panel p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl relative z-10 backdrop-blur-md">
+        <div className="lg:col-span-7 glass-panel p-4 sm:p-6 md:p-10 rounded-2xl border border-white/10 shadow-2xl relative z-10 backdrop-blur-md">
           {/* Kannada Header Tagline from Banner */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-xl bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-kannada tracking-wide mb-6">
-            <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-            ನಿಮ್ಮ ಭದ್ರತೆ ನಮ್ಮ ಜವಾಬ್ದಾರಿ
+          <div className="inline-flex items-center gap-2px px-2.5 py-1 rounded bg-amber-400/10 border border-amber-400/30 text-amber-300 text-[9px] sm:text-xs tracking-wide mb-3 sm:mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse mr-1"></span>
+            {t('ನಿಮ್ಮ ಭದ್ರತೆ ನಮ್ಮ ಜವಾಬ್ದಾರಿ / Your security is our responsibility', store.language)}
           </div>
 
           {/* Title with Kannada Font Noto Sans Kannada */}
-          <h1 className="text-4xl md:text-6xl font-bold font-kannada leading-tight text-white mb-6">
-            ಸೂರ್ಯ ದೃಷ್ಟಿ
-            <span className="block text-2xl md:text-3.5xl font-space font-semibold tracking-wider bg-gradient-to-r from-electric-cyan via-electric-sky to-electric-emerald bg-clip-text text-transparent mt-2 uppercase">
-              SURYA DRISHTI
-            </span>
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight text-white mb-3 sm:mb-4">
+            {store.language === 'kn' ? (
+              <>
+                <span className="font-kannada">ಸೌರ್ಯ ದೃಷ್ಟಿ</span>
+                <span className="block text-sm sm:text-lg md:text-2xl font-space font-semibold tracking-wider bg-gradient-to-r from-electric-cyan via-electric-sky to-electric-emerald bg-clip-text text-transparent mt-1 uppercase">
+                  SURYA DRISHTI
+                </span>
+              </>
+            ) : (
+              <span className="bg-gradient-to-r from-electric-cyan via-electric-sky to-electric-emerald bg-clip-text text-transparent font-space font-semibold tracking-wider uppercase">
+                SURYA DRISHTI
+              </span>
+            )}
           </h1>
 
           {/* Kannada + English descriptions */}
-          <p className="text-zinc-200 font-kannada text-base md:text-lg leading-relaxed mb-4">
-            ನಿಮ್ಮ ಜಮೀನು, ತೋಟ ಮತ್ತು ಸ್ವತ್ತುಗಳ ರಕ್ಷಣೆಗಾಗಿ ಸೌರಶಕ್ತಿ ಚಾಲಿತ ಸ್ಮಾರ್ಟ್ ಕಣ್ಗಾವಲು ವ್ಯವಸ್ಥೆ.
-          </p>
-          <p className="text-zinc-400 font-space text-sm md:text-base font-light leading-relaxed mb-8">
-            Autonomous Solar CCTV security engineered with starlight AI threat classification, thermal energy backup, and custom specifications generator.
+          {store.language === 'kn' && (
+            <p className="text-zinc-200 font-kannada text-xs sm:text-sm md:text-base leading-relaxed mb-2.5">
+              ನಿಮ್ಮ ಜಮೀನು, ತೋಟ ಮತ್ತು ಸ್ವತ್ತುಗಳ ರಕ್ಷಣೆಗಾಗಿ ಸೌರಶಕ್ತಿ ಚಾಲಿತ ಸ್ಮಾರ್ಟ್ ಕಣ್ಗಾವಲು ವ್ಯವಸ್ಥೆ.
+            </p>
+          )}
+          <p className="text-zinc-400 font-space text-[11px] sm:text-xs md:text-sm font-light leading-relaxed mb-5 sm:mb-6">
+            {store.language === 'en'
+              ? 'Autonomous Solar CCTV security engineered with starlight AI threat classification, thermal energy backup, and custom specifications generator.'
+              : 'Autonomous Solar CCTV security engineered with starlight AI threat classification, thermal energy backup, and custom specifications generator.'}
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3 mb-5 sm:mb-6">
             <button 
               onClick={() => onNavigate('configurator')}
-              className="px-8 py-4 rounded-xl font-space bg-gradient-to-r from-electric-cyan to-electric-emerald text-black font-semibold tracking-wider hover:opacity-90 shadow-lg hover:shadow-electric-cyan/20 transition-all duration-300 flex items-center justify-center gap-2 text-sm uppercase group cursor-pointer"
+              className="px-5 py-2.5 sm:px-6 sm:py-3.5 rounded-lg font-space bg-gradient-to-r from-electric-cyan to-electric-emerald text-black font-semibold tracking-wider hover:opacity-90 shadow-lg hover:shadow-electric-cyan/20 transition-all duration-300 flex items-center justify-center gap-1.5 text-[10px] sm:text-xs uppercase group cursor-pointer"
             >
-              Configure System <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              {t('ಸಿಸ್ಟಮ್ ಕಾನ್ಫಿಗರ್ ಮಾಡಿ / Configure System', store.language)} <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
             </button>
             <button 
               onClick={() => {
                 const el = document.getElementById('comparison-matrix');
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="px-8 py-4 rounded-xl font-space glass-panel border border-zinc-800 text-white font-medium hover:border-zinc-700 transition-all duration-300 text-sm uppercase cursor-pointer"
+              className="px-5 py-2.5 sm:px-6 sm:py-3.5 rounded-lg font-space glass-panel border border-zinc-800 text-white font-medium hover:border-zinc-700 transition-all duration-300 text-[10px] sm:text-xs uppercase cursor-pointer"
             >
-              Compare Cameras
+              {t('ಕ್ಯಾಮೆರಾಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡಿ / Compare Cameras', store.language)}
             </button>
           </div>
 
           {/* Stats Bar */}
-          <div className="grid grid-cols-3 gap-6 pt-6 border-t border-zinc-900/60 max-w-lg">
+          <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-4 border-t border-zinc-900/60 max-w-lg">
             <div>
-              <div className="text-2xl font-space font-medium text-white">99.9%</div>
-              <div className="text-[10px] text-zinc-500 uppercase tracking-widest mt-1">Solar Autonomy</div>
+              <div className="text-base sm:text-lg font-space font-medium text-white">99.9%</div>
+              <div className="text-[8px] sm:text-[9px] text-zinc-500 uppercase tracking-widest mt-0.5">
+                {t('ಸೌರ ಸ್ವಾಯತ್ತತೆ / Solar Autonomy', store.language)}
+              </div>
             </div>
             <div>
-              <div className="text-2xl font-space font-medium text-white">&lt; 350ms</div>
-              <div className="text-[10px] text-zinc-500 uppercase tracking-widest mt-1">AI Classification</div>
+              <div className="text-base sm:text-lg font-space font-medium text-white">&lt; 350ms</div>
+              <div className="text-[8px] sm:text-[9px] text-zinc-500 uppercase tracking-widest mt-0.5">
+                {t('ಎಐ ವರ್ಗೀಕರಣ / AI Classification', store.language)}
+              </div>
             </div>
             <div>
-              <div className="text-2xl font-space font-medium text-white">7 Year</div>
-              <div className="text-[10px] text-zinc-500 uppercase tracking-widest mt-1">System Warranty</div>
+              <div className="text-base sm:text-lg font-space font-medium text-white">7 Year</div>
+              <div className="text-[8px] sm:text-[9px] text-zinc-500 uppercase tracking-widest mt-0.5">
+                {t('ಸಿಸ್ಟಮ್ ಖಾತರಿ / System Warranty', store.language)}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Right Side: Virtual Telemetry HUD overlaying the background image's camera tower */}
-        <div className="lg:col-span-5 relative h-[450px] flex items-center justify-center pointer-events-none">
+        {/* Right Side: Virtual Telemetry HUD overlaying the background image's camera tower - HIDDEN ON MOBILE */}
+        <div className="hidden lg:flex lg:col-span-5 relative h-[450px] items-center justify-center pointer-events-none">
           {/* Holographic Radar / Telemetry target rings */}
           <div className="absolute w-72 h-72 rounded-full border border-electric-cyan/15 animate-ping opacity-30"></div>
           <div className="absolute w-56 h-56 rounded-full border border-electric-cyan/10 animate-spin-slow"></div>

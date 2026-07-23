@@ -1,63 +1,53 @@
 import React, { useState } from 'react';
 import { db } from '../utils/dbMock';
+import { useConfiguratorStore } from '../store/useConfiguratorStore';
+import { t } from '../utils/translate';
 import { MapPin, Star, Eye, Calendar, UserCheck, Shield } from 'lucide-react';
 
-const renderBilingual = (text) => {
-  if (typeof text !== 'string') return text;
-  if (text.includes(' / ')) {
-    const [kn, en] = text.split(' / ');
-    return (
-      <>
-        <span className="font-kannada">{kn}</span>
-        <span className="text-zinc-500 font-light mx-1">/</span>
-        <span>{en}</span>
-      </>
-    );
-  }
-  return text;
-};
-
-const getBilingualProject = (proj) => {
-  if (!proj) return null;
-  const translations = {
-    '77A Farm Site Surveillance': '77ಎ ಫಾರ್ಮ್ ಸೈಟ್ ಕಣ್ಗಾವಲು / 77A Farm Site Surveillance',
-    'Metro Hub Construction Phase 2': 'ಮೆಟ್ರೋ ಹಬ್ ನಿರ್ಮಾಣ ಹಂತ 2 / Metro Hub Construction Phase 2',
-    'Coastal Marina Guarding': 'ಕರಾವಳಿ ಮರೀನಾ ಕಾವಲು / Coastal Marina Guarding',
-    'Hill Valley Agriculture Area': 'ಹಿಲ್ ವ್ಯಾಲಿ ಕೃಷಿ ಪ್ರದೇಶ / Hill Valley Agriculture Area',
-    'Downtown Commercial Block': 'ಡೌನ್‌ಟೌನ್ ವಾಣಿಜ್ಯ ಬ್ಲಾಕ್ / Downtown Commercial Block',
-    'North Quay Yacht Harbor': 'ನಾರ್ತ್ ಕ್ವೇ ಯಾಚ್ ಹಾರ್ಬರ್ / North Quay Yacht Harbor',
-    'Solar CCTV Off-Grid': 'ಸೌರ ಸಿಸಿಟಿವಿ ಆಫ್-ಗ್ರಿಡ್ / Solar CCTV Off-Grid',
-    'Hybrid CCTV (Solar + Backup AC)': 'ಹೈಬ್ರಿಡ್ ಸಿಸಿಟಿವಿ (ಸೌರ + ಬ್ಯಾಕಪ್ ಎಸಿ) / Hybrid CCTV (Solar + Backup AC)',
-    '100% Green Solar Tower': '100% ಹಸಿರು ಸೌರ ಗೋಪುರ / 100% Green Solar Tower',
-    'Surya Drishti Apex PTZ-S1 + 40W panel': 'ಸೂರ್ಯ ದೃಷ್ಟಿ ಅಪೆಕ್ಸ್ PTZ-S1 + 40W ಪ್ಯಾನಲ್ / Surya Drishti Apex PTZ-S1 + 40W panel',
-    'Surya Drishti Dome CS-S4 + 18Ah LFP': 'ಸೂರ್ಯ ದೃಷ್ಟಿ ಡೋಮ್ CS-S4 + 18Ah LFP / Surya Drishti Dome CS-S4 + 18Ah LFP',
-    'Double Pro AI TW-S2 + Helios 40W Duo': 'ಡಬಲ್ ಪ್ರೊ AI TW-S2 + ಹೆಲಿಯೋಸ್ 40W ಡ್ಯುವೋ / Double Pro AI TW-S2 + Helios 40W Duo',
-    '6 Hours': '6 ಗಂಟೆಗಳು / 6 Hours',
-    '8 Hours': '8 ಗಂಟೆಗಳು / 8 Hours',
-    '12 Hours': '12 ಗಂಟೆಗಳು / 12 Hours',
-    'Fantastic! The camera runs flawlessly on solar energy alone. Highly recommend this smart system.':
-      'ಅದ್ಭುತವಾಗಿದೆ! ಕ್ಯಾಮೆರಾ ಕೇವಲ ಸೌರಶಕ್ತಿಯಿಂದಲೇ ದೋಷರಹಿತವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಈ ಸ್ಮಾರ್ಟ್ ವ್ಯವಸ್ಥೆಯನ್ನು ಬಲವಾಗಿ ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ. / Fantastic! The camera runs flawlessly on solar energy alone. Highly recommend this smart system.',
-    'The active object tracking has already stopped three trespassers. Dashboard notifications are instant.':
-      'ಸಕ್ರಿಯ ಆಬ್ಜೆಕ್ಟ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಈಗಾಗಲೇ ಮೂವರು ಅತಿಕ್ರಮಣಕಾರರನ್ನು ತಡೆದಿದೆ. ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ಅಧಿಸೂಚನೆಗಳು ತ್ವರಿತವಾಗಿವೆ. / The active object tracking has already stopped three trespassers. Dashboard notifications are instant.',
-    'Anti-rust materials holding strong against salt air. Live stream works perfectly over 4G cellular.':
-      'ಉಪ್ಪು ಗಾಳಿಯ ವಿರುದ್ಧ ತುಕ್ಕು-ನಿರೋಧಕ ವಸ್ತುಗಳು ಬಲವಾಗಿ ನಿಲ್ಲುತ್ತವೆ. ಲೈವ್ ಸ್ಟ್ರೀಮ್ 4G ಸೆಲ್ಯುಲಾರ್ ಮೂಲಕ ಸಂಪೂರ್ಣವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. / Anti-rust materials holding strong against salt air. Live stream works perfectly over 4G cellular.'
-  };
-
-  return {
-    ...proj,
-    title: translations[proj.title] || proj.title,
-    location: translations[proj.location] || proj.location,
-    type: translations[proj.type] || proj.type,
-    camera: translations[proj.camera] || proj.camera,
-    duration: translations[proj.duration] || proj.duration,
-    feedback: translations[proj.feedback] || proj.feedback
-  };
-};
-
 export default function Projects() {
+  const store = useConfiguratorStore();
   const projects = db.getProjects();
   const [selectedProjRaw, setSelectedProjRaw] = useState(projects[0]);
   const [comparisonSliderVal, setComparisonSliderVal] = useState(50); // percentage for before/after split
+
+  const renderBilingual = (text) => t(text, store.language);
+
+  const getBilingualProject = (proj) => {
+    if (!proj) return null;
+    const translations = {
+      '77A Farm Site Surveillance': '77ಎ ಫಾರ್ಮ್ ಸೈಟ್ ಕಣ್ಗಾವಲು / 77A Farm Site Surveillance',
+      'Metro Hub Construction Phase 2': 'ಮೆಟ್ರೋ ಹಬ್ ನಿರ್ಮಾಣ ಹಂತ 2 / Metro Hub Construction Phase 2',
+      'Coastal Marina Guarding': 'ಕರಾವಳಿ ಮರೀನಾ ಕಾವಲು / Coastal Marina Guarding',
+      'Hill Valley Agriculture Area': 'ಹಿಲ್ ವ್ಯಾಲಿ ಕೃಷಿ ಪ್ರದೇಶ / Hill Valley Agriculture Area',
+      'Downtown Commercial Block': 'ಡೌನ್‌ಟೌನ್ ವಾಣಿಜ್ಯ ಬ್ಲಾಕ್ / Downtown Commercial Block',
+      'North Quay Yacht Harbor': 'ನಾರ್ತ್ ಕ್ವೇ ಯಾಚ್ ಹಾರ್ಬರ್ / North Quay Yacht Harbor',
+      'Solar CCTV Off-Grid': 'ಸೌರ ಸಿಸಿಟಿವಿ ಆಫ್-ಗ್ರಿಡ್ / Solar CCTV Off-Grid',
+      'Hybrid CCTV (Solar + Backup AC)': 'ಹೈಬ್ರಿಡ್ ಸಿಸಿಟಿವಿ (ಸೌರ + ಬ್ಯಾಕಪ್ ಎಸಿ) / Hybrid CCTV (Solar + Backup AC)',
+      '100% Green Solar Tower': '100% ಹಸಿರು ಸೌರ ಗೋಪುರ / 100% Green Solar Tower',
+      'Surya Drishti Apex PTZ-S1 + 40W panel': 'ಸೂರ್ಯ ದೃಷ್ಟಿ ಅಪೆಕ್ಸ್ PTZ-S1 + 40W ಪ್ಯಾನಲ್ / Surya Drishti Apex PTZ-S1 + 40W panel',
+      'Surya Drishti Dome CS-S4 + 18Ah LFP': 'ಸೂರ್ಯ ದೃಷ್ಟಿ ಡೋಮ್ CS-S4 + 18Ah LFP / Surya Drishti Dome CS-S4 + 18Ah LFP',
+      'Double Pro AI TW-S2 + Helios 40W Duo': 'ಡಬಲ್ ಪ್ರೊ AI TW-S2 + ಹೆಲಿಯೋಸ್ 40W ಡ್ಯುವೋ / Double Pro AI TW-S2 + Helios 40W Duo',
+      '6 Hours': '6 ಗಂಟೆಗಳು / 6 Hours',
+      '8 Hours': '8 ಗಂಟೆಗಳು / 8 Hours',
+      '12 Hours': '12 ಗಂಟೆಗಳು / 12 Hours',
+      'Fantastic! The camera runs flawlessly on solar energy alone. Highly recommend this smart system.':
+        'ಅದ್ಭುತವಾಗಿದೆ! ಕ್ಯಾಮೆರಾ ಕೇವಲ ಸೌರಶಕ್ತಿಯಿಂದಲೇ ದೋಷರಹಿತವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಈ ಸ್ಮಾರ್ಟ್ ವ್ಯವಸ್ಥೆಯನ್ನು ಬಲವಾಗಿ ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ. / Fantastic! The camera runs flawlessly on solar energy alone. Highly recommend this smart system.',
+      'The active object tracking has already stopped three trespassers. Dashboard notifications are instant.':
+        'ಸಕ್ರಿಯ ಆಬ್ಜೆಕ್ಟ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಈಗಾಗಲೇ ಮೂವರು ಅತಿಕ್ರಮಣಕಾರರನ್ನು تಡೆದಿದೆ. ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ಅಧಿಸೂಚನೆಗಳು ತ್ವರಿತವಾಗಿವೆ. / The active object tracking has already stopped three trespassers. Dashboard notifications are instant.',
+      'Anti-rust materials holding strong against salt air. Live stream works perfectly over 4G cellular.':
+        'ಉಪ್ಪು ಗಾಳಿಯ ವಿರುದ್ಧ ತುಕ್ಕು-ನಿರೋಧಕ ವಸ್ತುಗಳು ಬಲವಾಗಿ ನಿಲ್ಲುತ್ತವೆ. ಲೈವ್ ಸ್ಟ್ರೀಮ್ 4G ಸೆಲ್ಯುಲಾರ್ ಮೂಲಕ ಸಂಪೂರ್ಣವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. / Anti-rust materials holding strong against salt air. Live stream works perfectly over 4G cellular.'
+    };
+
+    return {
+      ...proj,
+      title: translations[proj.title] || proj.title,
+      location: translations[proj.location] || proj.location,
+      type: translations[proj.type] || proj.type,
+      camera: translations[proj.camera] || proj.camera,
+      duration: translations[proj.duration] || proj.duration,
+      feedback: translations[proj.feedback] || proj.feedback
+    };
+  };
 
   const selectedProj = getBilingualProject(selectedProjRaw);
 
@@ -68,13 +58,13 @@ export default function Projects() {
       <div className="max-w-7xl w-full mx-auto px-6 relative z-10">
         <div className="max-w-3xl mb-16">
           <span className="text-electric-cyan text-xs font-space uppercase tracking-widest block mb-3 font-semibold">
-            <span className="font-kannada">ಸಕ್ರಿಯ ನಿಯೋಜನೆಗಳು</span> / Active Deployments
+            {renderBilingual("ಸಕ್ರಿಯ ನಿಯೋಜನೆಗಳು / Active Deployments")}
           </span>
           <h2 className="text-4xl md:text-5xl font-light text-white leading-tight">
-            <span className="font-kannada">ಯೋಜನೆಗಳು</span> / Projects Showcase
+            {renderBilingual("ಯೋಜನೆಗಳು / Projects Showcase")}
           </h2>
           <p className="text-zinc-400 font-light mt-3 max-w-xl">
-            <span className="font-kannada">ನಮ್ಮ ಕೈಗಾರಿಕಾ ಭದ್ರತಾ ಕೇಂದ್ರಗಳನ್ನು ಅನ್ವೇಷಿಸಿ. ಕಸ್ಟಮ್ ಪೇಲೋಡ್‌ಗಳು, ಮೊದಲು/ನಂತರದ ಚಿತ್ರಗಳು ಮತ್ತು ಸ್ವಾಯತ್ತತೆಯ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ವೀಕ್ಷಿಸಲು ಲೈವ್ ನೆಟ್‌ವರ್ಕ್ ಕೋಆರ್ಡಿನೇಟ್‌ಗಳಲ್ಲಿ ನಿಲ್ದಾಣವನ್ನು ಆಯ್ಕೆಮಾಡಿ.</span> / Explore our industrial security hubs. Select a station on the live network coordinates to view custom payloads, before/after images, and autonomy feedback.
+            {renderBilingual("ನಮ್ಮ ಕೈಗಾರಿಕಾ ಭದ್ರತಾ ಕೇಂದ್ರಗಳನ್ನು ಅನ್ವೇಷಿಸಿ. ಕಸ್ಟಮ್ ಪೇಲೋಡ್‌ಗಳು, ಮೊದಲು/ನಂತರದ ಚಿತ್ರಗಳು ಮತ್ತು ಸ್ವಾಯತ್ತತೆಯ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ವೀಕ್ಷಿಸಲು ಲೈವ್ ನೆಟ್‌ವರ್ಕ್ ಕೋಆರ್ಡಿನೇಟ್‌ಗಳಲ್ಲಿ ನಿಲ್ದಾಣವನ್ನು ಆಯ್ಕೆಮಾಡಿ. / Explore our industrial security hubs. Select a station on the live network coordinates to view custom payloads, before/after images, and autonomy feedback.")}
           </p>
         </div>
 
@@ -85,10 +75,10 @@ export default function Projects() {
               <div className="flex justify-between items-center mb-6">
                 <span className="text-xs text-zinc-400 font-space uppercase tracking-widest flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-electric-cyan animate-ping"></span> 
-                  <span className="font-kannada">ಲೈವ್ ಏರಿಯಾ ನೆಟ್‌ವರ್ಕ್</span> / Live Area Network
+                  {renderBilingual("ಲೈವ್ ಏರಿಯಾ ನೆಟ್‌ವರ್ಕ್ / Live Area Network")}
                 </span>
                 <span className="text-[10px] text-zinc-500 font-space uppercase">
-                  <span className="font-kannada">ಕೊಲ್ಲಿ ಪ್ರದೇಶದ ವಲಯ</span> / Bay Area Quadrant
+                  {renderBilingual("ಕೊಲ್ಲಿ ಪ್ರದೇಶದ ವಲಯ / Bay Area Quadrant")}
                 </span>
               </div>
               
@@ -147,12 +137,8 @@ export default function Projects() {
             </div>
             
             <div className="mt-6 border-t border-zinc-900 pt-4 flex justify-between text-xs text-zinc-500 font-space">
-              <span>
-                <span className="font-kannada">ನೆಟ್‌ವರ್ಕ್ ನೋಡ್ ಕ್ಲಿಕ್‌ಗಳು ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಟೆಲಿಮೆಟ್ರಿಯನ್ನು ನವೀಕರಿಸುತ್ತವೆ</span> / Interactive network node clicks updates portfolio telemetry
-              </span>
-              <span>
-                <span className="font-kannada">ಆನ್‌ಲೈನ್</span> / Online
-              </span>
+              <span>{renderBilingual("ನೆಟ್‌ವರ್ಕ್ ನೋಡ್ ಕ್ಲಿಕ್‌ಗಳು ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಟೆಲಿಮೆಟ್ರಿಯನ್ನು ನವೀಕರಿಸುತ್ತವೆ / Interactive network node clicks updates portfolio telemetry")}</span>
+              <span>{renderBilingual("ಆನ್‌ಲೈನ್ / Online")}</span>
             </div>
           </div>
 
@@ -199,12 +185,12 @@ export default function Projects() {
                       style={{ width: '100%', minWidth: '400px' }} // prevent image squishing
                     />
                     <div className="absolute top-4 left-4 bg-zinc-950/80 px-2 py-0.5 border border-white/10 rounded text-[9px] font-space text-zinc-400 uppercase tracking-widest z-20">
-                      <span className="font-kannada">ಮೊದಲು</span> / Before
+                      {renderBilingual("ಮೊದಲು / Before")}
                     </div>
                   </div>
 
                   <div className="absolute top-4 right-4 bg-electric-cyan/95 text-black px-2 py-0.5 rounded text-[9px] font-space font-semibold uppercase tracking-widest z-20 shadow-md">
-                    <span className="font-kannada">ನಂತರ (ಸೌರ ವ್ಯವಸ್ಥೆ)</span> / After (Solar System)
+                    {renderBilingual("ನಂತರ (ಸೌರ ವ್ಯವಸ್ಥೆ) / After (Solar System)")}
                   </div>
 
                   {/* Split line separator */}
@@ -232,7 +218,7 @@ export default function Projects() {
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="bg-zinc-950/40 border border-white/5 rounded-xl p-3.5">
                     <span className="text-[10px] text-zinc-500 uppercase tracking-wider block font-space">
-                      <span className="font-kannada">ಪೇಲೋಡ್ ಕಾನ್ಫಿಗರೇಶನ್</span> / Payload Config
+                      {renderBilingual("ಪೇಲೋಡ್ ಕಾನ್ಫಿಗರೇಶನ್ / Payload Config")}
                     </span>
                     <span className="text-xs text-zinc-200 mt-1 block leading-normal">
                       {renderBilingual(selectedProj.camera)}
@@ -240,7 +226,7 @@ export default function Projects() {
                   </div>
                   <div className="bg-zinc-950/40 border border-white/5 rounded-xl p-3.5">
                     <span className="text-[10px] text-zinc-500 uppercase tracking-wider block font-space">
-                      <span className="font-kannada">ಸ್ಥಾಪನಾ ಸಮಯ</span> / Install Time
+                      {renderBilingual("ಸ್ಥಾಪನಾ ಸಮಯ / Install Time")}
                     </span>
                     <span className="text-xs text-zinc-200 mt-1 block flex items-center gap-1.5">
                       <Calendar className="w-3.5 h-3.5 text-electric-cyan" /> {renderBilingual(selectedProj.duration)}
@@ -251,7 +237,7 @@ export default function Projects() {
 
               <div className="border-t border-zinc-900/60 pt-6">
                 <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-space block mb-2 flex items-center gap-1.5">
-                  <UserCheck className="w-3.5 h-3.5 text-electric-emerald" /> <span className="font-kannada">ಗ್ರಾಹಕರ ವಿಮರ್ಶೆ</span> / Client Review ({selectedProj.client})
+                  <UserCheck className="w-3.5 h-3.5 text-electric-emerald" /> {renderBilingual("ಗ್ರಾಹಕರ ವಿಮರ್ಶೆ / Client Review")} ({selectedProj.client})
                 </span>
                 <p className="text-zinc-400 text-xs italic leading-relaxed">
                   "{renderBilingual(selectedProj.feedback)}"

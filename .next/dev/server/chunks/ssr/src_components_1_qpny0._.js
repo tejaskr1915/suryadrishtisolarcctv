@@ -12,10 +12,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sun.mjs [app-ssr] (ecmascript) <export default as Sun>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$compass$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Compass$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/compass.mjs [app-ssr] (ecmascript) <export default as Compass>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.mjs [app-ssr] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/store/useConfiguratorStore.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/translate.js [app-ssr] (ecmascript)");
+;
+;
 ;
 ;
 ;
 function Hero({ onNavigate }) {
+    const store = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConfiguratorStore"])();
     const [solarAngle, setSolarAngle] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(32);
     const [batteryCharge, setBatteryCharge] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(78);
     const [isCharging, setIsCharging] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
@@ -66,92 +71,109 @@ function Hero({ onNavigate }) {
                 className: "absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-zinc-950/35 to-zinc-950/80 z-0"
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero.jsx",
-                lineNumber: 54,
+                lineNumber: 57,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-zinc-950/50 z-0"
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero.jsx",
-                lineNumber: 55,
+                lineNumber: 58,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-7xl w-full mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center",
+                className: "max-w-7xl w-full mx-auto px-4 sm:px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "lg:col-span-7 glass-panel p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl relative z-10 backdrop-blur-md",
+                        className: "lg:col-span-7 glass-panel p-4 sm:p-6 md:p-10 rounded-2xl border border-white/10 shadow-2xl relative z-10 backdrop-blur-md",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "inline-flex items-center gap-2.5 px-4 py-2 rounded-xl bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-kannada tracking-wide mb-6",
+                                className: "inline-flex items-center gap-2px px-2.5 py-1 rounded bg-amber-400/10 border border-amber-400/30 text-amber-300 text-[9px] sm:text-xs tracking-wide mb-3 sm:mb-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "w-2 h-2 rounded-full bg-amber-400 animate-pulse"
+                                        className: "w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse mr-1"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 62,
+                                        lineNumber: 65,
                                         columnNumber: 13
                                     }, this),
-                                    "ನಿಮ್ಮ ಭದ್ರತೆ ನಮ್ಮ ಜವಾಬ್ದಾರಿ"
+                                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ನಿಮ್ಮ ಭದ್ರತೆ ನಮ್ಮ ಜವಾಬ್ದಾರಿ / Your security is our responsibility', store.language)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 61,
+                                lineNumber: 64,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-4xl md:text-6xl font-bold font-kannada leading-tight text-white mb-6",
-                                children: [
-                                    "ಸೂರ್ಯ ದೃಷ್ಟಿ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "block text-2xl md:text-3.5xl font-space font-semibold tracking-wider bg-gradient-to-r from-electric-cyan via-electric-sky to-electric-emerald bg-clip-text text-transparent mt-2 uppercase",
-                                        children: "SURYA DRISHTI"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 69,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                className: "text-2xl sm:text-3xl md:text-5xl font-bold leading-tight text-white mb-3 sm:mb-4",
+                                children: store.language === 'kn' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "font-kannada",
+                                            children: "ಸೌರ್ಯ ದೃಷ್ಟಿ"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Hero.jsx",
+                                            lineNumber: 73,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "block text-sm sm:text-lg md:text-2xl font-space font-semibold tracking-wider bg-gradient-to-r from-electric-cyan via-electric-sky to-electric-emerald bg-clip-text text-transparent mt-1 uppercase",
+                                            children: "SURYA DRISHTI"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Hero.jsx",
+                                            lineNumber: 74,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "bg-gradient-to-r from-electric-cyan via-electric-sky to-electric-emerald bg-clip-text text-transparent font-space font-semibold tracking-wider uppercase",
+                                    children: "SURYA DRISHTI"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Hero.jsx",
+                                    lineNumber: 79,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 67,
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-zinc-200 font-kannada text-base md:text-lg leading-relaxed mb-4",
+                            store.language === 'kn' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-zinc-200 font-kannada text-xs sm:text-sm md:text-base leading-relaxed mb-2.5",
                                 children: "ನಿಮ್ಮ ಜಮೀನು, ತೋಟ ಮತ್ತು ಸ್ವತ್ತುಗಳ ರಕ್ಷಣೆಗಾಗಿ ಸೌರಶಕ್ತಿ ಚಾಲಿತ ಸ್ಮಾರ್ಟ್ ಕಣ್ಗಾವಲು ವ್ಯವಸ್ಥೆ."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 75,
-                                columnNumber: 11
+                                lineNumber: 87,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-zinc-400 font-space text-sm md:text-base font-light leading-relaxed mb-8",
-                                children: "Autonomous Solar CCTV security engineered with starlight AI threat classification, thermal energy backup, and custom specifications generator."
+                                className: "text-zinc-400 font-space text-[11px] sm:text-xs md:text-sm font-light leading-relaxed mb-5 sm:mb-6",
+                                children: store.language === 'en' ? 'Autonomous Solar CCTV security engineered with starlight AI threat classification, thermal energy backup, and custom specifications generator.' : 'Autonomous Solar CCTV security engineered with starlight AI threat classification, thermal energy backup, and custom specifications generator.'
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 78,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-col sm:flex-row gap-4 mb-8",
+                                className: "flex flex-col sm:flex-row gap-2.5 sm:gap-3 mb-5 sm:mb-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>onNavigate('configurator'),
-                                        className: "px-8 py-4 rounded-xl font-space bg-gradient-to-r from-electric-cyan to-electric-emerald text-black font-semibold tracking-wider hover:opacity-90 shadow-lg hover:shadow-electric-cyan/20 transition-all duration-300 flex items-center justify-center gap-2 text-sm uppercase group cursor-pointer",
+                                        className: "px-5 py-2.5 sm:px-6 sm:py-3.5 rounded-lg font-space bg-gradient-to-r from-electric-cyan to-electric-emerald text-black font-semibold tracking-wider hover:opacity-90 shadow-lg hover:shadow-electric-cyan/20 transition-all duration-300 flex items-center justify-center gap-1.5 text-[10px] sm:text-xs uppercase group cursor-pointer",
                                         children: [
-                                            "Configure System ",
+                                            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಸಿಸ್ಟಮ್ ಕಾನ್ಫಿಗರ್ ಮಾಡಿ / Configure System', store.language),
+                                            " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
+                                                className: "w-3 h-3 group-hover:translate-x-1 transition-transform"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 88,
-                                                columnNumber: 32
+                                                lineNumber: 103,
+                                                columnNumber: 80
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 84,
+                                        lineNumber: 99,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -161,135 +183,135 @@ function Hero({ onNavigate }) {
                                                 behavior: 'smooth'
                                             });
                                         },
-                                        className: "px-8 py-4 rounded-xl font-space glass-panel border border-zinc-800 text-white font-medium hover:border-zinc-700 transition-all duration-300 text-sm uppercase cursor-pointer",
-                                        children: "Compare Cameras"
+                                        className: "px-5 py-2.5 sm:px-6 sm:py-3.5 rounded-lg font-space glass-panel border border-zinc-800 text-white font-medium hover:border-zinc-700 transition-all duration-300 text-[10px] sm:text-xs uppercase cursor-pointer",
+                                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಕ್ಯಾಮೆರಾಗಳನ್ನು ಹೋಲಿಕೆ ಮಾಡಿ / Compare Cameras', store.language)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 90,
+                                        lineNumber: 105,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 83,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid grid-cols-3 gap-6 pt-6 border-t border-zinc-900/60 max-w-lg",
+                                className: "grid grid-cols-3 gap-2 sm:gap-4 pt-4 border-t border-zinc-900/60 max-w-lg",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-2xl font-space font-medium text-white",
+                                                className: "text-base sm:text-lg font-space font-medium text-white",
                                                 children: "99.9%"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 104,
+                                                lineNumber: 119,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-[10px] text-zinc-500 uppercase tracking-widest mt-1",
-                                                children: "Solar Autonomy"
+                                                className: "text-[8px] sm:text-[9px] text-zinc-500 uppercase tracking-widest mt-0.5",
+                                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಸೌರ ಸ್ವಾಯತ್ತತೆ / Solar Autonomy', store.language)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 105,
+                                                lineNumber: 120,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 103,
+                                        lineNumber: 118,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-2xl font-space font-medium text-white",
+                                                className: "text-base sm:text-lg font-space font-medium text-white",
                                                 children: "< 350ms"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 108,
+                                                lineNumber: 125,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-[10px] text-zinc-500 uppercase tracking-widest mt-1",
-                                                children: "AI Classification"
+                                                className: "text-[8px] sm:text-[9px] text-zinc-500 uppercase tracking-widest mt-0.5",
+                                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಎಐ ವರ್ಗೀಕರಣ / AI Classification', store.language)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 109,
+                                                lineNumber: 126,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 107,
+                                        lineNumber: 124,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-2xl font-space font-medium text-white",
+                                                className: "text-base sm:text-lg font-space font-medium text-white",
                                                 children: "7 Year"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 112,
+                                                lineNumber: 131,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-[10px] text-zinc-500 uppercase tracking-widest mt-1",
-                                                children: "System Warranty"
+                                                className: "text-[8px] sm:text-[9px] text-zinc-500 uppercase tracking-widest mt-0.5",
+                                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಸಿಸ್ಟಮ್ ಖಾತರಿ / System Warranty', store.language)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 113,
+                                                lineNumber: 132,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 111,
+                                        lineNumber: 130,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 102,
+                                lineNumber: 117,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Hero.jsx",
-                        lineNumber: 59,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "lg:col-span-5 relative h-[450px] flex items-center justify-center pointer-events-none",
+                        className: "hidden lg:flex lg:col-span-5 relative h-[450px] items-center justify-center pointer-events-none",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute w-72 h-72 rounded-full border border-electric-cyan/15 animate-ping opacity-30"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 121,
+                                lineNumber: 142,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute w-56 h-56 rounded-full border border-electric-cyan/10 animate-spin-slow"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 122,
+                                lineNumber: 143,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute w-40 h-40 rounded-full border border-dashed border-electric-cyan/20"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 123,
+                                lineNumber: 144,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute w-72 h-0.5 bg-gradient-to-r from-transparent via-electric-cyan to-transparent animate-scanner shadow-[0_0_8px_#00F5FF] z-20"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 126,
+                                lineNumber: 147,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -301,12 +323,12 @@ function Hero({ onNavigate }) {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Hero.jsx",
-                                            lineNumber: 131,
+                                            lineNumber: 152,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 130,
+                                        lineNumber: 151,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -316,7 +338,7 @@ function Hero({ onNavigate }) {
                                                 children: "Solar Input"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 134,
+                                                lineNumber: 155,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -324,19 +346,19 @@ function Hero({ onNavigate }) {
                                                 children: "40W Helios"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 135,
+                                                lineNumber: 156,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 133,
+                                        lineNumber: 154,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 129,
+                                lineNumber: 150,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -348,12 +370,12 @@ function Hero({ onNavigate }) {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Hero.jsx",
-                                            lineNumber: 141,
+                                            lineNumber: 162,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 140,
+                                        lineNumber: 161,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -363,7 +385,7 @@ function Hero({ onNavigate }) {
                                                 children: "Thermal Battery"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 144,
+                                                lineNumber: 165,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -374,19 +396,19 @@ function Hero({ onNavigate }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 145,
+                                                lineNumber: 166,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 143,
+                                        lineNumber: 164,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 139,
+                                lineNumber: 160,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -398,12 +420,12 @@ function Hero({ onNavigate }) {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Hero.jsx",
-                                            lineNumber: 151,
+                                            lineNumber: 172,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 150,
+                                        lineNumber: 171,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -413,7 +435,7 @@ function Hero({ onNavigate }) {
                                                 children: "Panel Align"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 154,
+                                                lineNumber: 175,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -424,19 +446,19 @@ function Hero({ onNavigate }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 155,
+                                                lineNumber: 176,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 153,
+                                        lineNumber: 174,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 149,
+                                lineNumber: 170,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -446,7 +468,7 @@ function Hero({ onNavigate }) {
                                         className: "w-1.5 h-1.5 rounded-full bg-electric-cyan animate-ping"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 161,
+                                        lineNumber: 182,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -454,31 +476,31 @@ function Hero({ onNavigate }) {
                                         children: "Active Telemetry HUD"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 162,
+                                        lineNumber: 183,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 160,
+                                lineNumber: 181,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Hero.jsx",
-                        lineNumber: 119,
+                        lineNumber: 140,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Hero.jsx",
-                lineNumber: 57,
+                lineNumber: 60,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Hero.jsx",
-        lineNumber: 49,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }
@@ -494,6 +516,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$dbMock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/dbMock.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/store/useConfiguratorStore.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/translate.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/eye.mjs [app-ssr] (ecmascript) <export default as Eye>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.mjs [app-ssr] (ecmascript) <export default as ShieldCheck>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.mjs [app-ssr] (ecmascript) <export default as ArrowRight>");
@@ -507,119 +530,87 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-const renderBilingual = (text)=>{
-    if (typeof text !== 'string') return text;
-    if (text.includes(' / ')) {
-        const [kn, en] = text.split(' / ');
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "font-kannada",
-                    children: kn
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Comparison.jsx",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-zinc-500 font-light mx-1",
-                    children: "/"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Comparison.jsx",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    children: en
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Comparison.jsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true);
-    }
-    return text;
-};
-const renderBilingualValue = (val)=>{
-    if (!val) return '';
-    const translations = {
-        // Night Vision
-        'Color Night Vision (Up to 50m)': 'ಕಲರ್ ನೈಟ್ ವಿಷನ್ (50 ಮೀ ವರೆಗೆ) / Color Night Vision (Up to 50m)',
-        'Starlight Laser (Up to 40m)': 'ಸ್ಟಾರ್‌ಲೈಟ್ ಲೇಸರ್ (40 ಮೀ ವರೆಗೆ) / Starlight Laser (Up to 40m)',
-        'Infrared Black & White (Up to 30m)': 'ಇನ್‌ಫ್ರಾರೆಡ್ ಬ್ಲಾಕ್ & ವೈಟ್ (30 ಮೀ ವರೆಗೆ) / Infrared Black & White (Up to 30m)',
-        'Dual-Source Color Night Vision': 'ಡ್ಯುಯಲ್-ಸೋರ್ಸ್ ಕಲರ್ ನೈಟ್ ವಿಷನ್ / Dual-Source Color Night Vision',
-        'Color Laser Starlight Gaze (Up to 80m)': 'ಕಲರ್ ಲೇಸರ್ ಸ್ಟಾರ್‌ಲೈಟ್ ಗೇಜ್ (80 ಮೀ ವರೆಗೆ) / Color Laser Starlight Gaze (Up to 80m)',
-        // Zoom
-        '10x Optical Hybrid Zoom': '10x ಆಪ್ಟಿಕಲ್ ಹೈಬ್ರಿಡ್ ಜೂಮ್ / 10x Optical Hybrid Zoom',
-        '4x Digital Magnification': '4x ಡಿಜಿಟಲ್ ಮ್ಯಾಗ್ನಿಫಿಕೇಶನ್ / 4x Digital Magnification',
-        'No Optical (Fixed Wide-Angle Lens)': 'ಆಪ್ಟಿಕಲ್ ಇಲ್ಲ (ಸ್ಥಿರ ವೈಡ್-ಆಂಗಲ್ ಲೆನ್ಸ್) / No Optical (Fixed Wide-Angle Lens)',
-        '4x Optical Zoom': '4x ಆಪ್ಟಿಕಲ್ ಜೂಮ್ / 4x Optical Zoom',
-        '16x Hybrid Panoramic Zoom': '16x ಹೈಬ್ರಿಡ್ ಪನೋರಮಿಕ್ ಜೂಮ್ / 16x Hybrid Panoramic Zoom',
-        // AI Target Tracing
-        'AI Object Tracking & Siren Lock': 'ಎಐ ಆಬ್ಜೆಕ್ಟ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಮತ್ತು ಸೈರನ್ ಲಾಕ್ / AI Object Tracking & Siren Lock',
-        'Intelligent Human Filter': 'ಬುದ್ಧಿವಂತ ಹ್ಯೂಮನ್ ಫಿಲ್ಟರ್ / Intelligent Human Filter',
-        'Basic Motion & Face Scanning': 'ಮೂಲ ಚಲನೆ ಮತ್ತು ಮುಖ ಸ್ಕ್ಯಾನಿಂಗ್ / Basic Motion & Face Scanning',
-        'Intrusion Cross-Line Alarm': 'ಅನಧಿಕೃತ ಪ್ರವೇಶ ಕ್ರಾಸ್-ಲೈನ್ ಅಲಾರಾಂ / Intrusion Cross-Line Alarm',
-        'AI Multi-Target Classification': 'ಎಐ ಮಲ್ಟಿ-ಟಾರ್ಗೆಟ್ ವರ್ಗೀಕರಣ / AI Multi-Target Classification',
-        // PIR Motion Sweep
-        'Radar Motion Scan (120° coverage)': 'ರಡಾರ್ ಮೋಷನ್ ಸ್ಕ್ಯಾನ್ (120° ಕವರೇಜ್) / Radar Motion Scan (120° coverage)',
-        'Zone PIR Heat Sensing': 'ಝೋನ್ ಪಿಐಆರ್ ಹೀಟ್ ಸೆನ್ಸಿಂಗ್ / Zone PIR Heat Sensing',
-        'Standard Pixel Motion Analysis': 'ಪ್ರಮಾಣಿತ ಪಿಕ್ಸೆಲ್ ಚಲನೆ ವಿಶ್ಲೇಷಣೆ / Standard Pixel Motion Analysis',
-        'Advanced Thermal Motion Sweep': 'ಸುಧಾರಿತ ಥರ್ಮಲ್ ಮೋಷನ್ ಸ್ವೀಪ್ / Advanced Thermal Motion Sweep',
-        'Radar Sweep & Perimeter Defense': 'ರಡಾರ್ ಸ್ವೀಪ್ ಮತ್ತು ಪರಿಧಿ ರಕ್ಷಣೆ / Radar Sweep & Perimeter Defense',
-        // Audio Intercom
-        'Full Duplex Intercom (Noise Cancelling)': 'ಫುಲ್ ಡ್ಯುಪ್ಲೆಕ್ಸ್ ಇಂಟರ್‌ಕಾಮ್ (ಶಬ್ದ ರದ್ದತಿ) / Full Duplex Intercom (Noise Cancelling)',
-        'Two-Way Audio with Speaker Alert': 'ಸ್ಪೀಕರ್ ಅಲರ್ಟ್‌ನೊಂದಿಗೆ ದ್ವಿಮುಖ ಆಡಿಯೋ / Two-Way Audio with Speaker Alert',
-        'Integrated Mic and Internal Speaker': 'ಸಂಯೋಜಿತ ಮೈಕ್ ಮತ್ತು ಆಂತರಿಕ ಸ್ವೀಕರ್ / Integrated Mic and Internal Speaker',
-        'Mic and High-Decibel Speaker Output': 'ಮೈಕ್ ಮತ್ತು ಹೈ-ಡೆಸಿಬಲ್ ಸ್ಪೀಕರ್ ಔಟ್‌ಪುಟ್ / Mic and High-Decibel Speaker Output',
-        'Active Acoustic Warning Shield': 'ಸಕ್ರಿಯ ಅಕೌಸ್ಟಿಕ್ ಎಚ್ಚರಿಕೆ ಶೀಲ್ಡ್ / Active Acoustic Warning Shield',
-        // Memory Storage Card
-        'SD Card up to 256GB / Cloud Sync': '256 ಜಿಬಿ ವರೆಗೆ ಎಸ್‌ಡಿ ಕಾರ್ಡ್ / ಕ್ಲೌಡ್ ಸಿಂಕ್ / SD Card up to 256GB / Cloud Sync',
-        'SD Card up to 256GB': '256 ಜಿಬಿ ವರೆಗೆ ಎಸ್‌ಡಿ ಕಾರ್ಡ್ / SD Card up to 256GB',
-        'SD Card up to 128GB': '128 ಜಿಬಿ ವರೆಗೆ ಎಸ್‌ಡಿ ಕಾರ್ಡ್ / SD Card up to 128GB',
-        'SD Card up to 256GB / Onboard NAS': '256 ಜಿಬಿ ವರೆಗೆ ಎಸ್‌ಡಿ ಕಾರ್ಡ್ / ಆನ್‌ಬೋರ್ಡ್ ಎನ್‌ಎಎಸ್ / SD Card up to 256GB / Onboard NAS',
-        'Dual MicroSD Slot (Up to 512GB)': 'ಡ್ಯುಯಲ್ ಮೈಕ್ರೋ ಎಸ್‌ಡಿ ಸ್ಲಾಟ್ (512 ಜಿಬಿ ವರೆಗೆ) / Dual MicroSD Slot (Up to 512GB)',
-        // Manufacturer Warranty
-        '5 Years': '5 ವರ್ಷಗಳು / 5 Years',
-        '3 Years': '3 ವರ್ಷಗಳು / 3 Years',
-        '7 Years': '7 ವರ್ಷಗಳು / 7 Years'
-    };
-    const matched = translations[val];
-    return matched ? renderBilingual(matched) : val;
-};
-const renderProductName = (name)=>{
-    if (!name) return '';
-    const translations = {
-        'Strobe Siren Warning Dome': 'ಸ್ಟ್ರೋಬ್ ಸೈರನ್ ಎಚ್ಚರಿಕೆ ಡೋಮ್ / Strobe Siren Warning Dome',
-        'THINKWILL Dual-Lens PTZ Dome': 'ಥಿಂಕ್‌ವಿಲ್ ಡ್ಯುಯಲ್-ಲೆನ್ಸ್ ಪಿಟಿಝಡ್ ಡೋಮ್ / THINKWILL Dual-Lens PTZ Dome',
-        'Consistent Smart Telemetry PTZ Dome': 'ಕನ್ಸಿಸ್ಟೆಂಟ್ ಸ್ಮಾರ್ಟ್ ಟೆಲಿಮೆಟ್ರಿ ಪಿಟಿಝಡ್ ಡೋಮ್ / Consistent Smart Telemetry PTZ Dome',
-        'THINKWILL Single-Lens Classic Dome': 'ಥಿಂಕ್‌ವಿಲ್ ಸಿಂಗಲ್-ಲೆನ್ಸ್ ಕ್ಲಾಸಿಕ್ ಡೋಮ್ / THINKWILL Single-Lens Classic Dome',
-        'THINKWILL Triple-Lens Panoramic Stand': 'ಥಿಂಕ್‌ವಿಲ್ ಟ್ರಿಪಲ್-ಲೆನ್ಸ್ ಪನೋರಮಿಕ್ ಸ್ಟ್ಯಾಂಡ್ / THINKWILL Triple-Lens Panoramic Stand'
-    };
-    const matched = translations[name];
-    return matched ? renderBilingual(matched) : name;
-};
-const renderProductDescription = (desc)=>{
-    if (!desc) return '';
-    const translations = {
-        'White dome camera with integrated red strobe siren, dual outdoor antennas, and dual-lens target tracking.': 'ಸಂಯೋಜಿತ ಕೆಂಪು ಸ್ಟ್ರೋಬ್ ಸೈರನ್, ಡ್ಯುಯಲ್ ಹೊರಾಂಗಣ ಆಂಟೆನಾಗಳು ಮತ್ತು ಡ್ಯುಯಲ್-ಲೆನ್ಸ್ ಗುರಿ ಟ್ರ್ಯಾಕಿಂಗ್ ಹೊಂದಿರುವ ಬಿಳಿ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / White dome camera with integrated red strobe siren, dual outdoor antennas, and dual-lens target tracking.',
-        'Compact wireless THINKWILL dome camera with integrated mounting bracket, dual antennas, and wide-angle optical lens.': 'ಸಂಯೋಜಿತ ಮೌಂಟಿಂಗ್ ಬ್ರಾಕೆಟ್, ಡ್ಯುಯಲ್ ಆಂಟೆನಾಗಳು ಮತ್ತು ವೈಡ್-ಆಂಗಲ್ ಆಪ್ಟಿಕಲ್ ಲೆನ್ಸ್ ಹೊಂದಿರುವ ಕಾಂಪ್ಯಾಕ್ಟ್ ವೈರ್‌ಲೆಸ್ ಥಿಂಕ್‌ವಿಲ್ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / Compact wireless THINKWILL dome camera with integrated mounting bracket, dual antennas, and wide-angle optical lens.',
-        'Consistent brand dome camera with dual outdoor antennas, starlight sensors, and high-efficiency infrared night sweep.': 'ಡ್ಯುಯಲ್ ಹೊರಾಂಗಣ ಆಂಟೆನಾಗಳು, ಸ್ಟಾರ್‌ಲೈಟ್ ಸೆನ್ಸಾರ್‌ಗಳು ಮತ್ತು ಹೆಚ್ಚಿನ ದಕ್ಷತೆಯ ಇನ್‌ಫ್ರಾರೆಡ್ ನೈಟ್ ಸ್ವೀಪ್ ಹೊಂದಿರುವ ಕನ್ಸಿಸ್ಟೆಂಟ್ ಬ್ರಾಂಡ್ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / Consistent brand dome camera with dual outdoor antennas, starlight sensors, and high-efficiency infrared night sweep.',
-        'White THINKWILL dome camera with dual outdoor antennas, zero-lag WiFi connection, and high strength weather-proof casing.': 'ಡ್ಯುಯಲ್ ಹೊರಾಂಗಣ ಆಂಟೆನಾಗಳು, ಶೂನ್ಯ-ವಿಳಂಬ ವೈಫೈ ಸಂಪರ್ಕ ಮತ್ತು ಹೆಚ್ಚಿನ ಶಕ್ತಿಯ ಹವಾಮಾನ-ನಿರೋಧಕ ಕೇಸಿಂಗ್ ಹೊಂದಿರುವ ಬಿಳಿ ಥಿಂಕ್‌ವಿಲ್ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / White THINKWILL dome camera with dual outdoor antennas, zero-lag WiFi connection, and high strength weather-proof casing.',
-        'Enterprise THINKWILL triple-lens camera with double antennas and dual sub-dome visual pods on support stand.': 'ಡಬಲ್ ಆಂಟೆನಾಗಳು ಮತ್ತು ಬೆಂಬಲ ಸ್ಟ್ಯಾಂಡ್‌ನಲ್ಲಿ ಡ್ಯುಯಲ್ ಸಬ್-ಡೋಮ್ ದೃಶ್ಯ ಪಾಡ್‌ಗಳನ್ನು ಹೊಂದಿರುವ ಎಂಟರ್‌ಪ್ರೈಸ್ ಥಿಂಕ್‌ವಿಲ್ ಟ್ರಿಪಲ್-ಲೆನ್ಸ್ ಕ್ಯಾಮೆರಾ. / Enterprise THINKWILL triple-lens camera with double antennas and dual sub-dome visual pods on support stand.'
-    };
-    const matched = translations[desc];
-    return matched ? renderBilingual(matched) : desc;
-};
+;
 function Comparison() {
+    const store = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConfiguratorStore"])();
     const products = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$dbMock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["db"].getProducts();
     // Filter only solar cameras for comparison
     const solarCameras = products.filter((p)=>p.type === 'solar-camera');
-    const store = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConfiguratorStore"])();
     const [cameraAId, setCameraAId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(solarCameras[0]?.id || '');
     const [cameraBId, setCameraBId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(solarCameras[1]?.id || '');
     const [highlightDifferences, setHighlightDifferences] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const renderBilingual = (text)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])(text, store.language);
+    const renderBilingualValue = (val)=>{
+        if (!val) return '';
+        const translations = {
+            // Night Vision
+            'Color Night Vision (Up to 50m)': 'ಕಲರ್ ನೈಟ್ ವಿಷನ್ (50 ಮೀ ವರೆಗೆ) / Color Night Vision (Up to 50m)',
+            'Starlight Laser (Up to 40m)': 'ಸ್ಟಾರ್‌ಲೈಟ್ ಲೇಸರ್ (40 ಮೀ ವರೆಗೆ) / Starlight Laser (Up to 40m)',
+            'Infrared Black & White (Up to 30m)': 'ಇನ್‌ಫ್ರಾರೆಡ್ ಬ್ಲಾಕ್ & ವೈಟ್ (30 ಮೀ ವರೆಗೆ) / Infrared Black & White (Up to 30m)',
+            'Dual-Source Color Night Vision': 'ಡ್ಯುಯಲ್-ಸೋರ್ಸ್ ಕಲರ್ ನೈಟ್ ವಿಷನ್ / Dual-Source Color Night Vision',
+            'Color Laser Starlight Gaze (Up to 80m)': 'ಕಲರ್ ಲೇಸರ್ ಸ್ಟಾರ್‌ಲೈಟ್ ಗೇಜ್ (80 ಮೀ ವರೆಗೆ) / Color Laser Starlight Gaze (Up to 80m)',
+            // Zoom
+            '10x Optical Hybrid Zoom': '10x ಆಪ್ಟಿಕಲ್ ಹೈಬ್ರಿಡ್ ಜೂಮ್ / 10x Optical Hybrid Zoom',
+            '4x Digital Magnification': '4x ಡಿಜಿಟಲ್ ಮ್ಯಾಗ್ನಿಫಿಕೇಶನ್ / 4x Digital Magnification',
+            'No Optical (Fixed Wide-Angle Lens)': 'ಆಪ್ಟಿಕಲ್ ಇಲ್ಲ (ಸ್ಥಿರ ವೈಡ್-ಆಂಗಲ್ ಲೆನ್ಸ್) / No Optical (Fixed Wide-Angle Lens)',
+            '4x Optical Zoom': '4x ಆಪ್ಟಿಕಲ್ ಜೂಮ್ / 4x Optical Zoom',
+            '16x Hybrid Panoramic Zoom': '16x ಹೈಬ್ರಿಡ್ ಪನೋರಮಿಕ್ ಜೂಮ್ / 16x Hybrid Panoramic Zoom',
+            // AI Target Tracing
+            'AI Object Tracking & Siren Lock': 'ಎಐ ಆಬ್ಜೆಕ್ಟ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಮತ್ತು ಸೈರನ್ ಲಾಕ್ / AI Object Tracking & Siren Lock',
+            'Intelligent Human Filter': 'ಬುದ್ಧಿವಂತ ಹ್ಯೂಮನ್ ಫಿಲ್ಟರ್ / Intelligent Human Filter',
+            'Basic Motion & Face Scanning': 'ಮೂಲ ಚಲನೆ ಮತ್ತು ಮುಖ ಸ್ಕ್ಯಾನಿಂಗ್ / Basic Motion & Face Scanning',
+            'Intrusion Cross-Line Alarm': 'ಅನಧಿಕೃತ ಪ್ರವೇಶ ಕ್ರಾಸ್-ಲೈನ್ ಅಲಾರಾಂ / Intrusion Cross-Line Alarm',
+            'AI Multi-Target Classification': 'ಎಐ ಮಲ್ಟಿ-ಟಾರ್ಗೆಟ್ ವರ್ಗೀಕರಣ / AI Multi-Target Classification',
+            // PIR Motion Sweep
+            'Radar Motion Scan (120° coverage)': 'ರಡಾರ್ ಮೋಷನ್ ಸ್ಕ್ಯಾನ್ (120° ಕವರೇಜ್) / Radar Motion Scan (120° coverage)',
+            'Zone PIR Heat Sensing': 'ಝೋನ್ ಪಿಐಆರ್ ಹೀಟ್ ಸೆನ್ಸಿಂಗ್ / Zone PIR Heat Sensing',
+            'Standard Pixel Motion Analysis': 'ಪ್ರಮಾಣಿತ ಪಿಕ್ಸೆಲ್ ಚಲನೆ ವಿಶ್ಲೇಷಣೆ / Standard Pixel Motion Analysis',
+            'Advanced Thermal Motion Sweep': 'ಸುಧಾರಿತ ಥರ್ಮಲ್ ಮೋಷನ್ ಸ್ವೀಪ್ / Advanced Thermal Motion Sweep',
+            'Radar Sweep & Perimeter Defense': 'ರಡಾರ್ ಸ್ವೀಪ್ ಮತ್ತು ಪರಿಧಿ ರಕ್ಷಣೆ / Radar Sweep & Perimeter Defense',
+            // Audio Intercom
+            'Full Duplex Intercom (Noise Cancelling)': 'ಫುಲ್ ಡ್ಯುಪ್ಲೆಕ್ಸ್ ಇಂಟರ್‌ಕಾಮ್ (ಶಬ್ದ ರದ್ದತಿ) / Full Duplex Intercom (Noise Cancelling)',
+            'Two-Way Audio with Speaker Alert': 'ಸ್ಪೀಕರ್ ಅಲರ್ಟ್‌ನೊಂದಿಗೆ ದ್ವಿಮುಖ ಆಡಿಯೋ / Two-Way Audio with Speaker Alert',
+            'Integrated Mic and Internal Speaker': 'ಸಂಯೋಜಿತ ಮೈಕ್ ಮತ್ತು ಆಂತರಿಕ ಸ್ವೀಕರ್ / Integrated Mic and Internal Speaker',
+            'Mic and High-Decibel Speaker Output': 'ಮೈಕ್ ಮತ್ತು ಹೈ-ಡೆಸಿಬಲ್ ಸ್ಪೀಕರ್ ಔಟ್‌ಪುಟ್ / Mic and High-Decibel Speaker Output',
+            'Active Acoustic Warning Shield': 'ಸಕ್ರಿಯ ಅಕೌಸ್ಟಿಕ್ ಎಚ್ಚರಿಕೆ ಶೀಲ್ಡ್ / Active Acoustic Warning Shield',
+            // Memory Storage Card
+            'SD Card up to 256GB / Cloud Sync': '256 ಜಿಬಿ ವರೆಗೆ ಎಸ್‌ಡಿ ಕಾರ್ಡ್ / ಕ್ಲೌಡ್ ಸಿಂಕ್ / SD Card up to 256GB / Cloud Sync',
+            'SD Card up to 256GB': '256 ಜಿಬಿ ವರೆಗೆ ಎಸ್‌ಡಿ ಕಾರ್ಡ್ / SD Card up to 256GB',
+            'SD Card up to 128GB': '128 ಜಿಬಿ ವರೆಗೆ ಎಸ್‌ಡಿ ಕಾರ್ಡ್ / SD Card up to 128GB',
+            'SD Card up to 256GB / Onboard NAS': '256 ಜಿಬಿ ವರೆಗೆ ಎಸ್‌ಡಿ ಕಾರ್ಡ್ / ಆನ್‌ಬೋರ್ಡ್ ಎನ್‌ಎಎಸ್ / SD Card up to 256GB / Onboard NAS',
+            'Dual MicroSD Slot (Up to 512GB)': 'ಡ್ಯುಯಲ್ ಮೈಕ್ರೋ ಎಸ್‌ಡಿ ಸ್ಲಾಟ್ (512 ಜಿಬಿ ವರೆಗೆ) / Dual MicroSD Slot (Up to 512GB)',
+            // Manufacturer Warranty
+            '5 Years': '5 ವರ್ಷಗಳು / 5 Years',
+            '3 Years': '3 ವರ್ಷಗಳು / 3 Years',
+            '7 Years': '7 ವರ್ಷಗಳು / 7 Years'
+        };
+        const matched = translations[val];
+        return matched ? renderBilingual(matched) : val;
+    };
+    const renderProductName = (name)=>{
+        if (!name) return '';
+        const translations = {
+            'Strobe Siren Warning Dome': 'ಸ್ಟ್ರೋಬ್ ಸೈರನ್ ಎಚ್ಚರಿಕೆ ಡೋಮ್ / Strobe Siren Warning Dome',
+            'THINKWILL Dual-Lens PTZ Dome': 'ಥಿಂಕ್‌ವಿಲ್ ಡ್ಯುಯಲ್-ಲೆನ್ಸ್ ಪಿಟಿಝಡ್ ಡೋಮ್ / THINKWILL Dual-Lens PTZ Dome',
+            'Consistent Smart Telemetry PTZ Dome': 'ಕನ್ಸಿಸ್ಟೆಂಟ್ ಸ್ಮಾರ್ಟ್ ಟೆಲಿಮೆಟ್ರಿ ಪಿಟಿಝಡ್ ಡೋಮ್ / Consistent Smart Telemetry PTZ Dome',
+            'THINKWILL Single-Lens Classic Dome': 'ಥಿಂಕ್‌ವಿಲ್ ಸಿಂಗಲ್-ಲೆನ್ಸ್ ಕ್ಲಾಸಿಕ್ ಡೋಮ್ / THINKWILL Single-Lens Classic Dome',
+            'THINKWILL Triple-Lens Panoramic Stand': 'ಥಿಂಕ್‌ವಿಲ್ ಟ್ರಿಪಲ್-ಲೆನ್ಸ್ ಪನೋರಮಿಕ್ ಸ್ಟ್ಯಾಂಡ್ / THINKWILL Triple-Lens Panoramic Stand'
+        };
+        const matched = translations[name];
+        return matched ? renderBilingual(matched) : name;
+    };
+    const renderProductDescription = (desc)=>{
+        if (!desc) return '';
+        const translations = {
+            'White dome camera with integrated red strobe siren, dual outdoor antennas, and dual-lens target tracking.': 'ಸಂಯೋಜಿತ ಕೆಂಪು ಸ್ಟ್ರೋಬ್ ಸೈರನ್, ಡ್ಯುಯಲ್ ಹೊರಾಂಗಣ ಆಂಟೆನಾಗಳು ಮತ್ತು ಡ್ಯುಯಲ್-ಲೆನ್ಸ್ ಗುರಿ ಟ್ರ್ಯಾಕಿಂಗ್ ಹೊಂದಿರುವ ಬಿಳಿ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / White dome camera with integrated red strobe siren, dual outdoor antennas, and dual-lens target tracking.',
+            'Compact wireless THINKWILL dome camera with integrated mounting bracket, dual antennas, and wide-angle optical lens.': 'ಸಂಯೋಜಿತ ಮೌಂಟಿಂಗ್ ಬ್ರಾಕೆಟ್, ಡ್ಯುಯಲ್ ಆಂಟೆನಾಗಳು ಮತ್ತು ವೈಡ್-ಆಂಗಲ್ ಆಪ್ಟಿಕಲ್ ಲೆನ್ಸ್ ಹೊಂದಿರುವ ಕಾಂಪ್ಯಾಕ್ಟ್ ವೈರ್‌ಲೆಸ್ ಥಿಂಕ್‌ವಿಲ್ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / Compact wireless THINKWILL dome camera with integrated mounting bracket, dual antennas, and wide-angle optical lens.',
+            'Consistent brand dome camera with dual outdoor antennas, starlight sensors, and high-efficiency infrared night sweep.': 'ಡ್ಯುಯಲ್ ಹೊರಾಂಗಣ ಆಂಟೆನಾಗಳು, ಸ್ಟಾರ್‌ಲೈಟ್ ಸೆನ್ಸಾರ್‌ಗಳು ಮತ್ತು ಹೆಚ್ಚಿನ ದಕ್ಷತೆಯ ಇನ್‌ಫ್ರಾರೆಡ್ ನೈಟ್ ಸ್ವೀಪ್ ಹೊಂದಿರುವ ಕನ್ಸಿಸ್ಟೆಂಟ್ ಬ್ರಾಂಡ್ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / Consistent brand dome camera with dual outdoor antennas, starlight sensors, and high-efficiency infrared night sweep.',
+            'White THINKWILL dome camera with dual outdoor antennas, zero-lag WiFi connection, and high strength weather-proof casing.': 'ಡ್ಯುಯಲ್ ಹೊರಾಂಗಣ ಆಂಟೆನಾಗಳು, ಶೂನ್ಯ-ವಿಳಂಬ ವೈಫೈ ಸಂಪರ್ಕ ಮತ್ತು ಹೆಚ್ಚಿನ ಶಕ್ತಿಯ ಹವಾಮಾನ-ನಿರೋಧಕ ಕೇಸಿಂಗ್ ಹೊಂದಿರುವ ಬಿಳಿ ಥಿಂಕ್‌ವಿಲ್ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / White THINKWILL dome camera with dual outdoor antennas, zero-lag WiFi connection, and high strength weather-proof casing.',
+            'Enterprise THINKWILL triple-lens camera with double antennas and dual sub-dome visual pods on support stand.': 'ಡಬಲ್ ಆಂಟೆನಾಗಳು ಮತ್ತು ಬೆಂಬಲ ಸ್ಟ್ಯಾಂಡ್‌ನಲ್ಲಿ ಡ್ಯುಯಲ್ ಸಬ್-ಡೋಮ್ ದೃಶ್ಯ ಪಾಡ್‌ಗಳನ್ನು ಹೊಂದಿರುವ ಎಂಟರ್‌ಪ್ರೈಸ್ ಥಿಂಕ್‌ವಿಲ್ ಟ್ರಿಪಲ್-ಲೆನ್ಸ್ ಕ್ಯಾಮೆರಾ. / Enterprise THINKWILL triple-lens camera with double antennas and dual sub-dome visual pods on support stand.'
+        };
+        const matched = translations[desc];
+        return matched ? renderBilingual(matched) : desc;
+    };
     const camA = solarCameras.find((c)=>c.id === cameraAId) || solarCameras[0];
     const camB = solarCameras.find((c)=>c.id === cameraBId) || solarCameras[1];
     const handleConfigure = (camera)=>{
@@ -645,7 +636,7 @@ function Comparison() {
                 className: "absolute top-0 right-1/4 w-96 h-96 bg-electric-cyan/5 rounded-full filter blur-[100px] pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/src/components/Comparison.jsx",
-                lineNumber: 132,
+                lineNumber: 119,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -664,14 +655,14 @@ function Comparison() {
                                                 children: "ಕ್ಯಾಮೆರಾ ಹೋಲಿಕೆ"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                lineNumber: 140,
+                                                lineNumber: 127,
                                                 columnNumber: 15
                                             }, this),
                                             " / Compare Models"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Comparison.jsx",
-                                        lineNumber: 139,
+                                        lineNumber: 126,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -682,14 +673,14 @@ function Comparison() {
                                                 children: "ಸಂವಾದಾತ್ಮಕ ಹೋಲಿಕೆ"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                lineNumber: 143,
+                                                lineNumber: 130,
                                                 columnNumber: 15
                                             }, this),
                                             " / Interactive Comparison"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Comparison.jsx",
-                                        lineNumber: 142,
+                                        lineNumber: 129,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -700,20 +691,20 @@ function Comparison() {
                                                 children: "ಆಪ್ಟಿಕ್ಸ್, ರಾತ್ರಿ ದೃಷ್ಟಿ ಸಾಮರ್ಥ್ಯಗಳು ಮತ್ತು ಸ್ವಾಯತ್ತ ಟ್ರ್ಯಾಕಿಂಗ್ ನಿಯತಾಂಕಗಳನ್ನು ಅಕ್ಕಪಕ್ಕದಲ್ಲಿ ಹೋಲಿಸಲು ಯಾವುದೇ ಎರಡು ಕ್ಯಾಮೆರಾ ಮಾದರಿಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                lineNumber: 146,
+                                                lineNumber: 133,
                                                 columnNumber: 15
                                             }, this),
                                             " / Select any two camera models to compare their optics, night vision capabilities, and autonomous tracking parameters side-by-side."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Comparison.jsx",
-                                        lineNumber: 145,
+                                        lineNumber: 132,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Comparison.jsx",
-                                lineNumber: 138,
+                                lineNumber: 125,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -727,25 +718,25 @@ function Comparison() {
                                             children: "ವ್ಯತ್ಯಾಸಗಳನ್ನು ಗುರುತಿಸಿ"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Comparison.jsx",
-                                            lineNumber: 159,
+                                            lineNumber: 146,
                                             columnNumber: 15
                                         }, this),
                                         " / Highlight Differences"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Comparison.jsx",
-                                    lineNumber: 151,
+                                    lineNumber: 138,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Comparison.jsx",
-                                lineNumber: 150,
+                                lineNumber: 137,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Comparison.jsx",
-                        lineNumber: 137,
+                        lineNumber: 124,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -762,14 +753,14 @@ function Comparison() {
                                                 children: "ಕ್ಯಾಮೆರಾ 1 ಆಯ್ಕೆಮಾಡಿ"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                lineNumber: 169,
+                                                lineNumber: 156,
                                                 columnNumber: 15
                                             }, this),
                                             " / Choose Camera 1"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Comparison.jsx",
-                                        lineNumber: 168,
+                                        lineNumber: 155,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -787,26 +778,26 @@ function Comparison() {
                                                         className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 185,
+                                                        lineNumber: 172,
                                                         columnNumber: 21
                                                     }, this),
                                                     isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "absolute top-1 right-1 w-2 h-2 rounded-full bg-electric-cyan animate-pulse"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 187,
+                                                        lineNumber: 174,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, cam.id, true, {
                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                lineNumber: 175,
+                                                lineNumber: 162,
                                                 columnNumber: 19
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Comparison.jsx",
-                                        lineNumber: 171,
+                                        lineNumber: 158,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -814,13 +805,13 @@ function Comparison() {
                                         children: renderProductName(camA?.name)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Comparison.jsx",
-                                        lineNumber: 193,
+                                        lineNumber: 180,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Comparison.jsx",
-                                lineNumber: 167,
+                                lineNumber: 154,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -834,14 +825,14 @@ function Comparison() {
                                                 children: "ಕ್ಯಾಮೆರಾ 2 ಆಯ್ಕೆಮಾಡಿ"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                lineNumber: 201,
+                                                lineNumber: 188,
                                                 columnNumber: 15
                                             }, this),
                                             " / Choose Camera 2"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Comparison.jsx",
-                                        lineNumber: 200,
+                                        lineNumber: 187,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -859,26 +850,26 @@ function Comparison() {
                                                         className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 217,
+                                                        lineNumber: 204,
                                                         columnNumber: 21
                                                     }, this),
                                                     isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "absolute top-1 right-1 w-2 h-2 rounded-full bg-electric-cyan animate-pulse"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 219,
+                                                        lineNumber: 206,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, cam.id, true, {
                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                lineNumber: 207,
+                                                lineNumber: 194,
                                                 columnNumber: 19
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Comparison.jsx",
-                                        lineNumber: 203,
+                                        lineNumber: 190,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -886,19 +877,19 @@ function Comparison() {
                                         children: renderProductName(camB?.name)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Comparison.jsx",
-                                        lineNumber: 225,
+                                        lineNumber: 212,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Comparison.jsx",
-                                lineNumber: 199,
+                                lineNumber: 186,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Comparison.jsx",
-                        lineNumber: 165,
+                        lineNumber: 152,
                         columnNumber: 9
                     }, this),
                     camA && camB && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -918,14 +909,14 @@ function Comparison() {
                                                         children: "ವಿಶೇಷಣಗಳು"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 238,
+                                                        lineNumber: 225,
                                                         columnNumber: 21
                                                     }, this),
                                                     " / Specifications"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                lineNumber: 237,
+                                                lineNumber: 224,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -939,12 +930,12 @@ function Comparison() {
                                                             className: "w-full h-full object-contain"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 244,
+                                                            lineNumber: 231,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 243,
+                                                        lineNumber: 230,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -952,7 +943,7 @@ function Comparison() {
                                                         children: renderProductName(camA.name)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 246,
+                                                        lineNumber: 233,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -960,7 +951,7 @@ function Comparison() {
                                                         children: renderProductDescription(camA.description)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 249,
+                                                        lineNumber: 236,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -972,7 +963,7 @@ function Comparison() {
                                                                 children: "ಕಾನ್ಫಿಗರ್ ಮಾಡಿ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                                lineNumber: 256,
+                                                                lineNumber: 243,
                                                                 columnNumber: 23
                                                             }, this),
                                                             " / Configure Node ",
@@ -980,19 +971,19 @@ function Comparison() {
                                                                 className: "w-3 h-3 group-hover:translate-x-1 transition-transform"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                                lineNumber: 256,
+                                                                lineNumber: 243,
                                                                 columnNumber: 93
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 252,
+                                                        lineNumber: 239,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                lineNumber: 242,
+                                                lineNumber: 229,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -1006,12 +997,12 @@ function Comparison() {
                                                             className: "w-full h-full object-contain"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 263,
+                                                            lineNumber: 250,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 262,
+                                                        lineNumber: 249,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1019,7 +1010,7 @@ function Comparison() {
                                                         children: renderProductName(camB.name)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 265,
+                                                        lineNumber: 252,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1027,7 +1018,7 @@ function Comparison() {
                                                         children: renderProductDescription(camB.description)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 268,
+                                                        lineNumber: 255,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1039,7 +1030,7 @@ function Comparison() {
                                                                 children: "ಕಾನ್ಫಿಗರ್ ಮಾಡಿ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                                lineNumber: 275,
+                                                                lineNumber: 262,
                                                                 columnNumber: 23
                                                             }, this),
                                                             " / Configure Node ",
@@ -1047,30 +1038,30 @@ function Comparison() {
                                                                 className: "w-3 h-3 group-hover:translate-x-1 transition-transform"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                                lineNumber: 275,
+                                                                lineNumber: 262,
                                                                 columnNumber: 93
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Comparison.jsx",
-                                                        lineNumber: 271,
+                                                        lineNumber: 258,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Comparison.jsx",
-                                                lineNumber: 261,
+                                                lineNumber: 248,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Comparison.jsx",
-                                        lineNumber: 236,
+                                        lineNumber: 223,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Comparison.jsx",
-                                    lineNumber: 235,
+                                    lineNumber: 222,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -1086,7 +1077,7 @@ function Comparison() {
                                                             className: "w-4 h-4 text-electric-cyan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 284,
+                                                            lineNumber: 271,
                                                             columnNumber: 21
                                                         }, this),
                                                         " ",
@@ -1095,14 +1086,14 @@ function Comparison() {
                                                             children: "ರಾತ್ರಿ ದೃಷ್ಟಿ ಸಾಮರ್ಥ್ಯ"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 284,
+                                                            lineNumber: 271,
                                                             columnNumber: 68
                                                         }, this),
                                                         " / Night Vision Gaze"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 283,
+                                                    lineNumber: 270,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1110,7 +1101,7 @@ function Comparison() {
                                                     children: renderBilingualValue(camA.features?.nightVision || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 286,
+                                                    lineNumber: 273,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1118,13 +1109,13 @@ function Comparison() {
                                                     children: renderBilingualValue(camB.features?.nightVision || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 289,
+                                                    lineNumber: 276,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Comparison.jsx",
-                                            lineNumber: 282,
+                                            lineNumber: 269,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1137,7 +1128,7 @@ function Comparison() {
                                                             className: "w-4 h-4 text-electric-cyan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 297,
+                                                            lineNumber: 284,
                                                             columnNumber: 21
                                                         }, this),
                                                         " ",
@@ -1146,14 +1137,14 @@ function Comparison() {
                                                             children: "ಹೈಬ್ರಿಡ್ ಆಪ್ಟಿಕ್ಸ್ ಜೂಮ್"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 297,
+                                                            lineNumber: 284,
                                                             columnNumber: 71
                                                         }, this),
                                                         " / Hybrid Optics Zoom"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 296,
+                                                    lineNumber: 283,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1161,7 +1152,7 @@ function Comparison() {
                                                     children: renderBilingualValue(camA.features?.zoom || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 299,
+                                                    lineNumber: 286,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1169,13 +1160,13 @@ function Comparison() {
                                                     children: renderBilingualValue(camB.features?.zoom || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 302,
+                                                    lineNumber: 289,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Comparison.jsx",
-                                            lineNumber: 295,
+                                            lineNumber: 282,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1188,7 +1179,7 @@ function Comparison() {
                                                             className: "w-4 h-4 text-electric-cyan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 310,
+                                                            lineNumber: 297,
                                                             columnNumber: 21
                                                         }, this),
                                                         " ",
@@ -1197,14 +1188,14 @@ function Comparison() {
                                                             children: "ಎಐ ಟಾರ್ಗೆಟ್ ಟ್ರೇಸಿಂಗ್"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 310,
+                                                            lineNumber: 297,
                                                             columnNumber: 71
                                                         }, this),
                                                         " / AI Target Tracing"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 309,
+                                                    lineNumber: 296,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1212,7 +1203,7 @@ function Comparison() {
                                                     children: renderBilingualValue(camA.humanDetection || camA.features?.humanDetection || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 312,
+                                                    lineNumber: 299,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1220,13 +1211,13 @@ function Comparison() {
                                                     children: renderBilingualValue(camB.humanDetection || camB.features?.humanDetection || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 315,
+                                                    lineNumber: 302,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Comparison.jsx",
-                                            lineNumber: 308,
+                                            lineNumber: 295,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1239,7 +1230,7 @@ function Comparison() {
                                                             className: "w-4 h-4 text-electric-cyan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 323,
+                                                            lineNumber: 310,
                                                             columnNumber: 21
                                                         }, this),
                                                         " ",
@@ -1248,14 +1239,14 @@ function Comparison() {
                                                             children: "ಪಿಐಆರ್ ಚಲನೆ ಪತ್ತೆ"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 323,
+                                                            lineNumber: 310,
                                                             columnNumber: 68
                                                         }, this),
                                                         " / PIR Motion Sweep"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 322,
+                                                    lineNumber: 309,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1263,7 +1254,7 @@ function Comparison() {
                                                     children: renderBilingualValue(camA.features?.motionDetection || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 325,
+                                                    lineNumber: 312,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1271,13 +1262,13 @@ function Comparison() {
                                                     children: renderBilingualValue(camB.features?.motionDetection || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 328,
+                                                    lineNumber: 315,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Comparison.jsx",
-                                            lineNumber: 321,
+                                            lineNumber: 308,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1290,7 +1281,7 @@ function Comparison() {
                                                             className: "w-4 h-4 text-electric-cyan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 336,
+                                                            lineNumber: 323,
                                                             columnNumber: 21
                                                         }, this),
                                                         " ",
@@ -1299,14 +1290,14 @@ function Comparison() {
                                                             children: "ಆಡಿಯೋ ಇಂಟರ್‌ಕಾಮ್"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 336,
+                                                            lineNumber: 323,
                                                             columnNumber: 75
                                                         }, this),
                                                         " / Audio Intercom"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 335,
+                                                    lineNumber: 322,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1314,7 +1305,7 @@ function Comparison() {
                                                     children: renderBilingualValue(camA.features?.twoWayAudio || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 338,
+                                                    lineNumber: 325,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1322,13 +1313,13 @@ function Comparison() {
                                                     children: renderBilingualValue(camB.features?.twoWayAudio || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 341,
+                                                    lineNumber: 328,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Comparison.jsx",
-                                            lineNumber: 334,
+                                            lineNumber: 321,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1341,7 +1332,7 @@ function Comparison() {
                                                             className: "w-4 h-4 text-electric-cyan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 349,
+                                                            lineNumber: 336,
                                                             columnNumber: 21
                                                         }, this),
                                                         " ",
@@ -1350,14 +1341,14 @@ function Comparison() {
                                                             children: "ಮೆಮೊರಿ ಸ್ಟೋರೇಜ್ ಕಾರ್ಡ್"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 349,
+                                                            lineNumber: 336,
                                                             columnNumber: 74
                                                         }, this),
                                                         " / Memory Storage Card"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 348,
+                                                    lineNumber: 335,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1365,7 +1356,7 @@ function Comparison() {
                                                     children: renderBilingualValue(camA.features?.storage || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 351,
+                                                    lineNumber: 338,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1373,13 +1364,13 @@ function Comparison() {
                                                     children: renderBilingualValue(camB.features?.storage || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 354,
+                                                    lineNumber: 341,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Comparison.jsx",
-                                            lineNumber: 347,
+                                            lineNumber: 334,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -1392,7 +1383,7 @@ function Comparison() {
                                                             className: "w-4 h-4 text-electric-cyan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 362,
+                                                            lineNumber: 349,
                                                             columnNumber: 21
                                                         }, this),
                                                         " ",
@@ -1401,14 +1392,14 @@ function Comparison() {
                                                             children: "ತಯಾರಕರ ವಾರಂಟಿ"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Comparison.jsx",
-                                                            lineNumber: 362,
+                                                            lineNumber: 349,
                                                             columnNumber: 76
                                                         }, this),
                                                         " / Manufacturer Warranty"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 361,
+                                                    lineNumber: 348,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1416,7 +1407,7 @@ function Comparison() {
                                                     children: renderBilingualValue(camA.features?.warranty || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 364,
+                                                    lineNumber: 351,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -1424,42 +1415,42 @@ function Comparison() {
                                                     children: renderBilingualValue(camB.features?.warranty || 'N/A')
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Comparison.jsx",
-                                                    lineNumber: 367,
+                                                    lineNumber: 354,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Comparison.jsx",
-                                            lineNumber: 360,
+                                            lineNumber: 347,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Comparison.jsx",
-                                    lineNumber: 280,
+                                    lineNumber: 267,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Comparison.jsx",
-                            lineNumber: 234,
+                            lineNumber: 221,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Comparison.jsx",
-                        lineNumber: 233,
+                        lineNumber: 220,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Comparison.jsx",
-                lineNumber: 134,
+                lineNumber: 121,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Comparison.jsx",
-        lineNumber: 131,
+        lineNumber: 118,
         columnNumber: 5
     }, this);
 }
@@ -1474,6 +1465,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$dbMock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/dbMock.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/store/useConfiguratorStore.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/translate.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.mjs [app-ssr] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.mjs [app-ssr] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.mjs [app-ssr] (ecmascript) <export default as Calendar>");
@@ -1482,76 +1475,46 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-const renderBilingual = (text)=>{
-    if (typeof text !== 'string') return text;
-    if (text.includes(' / ')) {
-        const [kn, en] = text.split(' / ');
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "font-kannada",
-                    children: kn
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Projects.jsx",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-zinc-500 font-light mx-1",
-                    children: "/"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Projects.jsx",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    children: en
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Projects.jsx",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true);
-    }
-    return text;
-};
-const getBilingualProject = (proj)=>{
-    if (!proj) return null;
-    const translations = {
-        '77A Farm Site Surveillance': '77ಎ ಫಾರ್ಮ್ ಸೈಟ್ ಕಣ್ಗಾವಲು / 77A Farm Site Surveillance',
-        'Metro Hub Construction Phase 2': 'ಮೆಟ್ರೋ ಹಬ್ ನಿರ್ಮಾಣ ಹಂತ 2 / Metro Hub Construction Phase 2',
-        'Coastal Marina Guarding': 'ಕರಾವಳಿ ಮರೀನಾ ಕಾವಲು / Coastal Marina Guarding',
-        'Hill Valley Agriculture Area': 'ಹಿಲ್ ವ್ಯಾಲಿ ಕೃಷಿ ಪ್ರದೇಶ / Hill Valley Agriculture Area',
-        'Downtown Commercial Block': 'ಡೌನ್‌ಟೌನ್ ವಾಣಿಜ್ಯ ಬ್ಲಾಕ್ / Downtown Commercial Block',
-        'North Quay Yacht Harbor': 'ನಾರ್ತ್ ಕ್ವೇ ಯಾಚ್ ಹಾರ್ಬರ್ / North Quay Yacht Harbor',
-        'Solar CCTV Off-Grid': 'ಸೌರ ಸಿಸಿಟಿವಿ ಆಫ್-ಗ್ರಿಡ್ / Solar CCTV Off-Grid',
-        'Hybrid CCTV (Solar + Backup AC)': 'ಹೈಬ್ರಿಡ್ ಸಿಸಿಟಿವಿ (ಸೌರ + ಬ್ಯಾಕಪ್ ಎಸಿ) / Hybrid CCTV (Solar + Backup AC)',
-        '100% Green Solar Tower': '100% ಹಸಿರು ಸೌರ ಗೋಪುರ / 100% Green Solar Tower',
-        'Surya Drishti Apex PTZ-S1 + 40W panel': 'ಸೂರ್ಯ ದೃಷ್ಟಿ ಅಪೆಕ್ಸ್ PTZ-S1 + 40W ಪ್ಯಾನಲ್ / Surya Drishti Apex PTZ-S1 + 40W panel',
-        'Surya Drishti Dome CS-S4 + 18Ah LFP': 'ಸೂರ್ಯ ದೃಷ್ಟಿ ಡೋಮ್ CS-S4 + 18Ah LFP / Surya Drishti Dome CS-S4 + 18Ah LFP',
-        'Double Pro AI TW-S2 + Helios 40W Duo': 'ಡಬಲ್ ಪ್ರೊ AI TW-S2 + ಹೆಲಿಯೋಸ್ 40W ಡ್ಯುವೋ / Double Pro AI TW-S2 + Helios 40W Duo',
-        '6 Hours': '6 ಗಂಟೆಗಳು / 6 Hours',
-        '8 Hours': '8 ಗಂಟೆಗಳು / 8 Hours',
-        '12 Hours': '12 ಗಂಟೆಗಳು / 12 Hours',
-        'Fantastic! The camera runs flawlessly on solar energy alone. Highly recommend this smart system.': 'ಅದ್ಭುತವಾಗಿದೆ! ಕ್ಯಾಮೆರಾ ಕೇವಲ ಸೌರಶಕ್ತಿಯಿಂದಲೇ ದೋಷರಹಿತವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಈ ಸ್ಮಾರ್ಟ್ ವ್ಯವಸ್ಥೆಯನ್ನು ಬಲವಾಗಿ ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ. / Fantastic! The camera runs flawlessly on solar energy alone. Highly recommend this smart system.',
-        'The active object tracking has already stopped three trespassers. Dashboard notifications are instant.': 'ಸಕ್ರಿಯ ಆಬ್ಜೆಕ್ಟ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಈಗಾಗಲೇ ಮೂವರು ಅತಿಕ್ರಮಣಕಾರರನ್ನು ತಡೆದಿದೆ. ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ಅಧಿಸೂಚನೆಗಳು ತ್ವರಿತವಾಗಿವೆ. / The active object tracking has already stopped three trespassers. Dashboard notifications are instant.',
-        'Anti-rust materials holding strong against salt air. Live stream works perfectly over 4G cellular.': 'ಉಪ್ಪು ಗಾಳಿಯ ವಿರುದ್ಧ ತುಕ್ಕು-ನಿರೋಧಕ ವಸ್ತುಗಳು ಬಲವಾಗಿ ನಿಲ್ಲುತ್ತವೆ. ಲೈವ್ ಸ್ಟ್ರೀಮ್ 4G ಸೆಲ್ಯುಲಾರ್ ಮೂಲಕ ಸಂಪೂರ್ಣವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. / Anti-rust materials holding strong against salt air. Live stream works perfectly over 4G cellular.'
-    };
-    return {
-        ...proj,
-        title: translations[proj.title] || proj.title,
-        location: translations[proj.location] || proj.location,
-        type: translations[proj.type] || proj.type,
-        camera: translations[proj.camera] || proj.camera,
-        duration: translations[proj.duration] || proj.duration,
-        feedback: translations[proj.feedback] || proj.feedback
-    };
-};
+;
+;
 function Projects() {
+    const store = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConfiguratorStore"])();
     const projects = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$dbMock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["db"].getProjects();
     const [selectedProjRaw, setSelectedProjRaw] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(projects[0]);
     const [comparisonSliderVal, setComparisonSliderVal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(50); // percentage for before/after split
+    const renderBilingual = (text)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])(text, store.language);
+    const getBilingualProject = (proj)=>{
+        if (!proj) return null;
+        const translations = {
+            '77A Farm Site Surveillance': '77ಎ ಫಾರ್ಮ್ ಸೈಟ್ ಕಣ್ಗಾವಲು / 77A Farm Site Surveillance',
+            'Metro Hub Construction Phase 2': 'ಮೆಟ್ರೋ ಹಬ್ ನಿರ್ಮಾಣ ಹಂತ 2 / Metro Hub Construction Phase 2',
+            'Coastal Marina Guarding': 'ಕರಾವಳಿ ಮರೀನಾ ಕಾವಲು / Coastal Marina Guarding',
+            'Hill Valley Agriculture Area': 'ಹಿಲ್ ವ್ಯಾಲಿ ಕೃಷಿ ಪ್ರದೇಶ / Hill Valley Agriculture Area',
+            'Downtown Commercial Block': 'ಡೌನ್‌ಟೌನ್ ವಾಣಿಜ್ಯ ಬ್ಲಾಕ್ / Downtown Commercial Block',
+            'North Quay Yacht Harbor': 'ನಾರ್ತ್ ಕ್ವೇ ಯಾಚ್ ಹಾರ್ಬರ್ / North Quay Yacht Harbor',
+            'Solar CCTV Off-Grid': 'ಸೌರ ಸಿಸಿಟಿವಿ ಆಫ್-ಗ್ರಿಡ್ / Solar CCTV Off-Grid',
+            'Hybrid CCTV (Solar + Backup AC)': 'ಹೈಬ್ರಿಡ್ ಸಿಸಿಟಿವಿ (ಸೌರ + ಬ್ಯಾಕಪ್ ಎಸಿ) / Hybrid CCTV (Solar + Backup AC)',
+            '100% Green Solar Tower': '100% ಹಸಿರು ಸೌರ ಗೋಪುರ / 100% Green Solar Tower',
+            'Surya Drishti Apex PTZ-S1 + 40W panel': 'ಸೂರ್ಯ ದೃಷ್ಟಿ ಅಪೆಕ್ಸ್ PTZ-S1 + 40W ಪ್ಯಾನಲ್ / Surya Drishti Apex PTZ-S1 + 40W panel',
+            'Surya Drishti Dome CS-S4 + 18Ah LFP': 'ಸೂರ್ಯ ದೃಷ್ಟಿ ಡೋಮ್ CS-S4 + 18Ah LFP / Surya Drishti Dome CS-S4 + 18Ah LFP',
+            'Double Pro AI TW-S2 + Helios 40W Duo': 'ಡಬಲ್ ಪ್ರೊ AI TW-S2 + ಹೆಲಿಯೋಸ್ 40W ಡ್ಯುವೋ / Double Pro AI TW-S2 + Helios 40W Duo',
+            '6 Hours': '6 ಗಂಟೆಗಳು / 6 Hours',
+            '8 Hours': '8 ಗಂಟೆಗಳು / 8 Hours',
+            '12 Hours': '12 ಗಂಟೆಗಳು / 12 Hours',
+            'Fantastic! The camera runs flawlessly on solar energy alone. Highly recommend this smart system.': 'ಅದ್ಭುತವಾಗಿದೆ! ಕ್ಯಾಮೆರಾ ಕೇವಲ ಸೌರಶಕ್ತಿಯಿಂದಲೇ ದೋಷರಹಿತವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಈ ಸ್ಮಾರ್ಟ್ ವ್ಯವಸ್ಥೆಯನ್ನು ಬಲವಾಗಿ ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ. / Fantastic! The camera runs flawlessly on solar energy alone. Highly recommend this smart system.',
+            'The active object tracking has already stopped three trespassers. Dashboard notifications are instant.': 'ಸಕ್ರಿಯ ಆಬ್ಜೆಕ್ಟ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಈಗಾಗಲೇ ಮೂವರು ಅತಿಕ್ರಮಣಕಾರರನ್ನು تಡೆದಿದೆ. ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ಅಧಿಸೂಚನೆಗಳು ತ್ವರಿತವಾಗಿವೆ. / The active object tracking has already stopped three trespassers. Dashboard notifications are instant.',
+            'Anti-rust materials holding strong against salt air. Live stream works perfectly over 4G cellular.': 'ಉಪ್ಪು ಗಾಳಿಯ ವಿರುದ್ಧ ತುಕ್ಕು-ನಿರೋಧಕ ವಸ್ತುಗಳು ಬಲವಾಗಿ ನಿಲ್ಲುತ್ತವೆ. ಲೈವ್ ಸ್ಟ್ರೀಮ್ 4G ಸೆಲ್ಯುಲಾರ್ ಮೂಲಕ ಸಂಪೂರ್ಣವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. / Anti-rust materials holding strong against salt air. Live stream works perfectly over 4G cellular.'
+        };
+        return {
+            ...proj,
+            title: translations[proj.title] || proj.title,
+            location: translations[proj.location] || proj.location,
+            type: translations[proj.type] || proj.type,
+            camera: translations[proj.camera] || proj.camera,
+            duration: translations[proj.duration] || proj.duration,
+            feedback: translations[proj.feedback] || proj.feedback
+        };
+    };
     const selectedProj = getBilingualProject(selectedProjRaw);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-24 relative overflow-hidden bg-obsidian-bg3 grid-bg",
@@ -1560,7 +1523,7 @@ function Projects() {
                 className: "absolute top-0 right-0 w-96 h-96 bg-electric-cyan/5 rounded-full filter blur-[120px]"
             }, void 0, false, {
                 fileName: "[project]/src/components/Projects.jsx",
-                lineNumber: 66,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1577,14 +1540,14 @@ function Projects() {
                                         children: "ಸಕ್ರಿಯ ನಿಯೋಜನೆಗಳು"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Projects.jsx",
-                                        lineNumber: 71,
+                                        lineNumber: 61,
                                         columnNumber: 13
                                     }, this),
                                     " / Active Deployments"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Projects.jsx",
-                                lineNumber: 70,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1595,14 +1558,14 @@ function Projects() {
                                         children: "ಯೋಜನೆಗಳು"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Projects.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 64,
                                         columnNumber: 13
                                     }, this),
                                     " / Projects Showcase"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Projects.jsx",
-                                lineNumber: 73,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1613,20 +1576,20 @@ function Projects() {
                                         children: "ನಮ್ಮ ಕೈಗಾರಿಕಾ ಭದ್ರತಾ ಕೇಂದ್ರಗಳನ್ನು ಅನ್ವೇಷಿಸಿ. ಕಸ್ಟಮ್ ಪೇಲೋಡ್‌ಗಳು, ಮೊದಲು/ನಂತರದ ಚಿತ್ರಗಳು ಮತ್ತು ಸ್ವಾಯತ್ತತೆಯ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ವೀಕ್ಷಿಸಲು ಲೈವ್ ನೆಟ್‌ವರ್ಕ್ ಕೋಆರ್ಡಿನೇಟ್‌ಗಳಲ್ಲಿ ನಿಲ್ದಾಣವನ್ನು ಆಯ್ಕೆಮಾಡಿ."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Projects.jsx",
-                                        lineNumber: 77,
+                                        lineNumber: 67,
                                         columnNumber: 13
                                     }, this),
                                     " / Explore our industrial security hubs. Select a station on the live network coordinates to view custom payloads, before/after images, and autonomy feedback."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Projects.jsx",
-                                lineNumber: 76,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Projects.jsx",
-                        lineNumber: 69,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1647,7 +1610,7 @@ function Projects() {
                                                                 className: "w-2 h-2 rounded-full bg-electric-cyan animate-ping"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 87,
+                                                                lineNumber: 77,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1655,14 +1618,14 @@ function Projects() {
                                                                 children: "ಲೈವ್ ಏರಿಯಾ ನೆಟ್‌ವರ್ಕ್"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 88,
+                                                                lineNumber: 78,
                                                                 columnNumber: 19
                                                             }, this),
                                                             " / Live Area Network"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 86,
+                                                        lineNumber: 76,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1673,20 +1636,20 @@ function Projects() {
                                                                 children: "ಕೊಲ್ಲಿ ಪ್ರದೇಶದ ವಲಯ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 91,
+                                                                lineNumber: 81,
                                                                 columnNumber: 19
                                                             }, this),
                                                             " / Bay Area Quadrant"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 80,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                lineNumber: 85,
+                                                lineNumber: 75,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1706,7 +1669,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 99,
+                                                                lineNumber: 89,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1718,7 +1681,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 100,
+                                                                lineNumber: 90,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1730,7 +1693,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 101,
+                                                                lineNumber: 91,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1742,7 +1705,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 102,
+                                                                lineNumber: 92,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1754,7 +1717,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 103,
+                                                                lineNumber: 93,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1766,7 +1729,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 104,
+                                                                lineNumber: 94,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1778,7 +1741,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 105,
+                                                                lineNumber: 95,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1790,7 +1753,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 106,
+                                                                lineNumber: 96,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1802,7 +1765,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 109,
+                                                                lineNumber: 99,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1814,7 +1777,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 110,
+                                                                lineNumber: 100,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1826,7 +1789,7 @@ function Projects() {
                                                                 strokeWidth: "0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 111,
+                                                                lineNumber: 101,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1840,13 +1803,13 @@ function Projects() {
                                                                 className: "animate-spin-slow"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 114,
+                                                                lineNumber: 104,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 97,
+                                                        lineNumber: 87,
                                                         columnNumber: 17
                                                     }, this),
                                                     projects.map((proj, idx)=>{
@@ -1883,14 +1846,14 @@ function Projects() {
                                                                     className: `absolute inset-0 rounded-full scale-150 animate-radar ${isSelected ? 'bg-electric-cyan/20' : 'bg-zinc-500/10'}`
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Projects.jsx",
-                                                                    lineNumber: 136,
+                                                                    lineNumber: 126,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
                                                                     className: `w-6 h-6 transition-all duration-300 ${isSelected ? 'text-electric-cyan scale-125 glow-cyan' : 'text-zinc-600 hover:text-zinc-400'}`
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Projects.jsx",
-                                                                    lineNumber: 137,
+                                                                    lineNumber: 127,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1898,26 +1861,26 @@ function Projects() {
                                                                     children: renderBilingual(mappedProj.title)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Projects.jsx",
-                                                                    lineNumber: 140,
+                                                                    lineNumber: 130,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, proj.id, true, {
                                                             fileName: "[project]/src/components/Projects.jsx",
-                                                            lineNumber: 130,
+                                                            lineNumber: 120,
                                                             columnNumber: 21
                                                         }, this);
                                                     })
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                lineNumber: 96,
+                                                lineNumber: 86,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Projects.jsx",
-                                        lineNumber: 84,
+                                        lineNumber: 74,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1930,14 +1893,14 @@ function Projects() {
                                                         children: "ನೆಟ್‌ವರ್ಕ್ ನೋಡ್ ಕ್ಲಿಕ್‌ಗಳು ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಟೆಲಿಮೆಟ್ರಿಯನ್ನು ನವೀಕರಿಸುತ್ತವೆ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 151,
+                                                        lineNumber: 141,
                                                         columnNumber: 17
                                                     }, this),
                                                     " / Interactive network node clicks updates portfolio telemetry"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                lineNumber: 150,
+                                                lineNumber: 140,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1947,26 +1910,26 @@ function Projects() {
                                                         children: "ಆನ್‌ಲೈನ್"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 154,
+                                                        lineNumber: 144,
                                                         columnNumber: 17
                                                     }, this),
                                                     " / Online"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                lineNumber: 153,
+                                                lineNumber: 143,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Projects.jsx",
-                                        lineNumber: 149,
+                                        lineNumber: 139,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Projects.jsx",
-                                lineNumber: 83,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, this),
                             selectedProj && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1984,7 +1947,7 @@ function Projects() {
                                                                 children: renderBilingual(selectedProj.type)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 165,
+                                                                lineNumber: 155,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1992,7 +1955,7 @@ function Projects() {
                                                                 children: renderBilingual(selectedProj.title)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 168,
+                                                                lineNumber: 158,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2002,7 +1965,7 @@ function Projects() {
                                                                         className: "w-3 h-3"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                                        lineNumber: 172,
+                                                                        lineNumber: 162,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     " ",
@@ -2010,13 +1973,13 @@ function Projects() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 171,
+                                                                lineNumber: 161,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 164,
+                                                        lineNumber: 154,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2026,7 +1989,7 @@ function Projects() {
                                                                 className: "w-3.5 h-3.5 fill-amber-400 text-amber-400"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 176,
+                                                                lineNumber: 166,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2034,19 +1997,19 @@ function Projects() {
                                                                 children: "5.0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 177,
+                                                                lineNumber: 167,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 175,
+                                                        lineNumber: 165,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                lineNumber: 163,
+                                                lineNumber: 153,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2058,7 +2021,7 @@ function Projects() {
                                                         className: "absolute inset-0 w-full h-full object-cover"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 184,
+                                                        lineNumber: 174,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2077,7 +2040,7 @@ function Projects() {
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 195,
+                                                                lineNumber: 185,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2088,20 +2051,20 @@ function Projects() {
                                                                         children: "ಮೊದಲು"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                                        lineNumber: 202,
+                                                                        lineNumber: 192,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     " / Before"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 201,
+                                                                lineNumber: 191,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 191,
+                                                        lineNumber: 181,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2112,14 +2075,14 @@ function Projects() {
                                                                 children: "ನಂತರ (ಸೌರ ವ್ಯವಸ್ಥೆ)"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 207,
+                                                                lineNumber: 197,
                                                                 columnNumber: 21
                                                             }, this),
                                                             " / After (Solar System)"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 206,
+                                                        lineNumber: 196,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2132,12 +2095,12 @@ function Projects() {
                                                             children: "↔"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Projects.jsx",
-                                                            lineNumber: 215,
+                                                            lineNumber: 205,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 211,
+                                                        lineNumber: 201,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2149,13 +2112,13 @@ function Projects() {
                                                         className: "absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 221,
+                                                        lineNumber: 211,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                lineNumber: 182,
+                                                lineNumber: 172,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2172,14 +2135,14 @@ function Projects() {
                                                                         children: "ಪೇಲೋಡ್ ಕಾನ್ಫಿಗರೇಶನ್"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                                        lineNumber: 235,
+                                                                        lineNumber: 225,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     " / Payload Config"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 234,
+                                                                lineNumber: 224,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2187,13 +2150,13 @@ function Projects() {
                                                                 children: renderBilingual(selectedProj.camera)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 237,
+                                                                lineNumber: 227,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 233,
+                                                        lineNumber: 223,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2207,14 +2170,14 @@ function Projects() {
                                                                         children: "ಸ್ಥಾಪನಾ ಸಮಯ"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                                        lineNumber: 243,
+                                                                        lineNumber: 233,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     " / Install Time"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 242,
+                                                                lineNumber: 232,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2224,7 +2187,7 @@ function Projects() {
                                                                         className: "w-3.5 h-3.5 text-electric-cyan"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                                        lineNumber: 246,
+                                                                        lineNumber: 236,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     " ",
@@ -2232,25 +2195,25 @@ function Projects() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                                lineNumber: 245,
+                                                                lineNumber: 235,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 241,
+                                                        lineNumber: 231,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                lineNumber: 232,
+                                                lineNumber: 222,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Projects.jsx",
-                                        lineNumber: 162,
+                                        lineNumber: 152,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2263,7 +2226,7 @@ function Projects() {
                                                         className: "w-3.5 h-3.5 text-electric-emerald"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 254,
+                                                        lineNumber: 244,
                                                         columnNumber: 19
                                                     }, this),
                                                     " ",
@@ -2272,7 +2235,7 @@ function Projects() {
                                                         children: "ಗ್ರಾಹಕರ ವಿಮರ್ಶೆ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Projects.jsx",
-                                                        lineNumber: 254,
+                                                        lineNumber: 244,
                                                         columnNumber: 79
                                                     }, this),
                                                     " / Client Review (",
@@ -2281,7 +2244,7 @@ function Projects() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                lineNumber: 253,
+                                                lineNumber: 243,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2293,37 +2256,37 @@ function Projects() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Projects.jsx",
-                                                lineNumber: 256,
+                                                lineNumber: 246,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Projects.jsx",
-                                        lineNumber: 252,
+                                        lineNumber: 242,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Projects.jsx",
-                                lineNumber: 161,
+                                lineNumber: 151,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Projects.jsx",
-                        lineNumber: 81,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Projects.jsx",
-                lineNumber: 68,
+                lineNumber: 58,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Projects.jsx",
-        lineNumber: 65,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }
@@ -2340,6 +2303,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.mjs [app-ssr] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zoom$2d$in$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ZoomIn$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zoom-in.mjs [app-ssr] (ecmascript) <export default as ZoomIn>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/play.mjs [app-ssr] (ecmascript) <export default as Play>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/store/useConfiguratorStore.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/translate.js [app-ssr] (ecmascript)");
+;
+;
 ;
 ;
 ;
@@ -2522,103 +2489,23 @@ const GALLERY_ITEMS = [
         img: '/images/media__1784620996687.jpg'
     }
 ];
-const renderBilingual = (text)=>{
-    if (typeof text !== 'string') return text;
-    if (text.includes(' / ')) {
-        const [kn, en] = text.split(' / ');
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "font-kannada",
-                    children: kn
-                }, void 0, false, {
-                    fileName: "[project]/src/components/GallerySection.jsx",
-                    lineNumber: 193,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-zinc-500 font-light mx-1",
-                    children: "/"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/GallerySection.jsx",
-                    lineNumber: 194,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    children: en
-                }, void 0, false, {
-                    fileName: "[project]/src/components/GallerySection.jsx",
-                    lineNumber: 195,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true);
-    }
-    return text;
-};
-const categoryBilingual = (category)=>{
-    switch(category){
-        case 'solar-cam':
-            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-kannada",
-                        children: "ಸೌರ ಕ್ಯಾಮೆರಾ"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 205,
-                        columnNumber: 16
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    " / Solar Cam"
-                ]
-            }, void 0, true);
-        case 'ip-cam':
-            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-kannada",
-                        children: "ಐಪಿ ಸರಣಿ"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 207,
-                        columnNumber: 16
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    " / IP Series"
-                ]
-            }, void 0, true);
-        case 'elec-cam':
-            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-kannada",
-                        children: "ವಿದ್ಯುತ್ ಸರಣಿ"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 209,
-                        columnNumber: 16
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    " / Electric Series"
-                ]
-            }, void 0, true);
-        case 'ir-cam':
-            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-kannada",
-                        children: "ಐಆರ್ ಸರಣಿ"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 211,
-                        columnNumber: 16
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    " / IR Series"
-                ]
-            }, void 0, true);
-        default:
-            return category;
-    }
-};
 function GallerySection() {
+    const store = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConfiguratorStore"])();
+    const renderBilingual = (text)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])(text, store.language);
+    const categoryBilingual = (category)=>{
+        switch(category){
+            case 'solar-cam':
+                return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಸೌರ ಕ್ಯಾಮೆರಾ / Solar Cam', store.language);
+            case 'ip-cam':
+                return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಐಪಿ ಸರಣಿ / IP Series', store.language);
+            case 'elec-cam':
+                return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ವಿದ್ಯುತ್ ಸರಣಿ / Electric Series', store.language);
+            case 'ir-cam':
+                return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಐಆರ್ ಸರಣಿ / IR Series', store.language);
+            default:
+                return category;
+        }
+    };
     const [filter, setFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('all');
     const [lightboxItem, setLightboxItem] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [playingVideo, setPlayingVideo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null); // Local demo video url state
@@ -2633,83 +2520,23 @@ function GallerySection() {
     const categories = [
         {
             id: 'all',
-            label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-kannada",
-                        children: "ಎಲ್ಲಾ ಪ್ರದರ್ಶನಗಳು"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 232,
-                        columnNumber: 27
-                    }, this),
-                    " / All Showcase"
-                ]
-            }, void 0, true)
+            label: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಎಲ್ಲಾ ಪ್ರದರ್ಶನಗಳು / All Showcase', store.language)
         },
         {
             id: 'solar-cam',
-            label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-kannada",
-                        children: "ಸೌರ ಕ್ಯಾಮೆರಾಗಳು"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 233,
-                        columnNumber: 33
-                    }, this),
-                    " / Solar Cameras"
-                ]
-            }, void 0, true)
+            label: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಸೌರ ಕ್ಯಾಮೆರಾಗಳು / Solar Cameras', store.language)
         },
         {
             id: 'ip-cam',
-            label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-kannada",
-                        children: "ಐಪಿ ಸರಣಿ"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 234,
-                        columnNumber: 30
-                    }, this),
-                    " / IP Series"
-                ]
-            }, void 0, true)
+            label: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಐಪಿ ಸರಣಿ / IP Series', store.language)
         },
         {
             id: 'elec-cam',
-            label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-kannada",
-                        children: "ವಿದ್ಯುತ್ ಸರಣಿ"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 235,
-                        columnNumber: 32
-                    }, this),
-                    " / Electric Series"
-                ]
-            }, void 0, true)
+            label: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ವಿದ್ಯುತ್ ಸರಣಿ / Electric Series', store.language)
         },
         {
             id: 'ir-cam',
-            label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "font-kannada",
-                        children: "ಐಆರ್ ಸರಣಿ"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 236,
-                        columnNumber: 30
-                    }, this),
-                    " / IR Series"
-                ]
-            }, void 0, true)
+            label: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಐಆರ್ ಸರಣಿ / IR Series', store.language)
         }
     ];
     const filteredItems = filter === 'all' ? GALLERY_ITEMS : GALLERY_ITEMS.filter((item)=>item.category === filter);
@@ -2721,14 +2548,14 @@ function GallerySection() {
                 className: "absolute top-1/4 right-0 w-80 h-80 bg-electric-cyan/5 rounded-full filter blur-[100px] pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/src/components/GallerySection.jsx",
-                lineNumber: 245,
+                lineNumber: 234,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute bottom-1/4 left-0 w-80 h-80 bg-electric-emerald/5 rounded-full filter blur-[100px] pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/src/components/GallerySection.jsx",
-                lineNumber: 246,
+                lineNumber: 235,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2739,62 +2566,32 @@ function GallerySection() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-electric-cyan text-xs font-space uppercase tracking-widest block mb-3 font-semibold",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-kannada",
-                                        children: "ಉತ್ಪನ್ನ ವಿವರಪಟ್ಟಿ"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 253,
-                                        columnNumber: 13
-                                    }, this),
-                                    " / Product Catalog"
-                                ]
-                            }, void 0, true, {
+                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಉತ್ಪನ್ನ ವಿವರಪಟ್ಟಿ / Product Catalog', store.language)
+                            }, void 0, false, {
                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                lineNumber: 252,
+                                lineNumber: 241,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-4xl md:text-5xl font-light text-white leading-tight",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-kannada",
-                                        children: "ಸಿಸಿಟಿವಿ ಕ್ಯಾಮೆರಾ ಗ್ಯಾಲರಿ"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 256,
-                                        columnNumber: 13
-                                    }, this),
-                                    " / CCTV Hardware Gallery"
-                                ]
-                            }, void 0, true, {
+                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಸಿಸಿಟಿವಿ ಕ್ಯಾಮೆರಾ ಗ್ಯಾಲರಿ / CCTV Hardware Gallery', store.language)
+                            }, void 0, false, {
                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                lineNumber: 255,
+                                lineNumber: 244,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-zinc-400 font-light mt-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-kannada",
-                                        children: "ಬಳಕೆದಾರರು ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ಸೌರ ಸೆಟಪ್‌ಗಳು, ಐಪಿ ಡೋಮ್ ನೋಡ್‌ಗಳು ಮತ್ತು ಎಕ್ಸ್‌ಟ್ರೀಮ್ ಲೋ-ಲಕ್ಸ್ ಇನ್‌ಫ್ರಾರೆಡ್ ಹಾರ್ಡ್‌ವೇರ್‌ಗಳ ವಿವರವಾದ ಕ್ಯಾಟಲಾಗ್ ಅನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ."
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 259,
-                                        columnNumber: 13
-                                    }, this),
-                                    " / Browse through our extensive catalog of user-configured solar setups, IP dome nodes, and extreme low-lux infrared hardware."
-                                ]
-                            }, void 0, true, {
+                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])('ಬಳಕೆದಾರರು ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ಸೌರ ಸೆಟಪ್‌ಗಳು, ಐಪಿ ಡೋಮ್ ನೋಡ್‌ಗಳು ಮತ್ತು ಎಕ್ಸ್‌ಟ್ರೀಮ್ ಲೋ-ಲಕ್ಸ್ ಇನ್‌ಫ್ರಾರೆಡ್ ಹಾರ್ಡ್‌ವೇರ್‌ಗಳ ವಿವರವಾದ ಕ್ಯಾಟಲಾಗ್ ಅನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ. / Browse through our extensive catalog of user-configured solar setups, IP dome nodes, and extreme low-lux infrared hardware.', store.language)
+                            }, void 0, false, {
                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                lineNumber: 258,
+                                lineNumber: 247,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 251,
+                        lineNumber: 240,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2806,19 +2603,19 @@ function GallerySection() {
                                 children: cat.label
                             }, cat.id, false, {
                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                lineNumber: 266,
+                                lineNumber: 255,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 264,
+                        lineNumber: 253,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6",
+                        className: "grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6",
                         children: filteredItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 onClick: ()=>handleItemClick(item),
-                                className: "group relative bg-zinc-900/40 rounded-3xl border border-white/5 overflow-hidden cursor-pointer transition-all duration-500 hover:border-electric-cyan/30 hover:shadow-[0_12px_24px_rgba(0,245,255,0.04)] hover:-translate-y-1",
+                                className: "group relative bg-zinc-900/40 rounded-xl sm:rounded-3xl border border-white/5 overflow-hidden cursor-pointer transition-all duration-500 hover:border-electric-cyan/30 hover:shadow-[0_12px_24px_rgba(0,245,255,0.04)] hover:-translate-y-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "aspect-square bg-zinc-950 flex items-center justify-center overflow-hidden relative",
@@ -2826,102 +2623,102 @@ function GallerySection() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: item.img,
                                                 alt: item.title,
-                                                className: "w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105",
+                                                className: "w-full h-full object-contain p-2 sm:p-4 transition-transform duration-700 group-hover:scale-105",
                                                 loading: "lazy"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                                lineNumber: 291,
+                                                lineNumber: 280,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-10 h-10 rounded-full bg-electric-cyan text-black flex items-center justify-center shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300",
+                                                    className: "w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-electric-cyan text-black flex items-center justify-center shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300",
                                                     children: item.type === 'video' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__["Play"], {
-                                                        className: "w-5 h-5 fill-black ml-0.5"
+                                                        className: "w-4 h-4 sm:w-5 sm:h-5 fill-black ml-0.5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                                        lineNumber: 301,
+                                                        lineNumber: 290,
                                                         columnNumber: 46
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zoom$2d$in$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ZoomIn$3e$__["ZoomIn"], {
-                                                        className: "w-5 h-5"
+                                                        className: "w-4 h-4 sm:w-5 sm:h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                                        lineNumber: 301,
-                                                        columnNumber: 95
+                                                        lineNumber: 290,
+                                                        columnNumber: 109
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GallerySection.jsx",
-                                                    lineNumber: 300,
+                                                    lineNumber: 289,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                                lineNumber: 299,
+                                                lineNumber: 288,
                                                 columnNumber: 17
                                             }, this),
                                             item.type === 'video' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute top-4 right-4 w-7 h-7 rounded-full bg-electric-cyan text-black flex items-center justify-center shadow-md z-20",
+                                                className: "absolute top-2 right-2 sm:top-4 sm:right-4 w-5 h-5 sm:w-7 sm:h-7 rounded-full bg-electric-cyan text-black flex items-center justify-center shadow-md z-20",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__["Play"], {
-                                                    className: "w-3.5 h-3.5 fill-black ml-0.5 animate-pulse"
+                                                    className: "w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 fill-black ml-0.5 animate-pulse"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/GallerySection.jsx",
-                                                    lineNumber: 308,
+                                                    lineNumber: 297,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                                lineNumber: 307,
+                                                lineNumber: 296,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "absolute top-4 left-4 px-2.5 py-1 rounded-md text-[8px] font-space font-semibold uppercase tracking-wider border border-white/10 bg-zinc-900/90 text-zinc-400 z-10",
+                                                className: "absolute top-2 left-2 sm:top-4 sm:left-4 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-md text-[6px] sm:text-[8px] font-space font-semibold uppercase tracking-wider border border-white/10 bg-zinc-900/90 text-zinc-400 z-10",
                                                 children: categoryBilingual(item.category)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                                lineNumber: 313,
+                                                lineNumber: 302,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 290,
+                                        lineNumber: 279,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "p-5 border-t border-zinc-900 bg-zinc-900/20",
+                                        className: "p-3 sm:p-5 border-t border-zinc-900 bg-zinc-900/20",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "text-xs font-semibold text-zinc-200 group-hover:text-white transition-colors",
+                                                className: "text-[10px] sm:text-xs font-semibold text-zinc-200 group-hover:text-white transition-colors leading-tight",
                                                 children: renderBilingual(item.title)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                                lineNumber: 320,
+                                                lineNumber: 309,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-[10px] text-zinc-500 font-light mt-1.5 leading-relaxed",
+                                                className: "text-[8px] sm:text-[10px] text-zinc-500 font-light mt-1 sm:mt-1.5 leading-relaxed line-clamp-2",
                                                 children: renderBilingual(item.desc)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                                lineNumber: 323,
+                                                lineNumber: 312,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 319,
+                                        lineNumber: 308,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, item.id, true, {
                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                lineNumber: 284,
+                                lineNumber: 273,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 282,
+                        lineNumber: 271,
                         columnNumber: 9
                     }, this),
                     filteredItems.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2932,20 +2729,20 @@ function GallerySection() {
                                 children: "ಯಾವುದೇ ಸ್ವತ್ತುಗಳು ಕಂಡುಬಂದಿಲ್ಲ"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                lineNumber: 334,
+                                lineNumber: 323,
                                 columnNumber: 13
                             }, this),
                             " / No assets found matching this filter"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 333,
+                        lineNumber: 322,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/GallerySection.jsx",
-                lineNumber: 248,
+                lineNumber: 237,
                 columnNumber: 7
             }, this),
             lightboxItem && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2965,12 +2762,12 @@ function GallerySection() {
                             className: "w-5 h-5"
                         }, void 0, false, {
                             fileName: "[project]/src/components/GallerySection.jsx",
-                            lineNumber: 349,
+                            lineNumber: 338,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 345,
+                        lineNumber: 334,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2986,7 +2783,7 @@ function GallerySection() {
                                         className: "max-w-full max-h-[48vh] object-contain rounded-xl"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 358,
+                                        lineNumber: 347,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2997,7 +2794,7 @@ function GallerySection() {
                                                 className: "w-4 h-4 animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                                lineNumber: 367,
+                                                lineNumber: 356,
                                                 columnNumber: 19
                                             }, this),
                                             " ",
@@ -3006,20 +2803,20 @@ function GallerySection() {
                                                 children: "ವಿಡಿಯೋ ಡೆಮೊ ವೀಕ್ಷಿಸಿ"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                                lineNumber: 367,
+                                                lineNumber: 356,
                                                 columnNumber: 62
                                             }, this),
                                             " / Play Video Demo"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 363,
+                                        lineNumber: 352,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                lineNumber: 357,
+                                lineNumber: 346,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "relative w-full max-h-[70vh] bg-zinc-950/40 rounded-3xl overflow-hidden border border-white/10 flex flex-col items-center justify-center p-6 gap-4",
@@ -3031,7 +2828,7 @@ function GallerySection() {
                                         className: "max-w-full max-h-[48vh] object-contain rounded-xl aspect-video border border-white/5"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 372,
+                                        lineNumber: 361,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3043,20 +2840,20 @@ function GallerySection() {
                                                 children: "ಚಿತ್ರಕ್ಕೆ ಹಿಂತಿರುಗಿ"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                                lineNumber: 382,
+                                                lineNumber: 371,
                                                 columnNumber: 19
                                             }, this),
                                             " / Back to Image"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 378,
+                                        lineNumber: 367,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                lineNumber: 371,
+                                lineNumber: 360,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3067,7 +2864,7 @@ function GallerySection() {
                                         children: categoryBilingual(lightboxItem.category)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 388,
+                                        lineNumber: 377,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3075,7 +2872,7 @@ function GallerySection() {
                                         children: renderBilingual(lightboxItem.title)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 391,
+                                        lineNumber: 380,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3083,31 +2880,31 @@ function GallerySection() {
                                         children: renderBilingual(lightboxItem.desc)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/GallerySection.jsx",
-                                        lineNumber: 394,
+                                        lineNumber: 383,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/GallerySection.jsx",
-                                lineNumber: 387,
+                                lineNumber: 376,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/GallerySection.jsx",
-                        lineNumber: 352,
+                        lineNumber: 341,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/GallerySection.jsx",
-                lineNumber: 341,
+                lineNumber: 330,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/GallerySection.jsx",
-        lineNumber: 244,
+        lineNumber: 233,
         columnNumber: 5
     }, this);
 }

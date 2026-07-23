@@ -14,6 +14,10 @@ export const useConfiguratorStore = create((set, get) => {
     activeTab: 'home', // 'home' | 'configurator' | 'admin' | 'technician' | 'service'
     setActiveTab: (tab) => set({ activeTab: tab }),
 
+    // Language setting: 'kn' (Bilingual Kannada + English), 'en' (English only)
+    language: 'en',
+    setLanguage: (lang) => set({ language: lang }),
+
     // Toasts alert array
     toasts: [],
     addToast: (message, type = 'success') => {

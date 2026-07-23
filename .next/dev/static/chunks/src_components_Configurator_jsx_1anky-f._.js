@@ -9,6 +9,7 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/store/useConfiguratorStore.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/translate.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$dbMock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/dbMock.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$pdfGenerator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/pdfGenerator.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield.mjs [app-client] (ecmascript) <export default as Shield>");
@@ -29,102 +30,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const renderBilingual = (text)=>{
-    if (typeof text !== 'string') return text;
-    if (text.includes(' / ')) {
-        const [kn, en] = text.split(' / ');
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "font-kannada",
-                    children: kn
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Configurator.jsx",
-                    lineNumber: 16,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-zinc-500 font-light mx-1",
-                    children: "/"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Configurator.jsx",
-                    lineNumber: 17,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    children: en
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Configurator.jsx",
-                    lineNumber: 18,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true);
-    }
-    return text;
-};
-const renderProductName = (name)=>{
-    if (!name) return '';
-    const translations = {
-        'Strobe Siren Warning Dome': 'ಸ್ಟ್ರೋಬ್ ಸೈರನ್ ಎಚ್ಚರಿಕೆ ಡೋಮ್ / Strobe Siren Warning Dome',
-        'THINKWILL Dual-Lens PTZ Dome': 'ಥಿಂಕ್‌ವಿಲ್ ಡ್ಯುಯಲ್-ಲೆನ್ಸ್ ಪಿಟಿಝಡ್ ಡೋಮ್ / THINKWILL Dual-Lens PTZ Dome',
-        'Consistent Smart Telemetry PTZ Dome': 'ಕನ್ಸಿಸ್ಟೆಂಟ್ ಸ್ಮಾರ್ಟ್ ಟೆಲಿಮೆಟ್ರಿ ಪಿಟಿಝಡ್ ಡೋಮ್ / Consistent Smart Telemetry PTZ Dome',
-        'THINKWILL Single-Lens Classic Dome': 'ಥಿಂಕ್‌ವಿಲ್ ಸಿಂಗಲ್-ಲೆನ್ಸ್ ಕ್ಲಾಸಿಕ್ ಡೋಮ್ / THINKWILL Single-Lens Classic Dome',
-        'THINKWILL Triple-Lens Panoramic Stand': 'ಥಿಂಕ್‌ವಿಲ್ ಟ್ರಿಪಲ್-ಲೆನ್ಸ್ ಪನೋರಮಿಕ್ ಸ್ಟ್ಯಾಂಡ್ / THINKWILL Triple-Lens Panoramic Stand'
-    };
-    return renderBilingual(translations[name] || name);
-};
-const renderProductDescription = (desc)=>{
-    if (!desc) return '';
-    const translations = {
-        'White dome camera with integrated red strobe siren, dual outdoor antennas, and dual-lens target tracking.': 'ಸಂಯೋಜಿತ ಕೆಂಪು ಸ್ಟ್ರೋಬ್ ಸೈರನ್, ಡ್ಯುಯಲ್ ಹೊರಾಂಗಣ ಆಂಟೆನಾಗಳು ಮತ್ತು ಡ್ಯುಯಲ್-ಲೆನ್ಸ್ ಗುರಿ ಟ್ರ್ಯಾಕಿಂಗ್ ಹೊಂದಿರುವ ಬಿಳಿ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / White dome camera with integrated red strobe siren, dual outdoor antennas, and dual-lens target tracking.',
-        'Compact wireless THINKWILL dome camera with integrated mounting bracket, dual antennas, and wide-angle optical lens.': 'ಸಂಯೋಜಿತ ಮೌಂಟಿಂಗ್ ಬ್ರಾಕೆಟ್, ಡ್ಯುಯಲ್ ಆಂಟೆನಾಗಳು ಮತ್ತು ವೈಡ್-ಆಂಗಲ್ ಆಪ್ಟಿಕಲ್ ಲೆನ್ಸ್ ಹೊಂದಿರುವ ಕಾಂಪ್ಯಾಕ್ಟ್ ವೈರ್‌ಲೆಸ್ ಥಿಂಕ್‌ವಿಲ್ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / Compact wireless THINKWILL dome camera with integrated mounting bracket, dual antennas, and wide-angle optical lens.',
-        'Consistent brand dome camera with dual outdoor antennas, starlight sensors, and high-efficiency infrared night sweep.': 'ಡ್ಯುಯಲ್ ಹೊರಾಂಗಣ ಆಂಟೆನಾಗಳು, ಸ್ಟಾರ್‌ಲೈಟ್ ಸೆನ್ಸಾರ್‌ಗಳು ಮತ್ತು ಹೆಚ್ಚಿನ ದಕ್ಷತೆಯ ಇನ್‌ಫ್ರಾರೆಡ್ ನೈಟ್ ಸ್ವೀಪ್ ಹೊಂದಿರುವ ಕನ್ಸಿಸ್ಟೆಂಟ್ ಬ್ರಾಂಡ್ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / Consistent brand dome camera with dual outdoor antennas, starlight sensors, and high-efficiency infrared night sweep.',
-        'White THINKWILL dome camera with dual outdoor antennas, zero-lag WiFi connection, and high strength weather-proof casing.': 'ಡ್ಯುಯಲ್ ಹೊರಾಂಗಣ ಆಂಟೆನಾಗಳು, ಶೂನ್ಯ-ವಿಳಂಬ ವೈಫೈ ಸಂಪರ್ಕ ಮತ್ತು ಹೆಚ್ಚಿನ ಶಕ್ತಿಯ ಹವಾಮಾನ-ನಿರೋಧಕ ಕೇಸಿಂಗ್ ಹೊಂದಿರುವ ಬಿಳಿ ಥಿಂಕ್‌ವಿಲ್ ಡೋಮ್ ಕ್ಯಾಮೆರಾ. / White THINKWILL dome camera with dual outdoor antennas, zero-lag WiFi connection, and high strength weather-proof casing.',
-        'Enterprise THINKWILL triple-lens camera with double antennas and dual sub-dome visual pods on support stand.': 'ಡಬಲ್ ಆಂಟೆನಾಗಳು ಮತ್ತು ಬೆಂಬಲ ಸ್ಟ್ಯಾಂಡ್‌ನಲ್ಲಿ ಡ್ಯುಯಲ್ ಸಬ್-ಡೋಮ್ ದೃಶ್ಯ ಪಾಡ್‌ಗಳನ್ನು ಹೊಂದಿರುವ ಎಂಟರ್‌ಪ್ರೈಸ್ ಥಿಂಕ್‌ವಿಲ್ ಟ್ರಿಪಲ್-ಲೆನ್ಸ್ ಕ್ಯಾಮೆರಾ. / Enterprise THINKWILL triple-lens camera with double antennas and dual sub-dome visual pods on support stand.'
-    };
-    return renderBilingual(translations[desc] || desc);
-};
-const renderBatteryName = (name)=>{
-    const translations = {
-        'SuryaGlow 12Ah LFP': 'ಸೂರ್ಯಗ್ಲೋ 12Ah ಎಲ್‌ಎಫ್‌ಪಿ / SuryaGlow 12Ah LFP',
-        'SuryaGlow 18Ah LFP Pro': 'ಸೂರ್ಯಗ್ಲೋ 18Ah ಎಲ್‌ಎಫ್‌ಪಿ ಪ್ರೊ / SuryaGlow 18Ah LFP Pro'
-    };
-    return renderBilingual(translations[name] || name);
-};
-const renderBatteryDescription = (desc)=>{
-    const translations = {
-        'Lightweight safety LiFePO4 battery pack': 'ಕಡಿಮೆ ತೂಕದ ಸುರಕ್ಷಿತ LiFePO4 ಬ್ಯಾಟರಿ ಪ್ಯಾಕ್ / Lightweight safety LiFePO4 battery pack',
-        'High endurance safety LiFePO4 battery pack': 'ಹೆಚ್ಚಿನ ಬಾಳಿಕೆಯ ಸುರಕ್ಷಿತ LiFePO4 ಬ್ಯಾಟರಿ ಪ್ಯಾಕ್ / High endurance safety LiFePO4 battery pack'
-    };
-    return renderBilingual(translations[desc] || desc);
-};
-const renderPanelName = (name)=>{
-    const translations = {
-        'Helios 20W Monocrystalline': 'ಹೆಲಿಯೋಸ್ 20W ಮೊನೊಕ್ರಿಸ್ಟಲಿನ್ / Helios 20W Monocrystalline',
-        'Helios 40W Monocrystalline Pro': 'ಹೆಲಿಯೋಸ್ 40W ಮೊನೊಕ್ರಿಸ್ಟಲಿನ್ ಪ್ರೊ / Helios 40W Monocrystalline Pro'
-    };
-    return renderBilingual(translations[name] || name);
-};
-const renderPanelDescription = (desc)=>{
-    const translations = {
-        'Anti-reflective tempered glass solar panel': 'ಪ್ರತಿಫಲನ-ನಿರೋಧಕ ಟೆಂಪರ್ಡ್ ಗ್ಲಾಸ್ ಸೌರ ಫಲಕ / Anti-reflective tempered glass solar panel',
-        'Double sided efficiency capture panel': 'ಉಭಯ ಬದಿಯ ದಕ್ಷತೆಯ ಸೌರ ಫಲಕ / Double sided efficiency capture panel'
-    };
-    return renderBilingual(translations[desc] || desc);
-};
-const renderAccessoryName = (name)=>{
-    const translations = {
-        '64GB CCTV SD Card': '64 ಜಿಬಿ ಸಿಸಿಟಿವಿ ಎಸ್‌ಡಿ ಕಾರ್ಡ್ / 64GB CCTV SD Card',
-        '128GB CCTV SD Card': '128 ಜಿಬಿ ಸಿಸಿಟಿವಿ ಎಸ್‌ಡಿ ಕಾರ್ಡ್ / 128GB CCTV SD Card',
-        'Pole Clamp Bracket set': 'ಪೋಲ್ ಕ್ಲಾಂಪ್ ಬ್ರಾಕೆಟ್ ಸೆಟ್ / Pole Clamp Bracket set',
-        'Wall Mount Arm bracket': 'ವಾಲ್ ಮೌಂಟ್ ಆರ್ಮ್ ಬ್ರಾಕೆಟ್ / Wall Mount Arm bracket',
-        'Waterproof Junction Box': 'ಜಲನಿರೋಧಕ ಜಂಕ್ಷನ್ ಬಾಕ್ಸ್ / Waterproof Junction Box',
-        'Professional Site Installation': 'ವೃತ್ತಿಪರ ಸ್ಥಳ ಸ್ಥಾಪನೆ / Professional Site Installation',
-        'Annual Maintenance Contract': 'ವಾರ್ಷಿಕ ನಿರ್ವಹಣೆ ಒಪ್ಪಂದ / Annual Maintenance Contract'
-    };
-    return renderBilingual(translations[name] || name);
-};
+;
 function Configurator() {
     _s();
     const store = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useConfiguratorStore"])();
@@ -232,7 +138,7 @@ function Configurator() {
                         className: "absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-electric-emerald/5 rounded-full filter blur-[50px] pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Configurator.jsx",
-                        lineNumber: 204,
+                        lineNumber: 118,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -241,12 +147,12 @@ function Configurator() {
                             className: "w-8 h-8"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Configurator.jsx",
-                            lineNumber: 207,
+                            lineNumber: 121,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Configurator.jsx",
-                        lineNumber: 206,
+                        lineNumber: 120,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -257,14 +163,14 @@ function Configurator() {
                                 children: "ಸಿಸಿಟಿವಿ ಕಾನ್ಫಿಗರೇಶನ್ ಉಳಿಸಲಾಗಿದೆ"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 211,
+                                lineNumber: 125,
                                 columnNumber: 13
                             }, this),
                             " / CCTV Configuration Saved"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Configurator.jsx",
-                        lineNumber: 210,
+                        lineNumber: 124,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -275,7 +181,7 @@ function Configurator() {
                                 children: "ಉಲ್ಲೇಖ ಐಡಿ"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 214,
+                                lineNumber: 128,
                                 columnNumber: 13
                             }, this),
                             " / Reference ID: ",
@@ -283,7 +189,7 @@ function Configurator() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Configurator.jsx",
-                        lineNumber: 213,
+                        lineNumber: 127,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -299,14 +205,14 @@ function Configurator() {
                                                 children: "ಆಯ್ಕೆಮಾಡಿದ ಘಟಕಗಳ ಸಾರಾಂಶ"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 219,
+                                                lineNumber: 133,
                                                 columnNumber: 21
                                             }, this),
                                             " / Selected Components Summary"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 219,
+                                        lineNumber: 133,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -316,20 +222,20 @@ function Configurator() {
                                                 children: "ಸ್ಥಿತಿ"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 220,
+                                                lineNumber: 134,
                                                 columnNumber: 21
                                             }, this),
                                             " / Status"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 220,
+                                        lineNumber: 134,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 218,
+                                lineNumber: 132,
                                 columnNumber: 13
                             }, this),
                             store.configType === 'solar' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -342,7 +248,7 @@ function Configurator() {
                                                 children: renderProductName(store.completedOrder.summary.camera)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 226,
+                                                lineNumber: 140,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -353,20 +259,20 @@ function Configurator() {
                                                         children: "ವಿನಂತಿಸಲಾಗಿದೆ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 227,
+                                                        lineNumber: 141,
                                                         columnNumber: 51
                                                     }, this),
                                                     " / Requested"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 227,
+                                                lineNumber: 141,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 225,
+                                        lineNumber: 139,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -380,7 +286,7 @@ function Configurator() {
                                                         children: "ಬ್ಯಾಟರಿ:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 230,
+                                                        lineNumber: 144,
                                                         columnNumber: 51
                                                     }, this),
                                                     " / Battery: ",
@@ -388,7 +294,7 @@ function Configurator() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 230,
+                                                lineNumber: 144,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -399,20 +305,20 @@ function Configurator() {
                                                         children: "ವಿನಂತಿಸಲಾಗಿದೆ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 231,
+                                                        lineNumber: 145,
                                                         columnNumber: 51
                                                     }, this),
                                                     " / Requested"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 231,
+                                                lineNumber: 145,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 229,
+                                        lineNumber: 143,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -426,7 +332,7 @@ function Configurator() {
                                                         children: "ಸೌರ ಫಲಕ:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 234,
+                                                        lineNumber: 148,
                                                         columnNumber: 51
                                                     }, this),
                                                     " / Solar Panel: ",
@@ -434,7 +340,7 @@ function Configurator() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 234,
+                                                lineNumber: 148,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -445,20 +351,20 @@ function Configurator() {
                                                         children: "ವಿನಂತಿಸಲಾಗಿದೆ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 235,
+                                                        lineNumber: 149,
                                                         columnNumber: 51
                                                     }, this),
                                                     " / Requested"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 235,
+                                                lineNumber: 149,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 233,
+                                        lineNumber: 147,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -472,7 +378,7 @@ function Configurator() {
                                                         children: "ಮೆಮೊರಿ ಕಾರ್ಡ್:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 238,
+                                                        lineNumber: 152,
                                                         columnNumber: 51
                                                     }, this),
                                                     " / Memory Card: ",
@@ -480,7 +386,7 @@ function Configurator() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 238,
+                                                lineNumber: 152,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -491,20 +397,20 @@ function Configurator() {
                                                         children: "ವಿನಂತಿಸಲಾಗಿದೆ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 239,
+                                                        lineNumber: 153,
                                                         columnNumber: 51
                                                     }, this),
                                                     " / Requested"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 239,
+                                                lineNumber: 153,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 237,
+                                        lineNumber: 151,
                                         columnNumber: 17
                                     }, this)
                                 ]
@@ -518,7 +424,7 @@ function Configurator() {
                                                 children: renderProductName(store.completedOrder.summary.camera)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 245,
+                                                lineNumber: 159,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -529,20 +435,20 @@ function Configurator() {
                                                         children: "ವಿನಂತಿಸಲಾಗಿದೆ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 246,
+                                                        lineNumber: 160,
                                                         columnNumber: 51
                                                     }, this),
                                                     " / Requested"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 246,
+                                                lineNumber: 160,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 244,
+                                        lineNumber: 158,
                                         columnNumber: 17
                                     }, this),
                                     store.completedOrder.summary.dvr && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -558,7 +464,7 @@ function Configurator() {
                                                                 children: "ಡಿವಿಆರ್:"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 251,
+                                                                lineNumber: 165,
                                                                 columnNumber: 77
                                                             }, this),
                                                             " / DVR:"
@@ -570,7 +476,7 @@ function Configurator() {
                                                                 children: "ಎನ್‌ವಿಆರ್:"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 251,
+                                                                lineNumber: 165,
                                                                 columnNumber: 138
                                                             }, this),
                                                             " / NVR:"
@@ -581,7 +487,7 @@ function Configurator() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 250,
+                                                lineNumber: 164,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -592,20 +498,20 @@ function Configurator() {
                                                         children: "ವಿನಂತಿಸಲಾಗಿದೆ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 253,
+                                                        lineNumber: 167,
                                                         columnNumber: 53
                                                     }, this),
                                                     " / Requested"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 253,
+                                                lineNumber: 167,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 249,
+                                        lineNumber: 163,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -619,7 +525,7 @@ function Configurator() {
                                                         children: "ಸಂಗ್ರಹಣೆ:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 257,
+                                                        lineNumber: 171,
                                                         columnNumber: 51
                                                     }, this),
                                                     " / Storage: ",
@@ -627,7 +533,7 @@ function Configurator() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 257,
+                                                lineNumber: 171,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -638,20 +544,20 @@ function Configurator() {
                                                         children: "ವಿನಂತಿಸಲಾಗಿದೆ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 258,
+                                                        lineNumber: 172,
                                                         columnNumber: 51
                                                     }, this),
                                                     " / Requested"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 258,
+                                                lineNumber: 172,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 256,
+                                        lineNumber: 170,
                                         columnNumber: 17
                                     }, this)
                                 ]
@@ -667,14 +573,14 @@ function Configurator() {
                                                 children: "ಹೆಚ್ಚುವರಿ ಪರಿಕರಗಳು:"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 266,
+                                                lineNumber: 180,
                                                 columnNumber: 19
                                             }, this),
                                             " / Add-ons:"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 265,
+                                        lineNumber: 179,
                                         columnNumber: 17
                                     }, this),
                                     store.completedOrder.summary.accessories.map((acc, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -684,7 +590,7 @@ function Configurator() {
                                                     children: renderAccessoryName(acc)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 270,
+                                                    lineNumber: 184,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -695,26 +601,26 @@ function Configurator() {
                                                             children: "ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 271,
+                                                            lineNumber: 185,
                                                             columnNumber: 53
                                                         }, this),
                                                         " / Selected"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 271,
+                                                    lineNumber: 185,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, index, true, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 269,
+                                            lineNumber: 183,
                                             columnNumber: 19
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 264,
+                                lineNumber: 178,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -728,14 +634,14 @@ function Configurator() {
                                                 children: "ವಿಚಾರಣೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 279,
+                                                lineNumber: 193,
                                                 columnNumber: 17
                                             }, this),
                                             " / Enquiry Successfully Placed"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 278,
+                                        lineNumber: 192,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -743,20 +649,20 @@ function Configurator() {
                                         children: "ಸ್ಥಾಪನಾ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ಪರಿಶೀಲಿಸಲು ಮತ್ತು ನಿಮ್ಮ ಕಸ್ಟಮ್ ಉಲ್ಲೇಖವನ್ನು ಒದಗಿಸಲು ಆಡಳಿತಾತ್ಮಕ ಪ್ರತಿನಿಧಿಯು ಶೀಘ್ರದಲ್ಲೇ ವಾಟ್ಸಾಪ್ ಅಥವಾ ಫೋನ್ ಮೂಲಕ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುತ್ತಾರೆ."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 281,
+                                        lineNumber: 195,
                                         columnNumber: 15
                                     }, this),
                                     " / An administrative representative will contact you shortly via WhatsApp or Phone to review installation logistics and provide your custom quote."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 277,
+                                lineNumber: 191,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Configurator.jsx",
-                        lineNumber: 217,
+                        lineNumber: 131,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -769,21 +675,21 @@ function Configurator() {
                                         children: "ಗ್ರಾಹಕರು:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 286,
+                                        lineNumber: 200,
                                         columnNumber: 21
                                     }, this),
                                     " / Client:"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 286,
+                                lineNumber: 200,
                                 columnNumber: 13
                             }, this),
                             " ",
                             store.completedOrder.customer.name,
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 286,
+                                lineNumber: 200,
                                 columnNumber: 124
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
@@ -793,21 +699,21 @@ function Configurator() {
                                         children: "ವಿಳಾಸ:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 287,
+                                        lineNumber: 201,
                                         columnNumber: 21
                                     }, this),
                                     " / Address:"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 287,
+                                lineNumber: 201,
                                 columnNumber: 13
                             }, this),
                             " ",
                             store.completedOrder.customer.address,
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 287,
+                                lineNumber: 201,
                                 columnNumber: 125
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
@@ -817,14 +723,14 @@ function Configurator() {
                                         children: "ಫೋನ್:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 288,
+                                        lineNumber: 202,
                                         columnNumber: 21
                                     }, this),
                                     " / Phone:"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 288,
+                                lineNumber: 202,
                                 columnNumber: 13
                             }, this),
                             " ",
@@ -832,7 +738,7 @@ function Configurator() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Configurator.jsx",
-                        lineNumber: 285,
+                        lineNumber: 199,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -847,14 +753,14 @@ function Configurator() {
                                         children: "ಪಿಡಿಎಫ್ ವಿವರಣೆ ಪತ್ರಿಕೆ"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 296,
+                                        lineNumber: 210,
                                         columnNumber: 15
                                     }, this),
                                     " / Download Spec PDF"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 292,
+                                lineNumber: 206,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -871,14 +777,14 @@ function Configurator() {
                                         children: "ವಾಟ್ಸಾಪ್ ಮೂಲಕ ಕಳುಹಿಸಿ"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 326,
+                                        lineNumber: 240,
                                         columnNumber: 15
                                     }, this),
                                     " / Send via WhatsApp"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 298,
+                                lineNumber: 212,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -896,14 +802,14 @@ function Configurator() {
                                         children: "ಇಮೇಲ್ ಮೂಲಕ ಕಳುಹಿಸಿ"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 357,
+                                        lineNumber: 271,
                                         columnNumber: 15
                                     }, this),
                                     " / Send via Email"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 328,
+                                lineNumber: 242,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -918,31 +824,31 @@ function Configurator() {
                                         children: "ಮುಖಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 366,
+                                        lineNumber: 280,
                                         columnNumber: 15
                                     }, this),
                                     " / Back to Home"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 359,
+                                lineNumber: 273,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Configurator.jsx",
-                        lineNumber: 291,
+                        lineNumber: 205,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Configurator.jsx",
-                lineNumber: 203,
+                lineNumber: 117,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Configurator.jsx",
-            lineNumber: 202,
+            lineNumber: 116,
             columnNumber: 7
         }, this);
     }
@@ -969,14 +875,14 @@ function Configurator() {
                                             children: "ಸೌರ ಸಿಸಿಟಿವಿ ವ್ಯವಸ್ಥೆ"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 392,
+                                            lineNumber: 306,
                                             columnNumber: 15
                                         }, this),
                                         "Solar CCTV System"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Configurator.jsx",
-                                    lineNumber: 381,
+                                    lineNumber: 295,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -991,25 +897,25 @@ function Configurator() {
                                             children: "ವಿದ್ಯುತ್ ಸಿಸಿಟಿವಿ ವ್ಯವಸ್ಥೆ"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 406,
+                                            lineNumber: 320,
                                             columnNumber: 15
                                         }, this),
                                         "Electric CCTV System"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Configurator.jsx",
-                                    lineNumber: 395,
+                                    lineNumber: 309,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Configurator.jsx",
-                            lineNumber: 380,
+                            lineNumber: 294,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Configurator.jsx",
-                        lineNumber: 379,
+                        lineNumber: 293,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1031,7 +937,7 @@ function Configurator() {
                                                                 children: "ಕ್ಯಾಮೆರಾ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 424,
+                                                                lineNumber: 338,
                                                                 columnNumber: 41
                                                             }, this),
                                                             " / Camera"
@@ -1048,7 +954,7 @@ function Configurator() {
                                                                 children: "ಬ್ಯಾಟರಿ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 425,
+                                                                lineNumber: 339,
                                                                 columnNumber: 41
                                                             }, this),
                                                             " / Battery"
@@ -1065,7 +971,7 @@ function Configurator() {
                                                                 children: "ಸೌರ ಫಲಕ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 426,
+                                                                lineNumber: 340,
                                                                 columnNumber: 41
                                                             }, this),
                                                             " / Panel"
@@ -1082,7 +988,7 @@ function Configurator() {
                                                                 children: "ಮೆಮೊರಿ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 427,
+                                                                lineNumber: 341,
                                                                 columnNumber: 41
                                                             }, this),
                                                             " / Storage"
@@ -1099,7 +1005,7 @@ function Configurator() {
                                                                 children: "ಪರಿಕರಗಳು"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 428,
+                                                                lineNumber: 342,
                                                                 columnNumber: 41
                                                             }, this),
                                                             " / Accessories"
@@ -1116,7 +1022,7 @@ function Configurator() {
                                                                 children: "ಸಾರಾಂಶ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 429,
+                                                                lineNumber: 343,
                                                                 columnNumber: 41
                                                             }, this),
                                                             " / Summary"
@@ -1133,7 +1039,7 @@ function Configurator() {
                                                                 children: "ಸಂಪರ್ಕ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 430,
+                                                                lineNumber: 344,
                                                                 columnNumber: 41
                                                             }, this),
                                                             " / Contact"
@@ -1149,7 +1055,7 @@ function Configurator() {
                                                             className: "w-3 h-3 text-current"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 441,
+                                                            lineNumber: 355,
                                                             columnNumber: 19
                                                         }, this),
                                                         " ",
@@ -1157,12 +1063,12 @@ function Configurator() {
                                                     ]
                                                 }, s.step, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 432,
+                                                    lineNumber: 346,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 422,
+                                            lineNumber: 336,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1182,14 +1088,14 @@ function Configurator() {
                                                                     children: "ಹಿಂದೆ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 457,
+                                                                    lineNumber: 371,
                                                                     columnNumber: 26
                                                                 }, this),
                                                                 " / Back"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 451,
+                                                            lineNumber: 365,
                                                             columnNumber: 24
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1202,78 +1108,78 @@ function Configurator() {
                                                                     children: "ಮುಂದಿನ ಹಂತ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 464,
+                                                                    lineNumber: 378,
                                                                     columnNumber: 26
                                                                 }, this),
                                                                 " / Next Step"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 459,
+                                                            lineNumber: 373,
                                                             columnNumber: 24
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 450,
+                                                    lineNumber: 364,
                                                     columnNumber: 22
                                                 }, this),
                                                 solarStep === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                            className: "text-xl text-white mb-2",
+                                                            className: "text-base sm:text-lg text-white mb-1.5 font-semibold",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "font-kannada",
                                                                     children: "ಎಐ ಕ್ಯಾಮೆರಾ ಮಾದರಿಯನ್ನು ಆರಿಸಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 473,
+                                                                    lineNumber: 387,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Choose AI Camera Model"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 472,
+                                                            lineNumber: 386,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-xs text-zinc-500 mb-6 font-space uppercase",
+                                                            className: "text-[10px] sm:text-xs text-zinc-500 mb-4 font-space uppercase",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "font-kannada",
                                                                     children: "ನಮ್ಮ ಐದು ಸೌರ ಆಪ್ಟಿಕಲ್ ಸೆನ್ಸಾರ್‌ಗಳಿಂದ ಆಯ್ಕೆಮಾಡಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 476,
+                                                                    lineNumber: 390,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Select from our five solar optical sensors by visual design"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 475,
+                                                            lineNumber: 389,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                                                            className: "grid grid-cols-2 gap-2.5 sm:gap-6",
                                                             children: solarCameras.map((cam)=>{
                                                                 const isSelected = store.solarCamera?.id === cam.id;
                                                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     onClick: ()=>store.setSolarCamera(cam),
-                                                                    className: `p-6 rounded-3xl border transition-all duration-300 cursor-pointer flex flex-col justify-between ${isSelected ? 'bg-electric-cyan/5 border-electric-cyan glow-cyan' : 'bg-zinc-950/60 border-zinc-900 hover:border-zinc-800'}`,
+                                                                    className: `p-2.5 sm:p-5 rounded-xl sm:rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between ${isSelected ? 'bg-electric-cyan/5 border-electric-cyan glow-cyan' : 'bg-zinc-950/60 border-zinc-900 hover:border-zinc-800'}`,
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "relative w-full aspect-square rounded-2xl overflow-hidden border border-white/5 bg-zinc-950 flex items-center justify-center mb-4 group/img",
+                                                                            className: "relative w-full h-24 sm:h-40 rounded-lg sm:rounded-xl overflow-hidden border border-white/5 bg-zinc-950 flex items-center justify-center mb-2 sm:mb-3 group/img",
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                                                     src: cam.image,
                                                                                     alt: "Solar Camera Model",
-                                                                                    className: "w-full h-full object-contain p-4 transition-transform duration-300 group-hover/img:scale-105"
+                                                                                    className: "w-full h-full object-contain p-1.5 sm:p-4 transition-transform duration-300 group-hover/img:scale-105"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 494,
+                                                                                    lineNumber: 408,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1284,28 +1190,28 @@ function Configurator() {
                                                                                     className: "absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity cursor-pointer z-10",
                                                                                     title: "Watch Demo Clip",
                                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "w-12 h-12 rounded-full bg-electric-cyan text-black flex items-center justify-center shadow-lg font-bold",
+                                                                                        className: "w-8 h-8 rounded-full bg-electric-cyan text-black flex items-center justify-center shadow-lg font-bold",
                                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__["Play"], {
-                                                                                            className: "w-6 h-6 fill-black"
+                                                                                            className: "w-3.5 h-3.5 fill-black"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                                            lineNumber: 506,
+                                                                                            lineNumber: 420,
                                                                                             columnNumber: 37
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                                        lineNumber: 505,
+                                                                                        lineNumber: 419,
                                                                                         columnNumber: 35
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 497,
+                                                                                    lineNumber: 411,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 493,
+                                                                            lineNumber: 407,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1314,43 +1220,43 @@ function Configurator() {
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     children: [
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                            className: "text-[9px] text-zinc-500 uppercase tracking-widest font-space font-medium block",
+                                                                                            className: "text-[7px] sm:text-[9px] text-zinc-500 uppercase tracking-widest font-space font-medium block",
                                                                                             children: [
                                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                                     className: "font-kannada",
                                                                                                     children: "ಸ್ವಾಯತ್ತ ದೃಷ್ಟಿ ನೋಡ್"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                                    lineNumber: 515,
+                                                                                                    lineNumber: 429,
                                                                                                     columnNumber: 37
                                                                                                 }, this),
                                                                                                 " / Autonomous Vision Node"
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                                            lineNumber: 514,
+                                                                                            lineNumber: 428,
                                                                                             columnNumber: 35
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                                            className: "text-sm font-space font-medium text-white block mt-0.5",
+                                                                                            className: "text-[10px] sm:text-sm font-space font-medium text-white block mt-0.5 leading-tight",
                                                                                             children: renderProductName(cam.name)
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                                            lineNumber: 517,
+                                                                                            lineNumber: 431,
                                                                                             columnNumber: 35
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 513,
+                                                                                    lineNumber: 427,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                    className: "text-[11px] text-zinc-400 font-light leading-relaxed min-h-[44px]",
+                                                                                    className: "text-[9px] sm:text-xs text-zinc-400 font-light leading-relaxed min-h-[30px] line-clamp-2 hidden sm:block",
                                                                                     children: renderProductDescription(cam.description)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 521,
+                                                                                    lineNumber: 435,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1367,43 +1273,43 @@ function Configurator() {
                                                                                                 children: "ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ವೀಕ್ಷಿಸಿ"
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                                lineNumber: 533,
+                                                                                                lineNumber: 447,
                                                                                                 columnNumber: 37
                                                                                             }, this),
                                                                                             " / View Features"
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                                        lineNumber: 526,
+                                                                                        lineNumber: 440,
                                                                                         columnNumber: 35
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 525,
+                                                                                    lineNumber: 439,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 512,
+                                                                            lineNumber: 426,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     ]
                                                                 }, cam.id, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 483,
+                                                                    lineNumber: 397,
                                                                     columnNumber: 29
                                                                 }, this);
                                                             })
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 479,
+                                                            lineNumber: 393,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 471,
+                                                    lineNumber: 385,
                                                     columnNumber: 21
                                                 }, this),
                                                 solarStep === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1416,14 +1322,14 @@ function Configurator() {
                                                                     children: "ಎಲ್‌ಎಫ್‌ಪಿ ಸುರಕ್ಷಿತ ಬ್ಯಾಟರಿಯನ್ನು ಆರಿಸಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 548,
+                                                                    lineNumber: 462,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Choose LFP Safety Battery"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 547,
+                                                            lineNumber: 461,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1434,23 +1340,23 @@ function Configurator() {
                                                                     children: "ಲಿಥಿಯಂ ಐರನ್ ಫಾಸ್ಫೇಟ್ ಸಾಮರ್ಥ್ಯದ ಆಯ್ಕೆಗಳು"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 551,
+                                                                    lineNumber: 465,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Lithium Iron Phosphate capacity options"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 550,
+                                                            lineNumber: 464,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                                                            className: "grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4",
                                                             children: batteries.filter((b)=>b.capacity === '12Ah' || b.capacity === '18Ah').map((bat)=>{
                                                                 const isSelected = store.solarBattery?.id === bat.id;
                                                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     onClick: ()=>store.setSolarBattery(bat),
-                                                                    className: `p-6 rounded-2xl border cursor-pointer transition-all duration-300 flex flex-col justify-between h-40 ${isSelected ? 'bg-electric-emerald/5 border-electric-emerald glow-emerald' : 'bg-zinc-950/60 border-zinc-900 hover:border-zinc-800'}`,
+                                                                    className: `p-4 sm:p-5 rounded-xl border cursor-pointer transition-all duration-300 flex flex-col justify-between h-32 sm:h-36 ${isSelected ? 'bg-electric-emerald/5 border-electric-emerald glow-emerald' : 'bg-zinc-950/60 border-zinc-900 hover:border-zinc-800'}`,
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                             children: [
@@ -1462,69 +1368,69 @@ function Configurator() {
                                                                                             children: "ಥರ್ಮಲ್ ಬ್ಯಾಟರಿ ಪ್ಯಾಕ್"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                                            lineNumber: 569,
+                                                                                            lineNumber: 483,
                                                                                             columnNumber: 35
                                                                                         }, this),
                                                                                         " / Thermal Battery Pack"
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 568,
+                                                                                    lineNumber: 482,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                                    className: "text-lg font-space font-medium text-white mt-1",
+                                                                                    className: "text-xs sm:text-sm font-space font-medium text-white mt-0.5",
                                                                                     children: renderBatteryName(bat.name)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 571,
+                                                                                    lineNumber: 485,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                    className: "text-xs text-zinc-400 mt-2",
+                                                                                    className: "text-[10px] sm:text-xs text-zinc-400 mt-1 line-clamp-2",
                                                                                     children: renderBatteryDescription(bat.description)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 574,
+                                                                                    lineNumber: 488,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 567,
+                                                                            lineNumber: 481,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex justify-between items-center border-t border-zinc-900 pt-3 mt-4",
+                                                                            className: "flex justify-between items-center border-t border-zinc-900/60 pt-2 mt-2",
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "text-xs text-electric-emerald font-space",
                                                                                 children: bat.capacity
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 579,
+                                                                                lineNumber: 493,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 578,
+                                                                            lineNumber: 492,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     ]
                                                                 }, bat.id, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 558,
+                                                                    lineNumber: 472,
                                                                     columnNumber: 29
                                                                 }, this);
                                                             })
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 554,
+                                                            lineNumber: 468,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 546,
+                                                    lineNumber: 460,
                                                     columnNumber: 21
                                                 }, this),
                                                 solarStep === 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1537,14 +1443,14 @@ function Configurator() {
                                                                     children: "ಆಲ್ಬೆಡೋ ಸೌರ ಫಲಕವನ್ನು ಆರಿಸಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 592,
+                                                                    lineNumber: 506,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Choose Albedo Solar Panel"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 591,
+                                                            lineNumber: 505,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1555,23 +1461,23 @@ function Configurator() {
                                                                     children: "ಮೊನೊಕ್ರಿಸ್ಟಲಿನ್ ಉತ್ಪಾದನಾ ಘಟಕಗಳು"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 595,
+                                                                    lineNumber: 509,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Monocrystalline generation elements"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 594,
+                                                            lineNumber: 508,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                                                            className: "grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6",
                                                             children: panels.filter((p)=>p.wattage === '20W' || p.wattage === '40W').map((pan)=>{
                                                                 const isSelected = store.solarPanel?.id === pan.id;
                                                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     onClick: ()=>store.setSolarPanel(pan),
-                                                                    className: `p-6 rounded-2xl border cursor-pointer transition-all duration-300 flex flex-col justify-between h-40 ${isSelected ? 'bg-electric-cyan/5 border-electric-cyan glow-cyan' : 'bg-zinc-950/60 border-zinc-900 hover:border-zinc-800'}`,
+                                                                    className: `p-4 sm:p-5 rounded-xl border cursor-pointer transition-all duration-300 flex flex-col justify-between h-32 sm:h-36 ${isSelected ? 'bg-electric-cyan/5 border-electric-cyan glow-cyan' : 'bg-zinc-950/60 border-zinc-900 hover:border-zinc-800'}`,
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                             children: [
@@ -1583,14 +1489,14 @@ function Configurator() {
                                                                                             children: "ಸಿಲಿಕಾನ್ ಪವರ್ ಜನರೇಟರ್"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                                            lineNumber: 613,
+                                                                                            lineNumber: 527,
                                                                                             columnNumber: 35
                                                                                         }, this),
                                                                                         " / Silicon Power generator"
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 612,
+                                                                                    lineNumber: 526,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1598,7 +1504,7 @@ function Configurator() {
                                                                                     children: renderPanelName(pan.name)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 615,
+                                                                                    lineNumber: 529,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1606,13 +1512,13 @@ function Configurator() {
                                                                                     children: renderPanelDescription(pan.description)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 618,
+                                                                                    lineNumber: 532,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 611,
+                                                                            lineNumber: 525,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1622,30 +1528,30 @@ function Configurator() {
                                                                                 children: pan.wattage
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 623,
+                                                                                lineNumber: 537,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 622,
+                                                                            lineNumber: 536,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     ]
                                                                 }, pan.id, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 602,
+                                                                    lineNumber: 516,
                                                                     columnNumber: 29
                                                                 }, this);
                                                             })
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 598,
+                                                            lineNumber: 512,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 590,
+                                                    lineNumber: 504,
                                                     columnNumber: 21
                                                 }, this),
                                                 solarStep === 4 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1658,14 +1564,14 @@ function Configurator() {
                                                                     children: "ಸಂಗ್ರಹಣಾ ಮೆಮೊರಿ ಕಾರ್ಡ್ ಆರಿಸಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 636,
+                                                                    lineNumber: 550,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Choose Storage Memory Card"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 635,
+                                                            lineNumber: 549,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1676,14 +1582,14 @@ function Configurator() {
                                                                     children: "ಟಿಎಫ್/ಎಸ್‌ಡಿ ಕಾರ್ಡ್ ಸಂಗ್ರಹಣಾ ಸಾಮರ್ಥ್ಯಗಳು"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 639,
+                                                                    lineNumber: 553,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / TF/SD card storage capacities"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 638,
+                                                            lineNumber: 552,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1704,14 +1610,14 @@ function Configurator() {
                                                                                             children: "ಆನ್‌ಬೋರ್ಡ್ ಫ್ಲ್ಯಾಶ್ ಮೆಮೊರಿ"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                                            lineNumber: 657,
+                                                                                            lineNumber: 571,
                                                                                             columnNumber: 35
                                                                                         }, this),
                                                                                         " / Onboard flash memory"
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 656,
+                                                                                    lineNumber: 570,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1719,7 +1625,7 @@ function Configurator() {
                                                                                     children: renderAccessoryName(card.name)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 659,
+                                                                                    lineNumber: 573,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1730,20 +1636,20 @@ function Configurator() {
                                                                                             children: "ನಿರಂತರ ಭದ್ರತಾ ಲೂಪ್ ರೆಕಾರ್ಡಿಂಗ್‌ಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾದ ಹೆಚ್ಚಿನ ವೇಗದ ರೈಟಿಂಗ್ ಸಾಮರ್ಥ್ಯ."
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                                            lineNumber: 663,
+                                                                                            lineNumber: 577,
                                                                                             columnNumber: 35
                                                                                         }, this),
                                                                                         " / High speed write ratings designed for constant security loop recording."
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 662,
+                                                                                    lineNumber: 576,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 655,
+                                                                            lineNumber: 569,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1753,54 +1659,54 @@ function Configurator() {
                                                                                 children: "MicroSD"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 667,
+                                                                                lineNumber: 581,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 666,
+                                                                            lineNumber: 580,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     ]
                                                                 }, card.id, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 646,
+                                                                    lineNumber: 560,
                                                                     columnNumber: 29
                                                                 }, this);
                                                             })
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 642,
+                                                            lineNumber: 556,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 634,
+                                                    lineNumber: 548,
                                                     columnNumber: 21
                                                 }, this),
                                                 solarStep === 5 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                            className: "text-xl text-white mb-6",
+                                                            className: "text-base sm:text-lg text-white mb-4 font-semibold",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "font-kannada",
                                                                     children: "ಹಾರ್ಡ್‌ವೇರ್ ಪರಿಕರಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 680,
+                                                                    lineNumber: 594,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Select Hardware Accessories"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 679,
+                                                            lineNumber: 593,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+                                                            className: "grid grid-cols-1 md:grid-cols-2 gap-3",
                                                             children: accessories.filter((a)=>a.id !== 'acc-sd64' && a.id !== 'acc-sd128').map((acc)=>{
                                                                 const isSelected = store.solarAccessories.some((a)=>a.id === acc.id);
                                                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1812,7 +1718,7 @@ function Configurator() {
                                                                             children: renderAccessoryName(acc.name)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 695,
+                                                                            lineNumber: 609,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1824,55 +1730,55 @@ function Configurator() {
                                                                                     children: "✓"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 698,
+                                                                                    lineNumber: 612,
                                                                                     columnNumber: 50
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 697,
+                                                                                lineNumber: 611,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 696,
+                                                                            lineNumber: 610,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     ]
                                                                 }, acc.id, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 686,
+                                                                    lineNumber: 600,
                                                                     columnNumber: 29
                                                                 }, this);
                                                             })
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 682,
+                                                            lineNumber: 596,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 678,
+                                                    lineNumber: 592,
                                                     columnNumber: 21
                                                 }, this),
                                                 solarStep === 6 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                            className: "text-xl text-white mb-6",
+                                                            className: "text-base sm:text-lg text-white mb-4 font-semibold",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "font-kannada",
                                                                     children: "ಸಿಸ್ಟಮ್ ವಿವರಣೆಯ ಸಾರಾಂಶ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 712,
+                                                                    lineNumber: 626,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / System Specification Summary"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 711,
+                                                            lineNumber: 625,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1889,14 +1795,14 @@ function Configurator() {
                                                                                     children: "ಕ್ಯಾಮೆರಾ ಮಾದರಿ:"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 716,
+                                                                                    lineNumber: 630,
                                                                                     columnNumber: 59
                                                                                 }, this),
                                                                                 " / Camera Model:"
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 716,
+                                                                            lineNumber: 630,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1904,13 +1810,13 @@ function Configurator() {
                                                                             children: renderProductName(store.solarCamera?.name)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 717,
+                                                                            lineNumber: 631,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 715,
+                                                                    lineNumber: 629,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1924,14 +1830,14 @@ function Configurator() {
                                                                                     children: "ಬ್ಯಾಟರಿ ಸಂಗ್ರಹಣೆ:"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 720,
+                                                                                    lineNumber: 634,
                                                                                     columnNumber: 59
                                                                                 }, this),
                                                                                 " / Storage LFP Battery:"
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 720,
+                                                                            lineNumber: 634,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1939,13 +1845,13 @@ function Configurator() {
                                                                             children: renderBatteryName(store.solarBattery?.name)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 721,
+                                                                            lineNumber: 635,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 719,
+                                                                    lineNumber: 633,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1959,14 +1865,14 @@ function Configurator() {
                                                                                     children: "ಹೆಲಿಯೋಸ್ ಸೌರ ಫಲಕ:"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 724,
+                                                                                    lineNumber: 638,
                                                                                     columnNumber: 59
                                                                                 }, this),
                                                                                 " / Generator Helios Panel:"
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 724,
+                                                                            lineNumber: 638,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1974,13 +1880,13 @@ function Configurator() {
                                                                             children: renderPanelName(store.solarPanel?.name)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 725,
+                                                                            lineNumber: 639,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 723,
+                                                                    lineNumber: 637,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1994,14 +1900,14 @@ function Configurator() {
                                                                                     children: "ಮೆಮೊರಿ ಸಂಗ್ರಹಣೆ:"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 728,
+                                                                                    lineNumber: 642,
                                                                                     columnNumber: 59
                                                                                 }, this),
                                                                                 " / TF Memory Storage:"
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 728,
+                                                                            lineNumber: 642,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2009,13 +1915,13 @@ function Configurator() {
                                                                             children: renderAccessoryName(store.solarMemoryCard?.name)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 729,
+                                                                            lineNumber: 643,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 727,
+                                                                    lineNumber: 641,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 store.solarAccessories.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2029,14 +1935,14 @@ function Configurator() {
                                                                                     children: "ಹೆಚ್ಚುವರಿಗಳು:"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 734,
+                                                                                    lineNumber: 648,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 " / Add-ons:"
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 733,
+                                                                            lineNumber: 647,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         store.solarAccessories.map((a)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2045,18 +1951,18 @@ function Configurator() {
                                                                                     children: renderAccessoryName(a.name)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 738,
+                                                                                    lineNumber: 652,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             }, a.id, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 737,
+                                                                                lineNumber: 651,
                                                                                 columnNumber: 31
                                                                             }, this))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 732,
+                                                                    lineNumber: 646,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2070,14 +1976,14 @@ function Configurator() {
                                                                                     children: "ಕಸ್ಟಮ್ ಬೆಲೆ ವಿನಂತಿ"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 746,
+                                                                                    lineNumber: 660,
                                                                                     columnNumber: 29
                                                                                 }, this),
                                                                                 " / Custom Pricing Request"
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 745,
+                                                                            lineNumber: 659,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2085,20 +1991,20 @@ function Configurator() {
                                                                             children: "ನಮ್ಮ ಆಡಳಿತ ತಂಡವು ಈ ತಾಂತ್ರಿಕ ವಿವರಣೆಗಳನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ ಮತ್ತು ಕಸ್ಟಮೈಸ್ ಮಾಡಿದ ಬೆಲೆಯ ಉಲ್ಲೇಖವನ್ನು ಒದಗಿಸಲು ವಾಟ್ಸಾಪ್ ಅಥವಾ ಫೋನ್ ಕರೆ ಮೂಲಕ ನಿಮ್ಮನ್ನು ನೇರವಾಗಿ ಸಂಪರ್ಕಿಸುತ್ತದೆ."
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 748,
+                                                                            lineNumber: 662,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         " / Our administration team will review these technical specifications and contact you directly via WhatsApp or phone call to provide your customized pricing quote."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 744,
+                                                                    lineNumber: 658,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 714,
+                                                            lineNumber: 628,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2110,45 +2016,45 @@ function Configurator() {
                                                                     children: "ಸಂಪರ್ಕ ವಿವರಗಳಿಗೆ ಮುಂದುವರಿಯಿರಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 756,
+                                                                    lineNumber: 670,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Proceed to Contact Details"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 752,
+                                                            lineNumber: 666,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 710,
+                                                    lineNumber: 624,
                                                     columnNumber: 21
                                                 }, this),
                                                 solarStep === 7 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                            className: "text-xl text-white mb-6",
+                                                            className: "text-base sm:text-lg text-white mb-4 font-semibold",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     className: "font-kannada",
                                                                     children: "ಗ್ರಾಹಕ ಸ್ಥಾಪನಾ ವಿನಂತಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 765,
+                                                                    lineNumber: 679,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Customer Installation Request"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 764,
+                                                            lineNumber: 678,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                                             onSubmit: handleSolarSubmit,
-                                                            className: "space-y-4",
+                                                            className: "space-y-3",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "grid grid-cols-1 md:grid-cols-2 gap-4",
@@ -2164,7 +2070,7 @@ function Configurator() {
                                                                             className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-electric-cyan"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 769,
+                                                                            lineNumber: 683,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2178,13 +2084,13 @@ function Configurator() {
                                                                             className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-electric-cyan"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 777,
+                                                                            lineNumber: 691,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 768,
+                                                                    lineNumber: 682,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2200,7 +2106,7 @@ function Configurator() {
                                                                             className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-electric-cyan"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 788,
+                                                                            lineNumber: 702,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2214,13 +2120,13 @@ function Configurator() {
                                                                             className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-electric-cyan"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 795,
+                                                                            lineNumber: 709,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 787,
+                                                                    lineNumber: 701,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2234,7 +2140,7 @@ function Configurator() {
                                                                     className: "w-full bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-electric-cyan"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 805,
+                                                                    lineNumber: 719,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2250,7 +2156,7 @@ function Configurator() {
                                                                             className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 815,
+                                                                            lineNumber: 729,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2263,7 +2169,7 @@ function Configurator() {
                                                                             className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 822,
+                                                                            lineNumber: 736,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2276,13 +2182,13 @@ function Configurator() {
                                                                             className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 829,
+                                                                            lineNumber: 743,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 814,
+                                                                    lineNumber: 728,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2298,7 +2204,7 @@ function Configurator() {
                                                                             className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 839,
+                                                                            lineNumber: 753,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2311,7 +2217,7 @@ function Configurator() {
                                                                             className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 846,
+                                                                            lineNumber: 760,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2324,13 +2230,13 @@ function Configurator() {
                                                                             className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 853,
+                                                                            lineNumber: 767,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 838,
+                                                                    lineNumber: 752,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -2343,7 +2249,7 @@ function Configurator() {
                                                                     className: "w-full bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none resize-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 862,
+                                                                    lineNumber: 776,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -2356,20 +2262,20 @@ function Configurator() {
                                                                     className: "w-full bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none resize-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 870,
+                                                                    lineNumber: 784,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                     type: "submit",
                                                                     disabled: store.isSubmitting,
-                                                                    className: "w-full py-4 rounded-xl font-space text-xs font-semibold text-black bg-gradient-to-r from-electric-cyan to-electric-emerald hover:opacity-90 flex items-center justify-center gap-1.5 cursor-pointer mt-6",
+                                                                    className: "w-full py-3 rounded-lg font-space text-xs font-semibold text-black bg-gradient-to-r from-electric-cyan to-electric-emerald hover:opacity-90 flex items-center justify-center gap-1.5 cursor-pointer mt-4",
                                                                     children: store.isSubmitting ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$refresh$2d$cw$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__RefreshCw$3e$__["RefreshCw"], {
                                                                                 className: "w-4 h-4 animate-spin"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 884,
+                                                                                lineNumber: 798,
                                                                                 columnNumber: 31
                                                                             }, this),
                                                                             " ",
@@ -2378,7 +2284,7 @@ function Configurator() {
                                                                                 children: "ಉಲ್ಲೇಖವನ್ನು ಉಳಿಸಲಾಗುತ್ತಿದೆ..."
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 884,
+                                                                                lineNumber: 798,
                                                                                 columnNumber: 78
                                                                             }, this),
                                                                             " / Saving quote..."
@@ -2390,7 +2296,7 @@ function Configurator() {
                                                                                 children: "ಸೌರ ಉಲ್ಲೇಖ ಸಲ್ಲಿಸಿ ಮತ್ತು ಪಿಡಿಎಫ್ ರಚಿಸಿ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 886,
+                                                                                lineNumber: 800,
                                                                                 columnNumber: 31
                                                                             }, this),
                                                                             " / Submit Solar Quote & Generate PDF"
@@ -2398,51 +2304,51 @@ function Configurator() {
                                                                     }, void 0, true)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 878,
+                                                                    lineNumber: 792,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 767,
+                                                            lineNumber: 681,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 763,
+                                                    lineNumber: 677,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 446,
+                                            lineNumber: 360,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Configurator.jsx",
-                                    lineNumber: 420,
+                                    lineNumber: 334,
                                     columnNumber: 15
                                 }, this) : /* ELECTRIC CCTV PAGE */ /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "glass-panel p-6 md:p-8 rounded-3xl border border-white/5 bg-zinc-950/20",
+                                    className: "glass-panel p-4 md:p-6 rounded-2xl border border-white/5 bg-zinc-950/20",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl text-white mb-6",
+                                            className: "text-base sm:text-lg text-white mb-4 font-semibold",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "font-kannada",
                                                     children: "ವಿದ್ಯುತ್ ಸಿಸಿಟಿವಿ ಕಾನ್ಫಿಗರೇಶನ್"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 900,
+                                                    lineNumber: 814,
                                                     columnNumber: 19
                                                 }, this),
                                                 " / Configure Electric CCTV"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 899,
+                                            lineNumber: 813,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -2459,14 +2365,14 @@ function Configurator() {
                                                                     children: "ಕ್ಯಾಮೆರಾ ಲೈನ್ ಆಯ್ಕೆಮಾಡಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 908,
+                                                                    lineNumber: 822,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " / Choose Camera Line"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 907,
+                                                            lineNumber: 821,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2478,15 +2384,15 @@ function Configurator() {
                                                             ].map((cls)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                     type: "button",
                                                                     onClick: ()=>store.setElectricClass(cls),
-                                                                    className: `py-3 rounded-xl border font-space text-xs uppercase tracking-wider transition-all duration-300 cursor-pointer ${store.electricClass === cls ? 'border-electric-cyan bg-electric-cyan/5 text-electric-cyan glow-cyan' : 'border-zinc-900 bg-zinc-950/40 text-zinc-400 hover:border-zinc-800'}`,
+                                                                    className: `py-2.5 rounded-lg border font-space text-[10px] sm:text-xs uppercase tracking-wider transition-all duration-300 cursor-pointer ${store.electricClass === cls ? 'border-electric-cyan bg-electric-cyan/5 text-electric-cyan glow-cyan' : 'border-zinc-900 bg-zinc-950/40 text-zinc-400 hover:border-zinc-800'}`,
                                                                     children: cls === 'WiFi Camera' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "font-kannada block text-[10px] normal-case",
+                                                                                className: "font-kannada block text-[8px] normal-case",
                                                                                 children: "ವೈಫೈ ಕ್ಯಾಮೆರಾ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 922,
+                                                                                lineNumber: 836,
                                                                                 columnNumber: 54
                                                                             }, this),
                                                                             " WiFi Camera"
@@ -2494,11 +2400,11 @@ function Configurator() {
                                                                     }, void 0, true) : cls === 'IP Camera' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "font-kannada block text-[10px] normal-case",
+                                                                                className: "font-kannada block text-[8px] normal-case",
                                                                                 children: "ಐಪಿ ಕ್ಯಾಮೆರಾ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 923,
+                                                                                lineNumber: 837,
                                                                                 columnNumber: 52
                                                                             }, this),
                                                                             " IP Camera"
@@ -2506,11 +2412,11 @@ function Configurator() {
                                                                     }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "font-kannada block text-[10px] normal-case",
+                                                                                className: "font-kannada block text-[8px] normal-case",
                                                                                 children: "ಐಆರ್ ಕ್ಯಾಮೆರಾ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 924,
+                                                                                lineNumber: 838,
                                                                                 columnNumber: 30
                                                                             }, this),
                                                                             " IR Camera"
@@ -2518,18 +2424,18 @@ function Configurator() {
                                                                     }, void 0, true)
                                                                 }, cls, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 912,
+                                                                    lineNumber: 826,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 910,
+                                                            lineNumber: 824,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 906,
+                                                    lineNumber: 820,
                                                     columnNumber: 19
                                                 }, this),
                                                 store.electricClass === 'WiFi Camera' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2542,38 +2448,38 @@ function Configurator() {
                                                                     children: "ವೈಫೈ ಕ್ಯಾಮೆರಾ ಮಾದರಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 934,
+                                                                    lineNumber: 848,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Select WiFi Camera Model"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 933,
+                                                            lineNumber: 847,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "grid grid-cols-2 sm:grid-cols-5 gap-3",
+                                                            className: "grid grid-cols-2 sm:grid-cols-5 gap-2.5",
                                                             children: solarCameras.map((cam)=>{
                                                                 const isSelected = store.solarCamera?.id === cam.id;
                                                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     onClick: ()=>store.setSolarCamera(cam),
-                                                                    className: `p-3 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col items-center justify-between text-center ${isSelected ? 'bg-electric-cyan/5 border-electric-cyan glow-cyan' : 'bg-zinc-950/60 border-zinc-900 hover:border-zinc-800'}`,
+                                                                    className: `p-2 sm:p-2.5 rounded-xl border transition-all duration-300 cursor-pointer flex flex-col items-center justify-between text-center ${isSelected ? 'bg-electric-cyan/5 border-electric-cyan glow-cyan' : 'bg-zinc-950/60 border-zinc-900 hover:border-zinc-800'}`,
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "w-12 h-12 bg-zinc-950 rounded-xl overflow-hidden flex items-center justify-center p-1 mb-2",
+                                                                            className: "w-10 h-10 bg-zinc-950 rounded-lg overflow-hidden flex items-center justify-center p-1 mb-1.5",
                                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                                                 src: cam.image,
                                                                                 alt: cam.name,
                                                                                 className: "w-full h-full object-contain"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 950,
+                                                                                lineNumber: 864,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 949,
+                                                                            lineNumber: 863,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2581,25 +2487,25 @@ function Configurator() {
                                                                             children: renderProductName(cam.name)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 952,
+                                                                            lineNumber: 866,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     ]
                                                                 }, cam.id, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 940,
+                                                                    lineNumber: 854,
                                                                     columnNumber: 29
                                                                 }, this);
                                                             })
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 936,
+                                                            lineNumber: 850,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 932,
+                                                    lineNumber: 846,
                                                     columnNumber: 21
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
@@ -2611,14 +2517,14 @@ function Configurator() {
                                                                     children: "ರೆಸಲ್ಯೂಶನ್ ದರ್ಜೆ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 963,
+                                                                    lineNumber: 877,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Resolution Grade"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 962,
+                                                            lineNumber: 876,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2633,18 +2539,18 @@ function Configurator() {
                                                                     children: res
                                                                 }, res, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 967,
+                                                                    lineNumber: 881,
                                                                     columnNumber: 27
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 965,
+                                                            lineNumber: 879,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 961,
+                                                    lineNumber: 875,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2657,14 +2563,14 @@ function Configurator() {
                                                                     children: "ಕ್ಯಾಮೆರಾಗಳ ಸಂಖ್ಯೆ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 987,
+                                                                    lineNumber: 901,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " / Camera Quantity Nodes"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 986,
+                                                            lineNumber: 900,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2687,18 +2593,18 @@ function Configurator() {
                                                                     children: qty
                                                                 }, qty, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 991,
+                                                                    lineNumber: 905,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 989,
+                                                            lineNumber: 903,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 985,
+                                                    lineNumber: 899,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2714,14 +2620,14 @@ function Configurator() {
                                                                             children: "ಸಂಗ್ರಹಣಾ ಸಾಮರ್ಥ್ಯ"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 1011,
+                                                                            lineNumber: 925,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         " / Storage Capacity"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1010,
+                                                                    lineNumber: 924,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -2735,7 +2641,7 @@ function Configurator() {
                                                                                 children: "64GB ಮೆಮೊರಿ ಕಾರ್ಡ್ / 64GB Memory Card"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 1020,
+                                                                                lineNumber: 934,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -2743,7 +2649,7 @@ function Configurator() {
                                                                                 children: "128GB ಮೆಮೊರಿ ಕಾರ್ಡ್ / 128GB Memory Card"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 1021,
+                                                                                lineNumber: 935,
                                                                                 columnNumber: 29
                                                                             }, this)
                                                                         ]
@@ -2754,7 +2660,7 @@ function Configurator() {
                                                                                 children: "500GB ಸಿಸಿಟಿವಿ ಸಂಗ್ರಹಣೆ / 500GB CCTV Storage"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 1025,
+                                                                                lineNumber: 939,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -2762,7 +2668,7 @@ function Configurator() {
                                                                                 children: "1TB ಸಿಸಿಟಿವಿ ಸಂಗ್ರಹಣೆ / 1TB CCTV Storage"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 1026,
+                                                                                lineNumber: 940,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -2770,7 +2676,7 @@ function Configurator() {
                                                                                 children: "2TB ಸಿಸಿಟಿವಿ ಸಂಗ್ರಹಣೆ / 2TB CCTV Storage"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 1027,
+                                                                                lineNumber: 941,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -2778,20 +2684,20 @@ function Configurator() {
                                                                                 children: "4TB ಸಿಸಿಟಿವಿ ಸಂಗ್ರಹಣೆ / 4TB CCTV Storage"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 1028,
+                                                                                lineNumber: 942,
                                                                                 columnNumber: 29
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1013,
+                                                                    lineNumber: 927,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1009,
+                                                            lineNumber: 923,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2804,14 +2710,14 @@ function Configurator() {
                                                                             children: "ಸ್ಥಾಪನಾ ವ್ಯಾಪ್ತಿ"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 1036,
+                                                                            lineNumber: 950,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         " / Installation Scope"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1035,
+                                                                    lineNumber: 949,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -2824,7 +2730,7 @@ function Configurator() {
                                                                             children: "ಒಳಾಂಗಣ ಮಾತ್ರ / Indoor Only"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 1043,
+                                                                            lineNumber: 957,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -2832,7 +2738,7 @@ function Configurator() {
                                                                             children: "ಹೊರಾಂಗಣ ಮಾತ್ರ / Outdoor Only"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 1044,
+                                                                            lineNumber: 958,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -2840,25 +2746,25 @@ function Configurator() {
                                                                             children: "ಮಿಶ್ರ ಒಳಾಂಗಣ ಮತ್ತು ಹೊರಾಂಗಣ / Mixed Indoor & Outdoor"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 1045,
+                                                                            lineNumber: 959,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1038,
+                                                                    lineNumber: 952,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1034,
+                                                            lineNumber: 948,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1008,
+                                                    lineNumber: 922,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2872,14 +2778,14 @@ function Configurator() {
                                                                     children: "ಕಸ್ಟಮ್ ಬೆಲೆ ಉಲ್ಲೇಖ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1053,
+                                                                    lineNumber: 967,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " / Custom Pricing Quote"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1052,
+                                                            lineNumber: 966,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2887,14 +2793,14 @@ function Configurator() {
                                                             children: "ನಮ್ಮ ಆಡಳಿತ ತಂಡವು ಮಿಶ್ರ ಲೇಔಟ್ ನೋಡ್ ಸಂಖ್ಯೆಯನ್ನು ಪರಿಶೀಲಿಸಲು ಮತ್ತು ಕಸ್ಟಮ್ ಇನ್‌ವಾಯ್ಸ್ ಉಲ್ಲೇಖವನ್ನು ಒದಗಿಸಲು ವಾಟ್ಸಾಪ್ ಅಥವಾ ಫೋನ್ ಕರೆ ಮೂಲಕ ಸಂಪರ್ಕಿಸುತ್ತದೆ."
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1055,
+                                                            lineNumber: 969,
                                                             columnNumber: 21
                                                         }, this),
                                                         " / Our admin team will reach out via WhatsApp or phone call to review your mixed layout node count and supply a custom invoice quote."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1051,
+                                                    lineNumber: 965,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2908,14 +2814,14 @@ function Configurator() {
                                                                     children: "ಸ್ಥಾಪನಾ ವಿವರಗಳು"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1061,
+                                                                    lineNumber: 975,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " / Installation details"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1060,
+                                                            lineNumber: 974,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2932,7 +2838,7 @@ function Configurator() {
                                                                     className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1065,
+                                                                    lineNumber: 979,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2946,13 +2852,13 @@ function Configurator() {
                                                                     className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1073,
+                                                                    lineNumber: 987,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1064,
+                                                            lineNumber: 978,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2968,7 +2874,7 @@ function Configurator() {
                                                                     className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1084,
+                                                                    lineNumber: 998,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2982,13 +2888,13 @@ function Configurator() {
                                                                     className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1091,
+                                                                    lineNumber: 1005,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1083,
+                                                            lineNumber: 997,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -3002,7 +2908,7 @@ function Configurator() {
                                                             className: "w-full bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1101,
+                                                            lineNumber: 1015,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3018,7 +2924,7 @@ function Configurator() {
                                                                     className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1111,
+                                                                    lineNumber: 1025,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -3031,7 +2937,7 @@ function Configurator() {
                                                                     className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1118,
+                                                                    lineNumber: 1032,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -3044,13 +2950,13 @@ function Configurator() {
                                                                     className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1125,
+                                                                    lineNumber: 1039,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1110,
+                                                            lineNumber: 1024,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3066,7 +2972,7 @@ function Configurator() {
                                                                     className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1135,
+                                                                    lineNumber: 1049,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -3079,19 +2985,19 @@ function Configurator() {
                                                                     className: "bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1142,
+                                                                    lineNumber: 1056,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1134,
+                                                            lineNumber: 1048,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1059,
+                                                    lineNumber: 973,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3104,7 +3010,7 @@ function Configurator() {
                                                                 className: "w-4 h-4 animate-spin"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1158,
+                                                                lineNumber: 1072,
                                                                 columnNumber: 25
                                                             }, this),
                                                             " ",
@@ -3113,7 +3019,7 @@ function Configurator() {
                                                                 children: "ಆರ್ಡರ್ ಉಳಿಸಲಾಗುತ್ತಿದೆ..."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1158,
+                                                                lineNumber: 1072,
                                                                 columnNumber: 72
                                                             }, this),
                                                             " / Saving order..."
@@ -3125,7 +3031,7 @@ function Configurator() {
                                                                 children: "ಸ್ಥಾಪನೆ ಬುಕ್ ಮಾಡಿ ಮತ್ತು ಉಲ್ಲೇಖವನ್ನು ಪಡೆಯಿರಿ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1160,
+                                                                lineNumber: 1074,
                                                                 columnNumber: 25
                                                             }, this),
                                                             " / Book Installation & Generate Quote"
@@ -3133,24 +3039,24 @@ function Configurator() {
                                                     }, void 0, true)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1152,
+                                                    lineNumber: 1066,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 903,
+                                            lineNumber: 817,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Configurator.jsx",
-                                    lineNumber: 898,
+                                    lineNumber: 812,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 416,
+                                lineNumber: 330,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3167,14 +3073,14 @@ function Configurator() {
                                                         children: "ಕಾನ್ಫಿಗರೇಶನ್ ರೆಂಡರರ್"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1173,
+                                                        lineNumber: 1087,
                                                         columnNumber: 17
                                                     }, this),
                                                     " / Configuration Renderer"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 1172,
+                                                lineNumber: 1086,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3185,20 +3091,20 @@ function Configurator() {
                                                         children: "ತ್ವರಿತ ವೀಕ್ಷಣೆ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1176,
+                                                        lineNumber: 1090,
                                                         columnNumber: 17
                                                     }, this),
                                                     " / Instant view"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 1175,
+                                                lineNumber: 1089,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 1171,
+                                        lineNumber: 1085,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3208,7 +3114,7 @@ function Configurator() {
                                                 className: "absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 1182,
+                                                lineNumber: 1096,
                                                 columnNumber: 15
                                             }, this),
                                             store.configType === 'solar' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -3217,7 +3123,7 @@ function Configurator() {
                                                 className: "w-full h-full object-contain filter drop-shadow-[0_10px_15px_rgba(0,245,255,0.15)] animate-float relative z-0"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 1186,
+                                                lineNumber: 1100,
                                                 columnNumber: 17
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: getElectricCameraImage(),
@@ -3225,7 +3131,7 @@ function Configurator() {
                                                 className: "w-full h-full object-contain filter drop-shadow-[0_10px_15px_rgba(0,245,255,0.15)] animate-float relative z-0"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 1192,
+                                                lineNumber: 1106,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3238,7 +3144,7 @@ function Configurator() {
                                                                 className: "w-1.5 h-1.5 rounded-full bg-electric-cyan animate-ping"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1202,
+                                                                lineNumber: 1116,
                                                                 columnNumber: 19
                                                             }, this),
                                                             store.configType === 'solar' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -3248,7 +3154,7 @@ function Configurator() {
                                                                         children: "ಸೌರ ಲೂಪ್"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                        lineNumber: 1203,
+                                                                        lineNumber: 1117,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     " / Solar Loop"
@@ -3260,7 +3166,7 @@ function Configurator() {
                                                                         children: "ಗ್ರಿಡ್ ಲೂಪ್"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                        lineNumber: 1203,
+                                                                        lineNumber: 1117,
                                                                         columnNumber: 120
                                                                     }, this),
                                                                     " / Grid Loop"
@@ -3269,7 +3175,7 @@ function Configurator() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1201,
+                                                        lineNumber: 1115,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3280,7 +3186,7 @@ function Configurator() {
                                                                     children: "ಸೌರ ಸಿಸಿಟಿವಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1206,
+                                                                    lineNumber: 1120,
                                                                     columnNumber: 53
                                                                 }, this),
                                                                 " / Solar CCTV"
@@ -3292,7 +3198,7 @@ function Configurator() {
                                                                     children: "ವಿದ್ಯುತ್ ಸಿಸಿಟಿವಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1206,
+                                                                    lineNumber: 1120,
                                                                     columnNumber: 124
                                                                 }, this),
                                                                 " / Electric CCTV"
@@ -3300,19 +3206,19 @@ function Configurator() {
                                                         }, void 0, true)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1205,
+                                                        lineNumber: 1119,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 1200,
+                                                lineNumber: 1114,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 1181,
+                                        lineNumber: 1095,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3326,14 +3232,14 @@ function Configurator() {
                                                         children: "ಕಾನ್ಫಿಗರೇಶನ್ ವಿವರಣೆಗಳು"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1214,
+                                                        lineNumber: 1128,
                                                         columnNumber: 17
                                                     }, this),
                                                     " / Configuration specifications"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 1213,
+                                                lineNumber: 1127,
                                                 columnNumber: 15
                                             }, this),
                                             store.configType === 'solar' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -3349,14 +3255,14 @@ function Configurator() {
                                                                         children: "ಕ್ಯಾಮೆರಾ ನೋಡ್:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                        lineNumber: 1220,
+                                                                        lineNumber: 1134,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     " / Camera Node:"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1220,
+                                                                lineNumber: 1134,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3364,13 +3270,13 @@ function Configurator() {
                                                                 children: renderProductName(store.solarCamera?.name)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1221,
+                                                                lineNumber: 1135,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1219,
+                                                        lineNumber: 1133,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3384,14 +3290,14 @@ function Configurator() {
                                                                         children: "ಬ್ಯಾಟರಿ ಸಂಗ್ರಹಣೆ:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                        lineNumber: 1224,
+                                                                        lineNumber: 1138,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     " / LFP Battery Storage:"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1224,
+                                                                lineNumber: 1138,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3404,13 +3310,13 @@ function Configurator() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1225,
+                                                                lineNumber: 1139,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1223,
+                                                        lineNumber: 1137,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3424,14 +3330,14 @@ function Configurator() {
                                                                         children: "ಸೌರ ಫಲಕ:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                        lineNumber: 1228,
+                                                                        lineNumber: 1142,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     " / Albedo Solar input:"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1228,
+                                                                lineNumber: 1142,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3444,13 +3350,13 @@ function Configurator() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1229,
+                                                                lineNumber: 1143,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1227,
+                                                        lineNumber: 1141,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3464,14 +3370,14 @@ function Configurator() {
                                                                         children: "ಮೆಮೊರಿ ಸಂಗ್ರಹಣೆ:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                        lineNumber: 1232,
+                                                                        lineNumber: 1146,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     " / TF Memory Storage:"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1232,
+                                                                lineNumber: 1146,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3479,13 +3385,13 @@ function Configurator() {
                                                                 children: renderAccessoryName(store.solarMemoryCard?.name)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1233,
+                                                                lineNumber: 1147,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1231,
+                                                        lineNumber: 1145,
                                                         columnNumber: 19
                                                     }, this),
                                                     store.solarAccessories.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3499,14 +3405,14 @@ function Configurator() {
                                                                         children: "ಹೆಚ್ಚುವರಿಗಳು:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                        lineNumber: 1238,
+                                                                        lineNumber: 1152,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     " / Add-ons:"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1237,
+                                                                lineNumber: 1151,
                                                                 columnNumber: 23
                                                             }, this),
                                                             store.solarAccessories.map((a)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3520,7 +3426,7 @@ function Configurator() {
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 1242,
+                                                                            lineNumber: 1156,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3531,26 +3437,26 @@ function Configurator() {
                                                                                     children: "ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                                    lineNumber: 1243,
+                                                                                    lineNumber: 1157,
                                                                                     columnNumber: 59
                                                                                 }, this),
                                                                                 " / Selected"
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 1243,
+                                                                            lineNumber: 1157,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, a.id, true, {
                                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                                    lineNumber: 1241,
+                                                                    lineNumber: 1155,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1236,
+                                                        lineNumber: 1150,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
@@ -3567,14 +3473,14 @@ function Configurator() {
                                                                         children: "ಕ್ಯಾಮೆರಾ ಶ್ರೇಣಿ:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                        lineNumber: 1252,
+                                                                        lineNumber: 1166,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     " / Category Line:"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1252,
+                                                                lineNumber: 1166,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3587,7 +3493,7 @@ function Configurator() {
                                                                                 children: "ವೈಫೈ ಕ್ಯಾಮೆರಾ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 1254,
+                                                                                lineNumber: 1168,
                                                                                 columnNumber: 66
                                                                             }, this),
                                                                             " / WiFi Camera"
@@ -3599,7 +3505,7 @@ function Configurator() {
                                                                                 children: "ಐಪಿ ಕ್ಯಾಮೆರಾ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 1255,
+                                                                                lineNumber: 1169,
                                                                                 columnNumber: 64
                                                                             }, this),
                                                                             " / IP Camera"
@@ -3611,7 +3517,7 @@ function Configurator() {
                                                                                 children: "ಐಆರ್ ಕ್ಯಾಮೆರಾ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                                lineNumber: 1256,
+                                                                                lineNumber: 1170,
                                                                                 columnNumber: 26
                                                                             }, this),
                                                                             " / IR Camera"
@@ -3625,20 +3531,20 @@ function Configurator() {
                                                                         children: "ಯುನಿಟ್‌ಗಳು"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                        lineNumber: 1256,
+                                                                        lineNumber: 1170,
                                                                         columnNumber: 115
                                                                     }, this),
                                                                     " / units)"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1253,
+                                                                lineNumber: 1167,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1251,
+                                                        lineNumber: 1165,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3652,14 +3558,14 @@ function Configurator() {
                                                                         children: "ಸಂಗ್ರಹಣಾ ಗಾತ್ರ:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                                        lineNumber: 1260,
+                                                                        lineNumber: 1174,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     " / Storage Size:"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1260,
+                                                                lineNumber: 1174,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3667,13 +3573,13 @@ function Configurator() {
                                                                 children: store.electricStorage
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1261,
+                                                                lineNumber: 1175,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1259,
+                                                        lineNumber: 1173,
                                                         columnNumber: 19
                                                     }, this),
                                                     store.getElectricBreakdown().dvrModel && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3688,7 +3594,7 @@ function Configurator() {
                                                                             children: "ಡಿವಿಆರ್ ರ್ಯಾಕ್:"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 1266,
+                                                                            lineNumber: 1180,
                                                                             columnNumber: 84
                                                                         }, this),
                                                                         " / DVR Rack:"
@@ -3700,7 +3606,7 @@ function Configurator() {
                                                                             children: "ಎನ್‌ವಿಆರ್ ರ್ಯಾಕ್:"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                                            lineNumber: 1266,
+                                                                            lineNumber: 1180,
                                                                             columnNumber: 157
                                                                         }, this),
                                                                         " / NVR Rack:"
@@ -3708,7 +3614,7 @@ function Configurator() {
                                                                 }, void 0, true)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1265,
+                                                                lineNumber: 1179,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3716,13 +3622,13 @@ function Configurator() {
                                                                 children: store.getElectricBreakdown().dvrModel
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                                lineNumber: 1268,
+                                                                lineNumber: 1182,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1264,
+                                                        lineNumber: 1178,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
@@ -3730,25 +3636,25 @@ function Configurator() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Configurator.jsx",
-                                        lineNumber: 1212,
+                                        lineNumber: 1126,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 1170,
+                                lineNumber: 1084,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Configurator.jsx",
-                        lineNumber: 413,
+                        lineNumber: 327,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Configurator.jsx",
-                lineNumber: 376,
+                lineNumber: 290,
                 columnNumber: 7
             }, this),
             videoModalUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3763,12 +3669,12 @@ function Configurator() {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 1292,
+                                lineNumber: 1206,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Configurator.jsx",
-                            lineNumber: 1288,
+                            lineNumber: 1202,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
@@ -3778,18 +3684,18 @@ function Configurator() {
                             className: "w-full h-full object-cover"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Configurator.jsx",
-                            lineNumber: 1294,
+                            lineNumber: 1208,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Configurator.jsx",
-                    lineNumber: 1287,
+                    lineNumber: 1201,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Configurator.jsx",
-                lineNumber: 1286,
+                lineNumber: 1200,
                 columnNumber: 9
             }, this),
             previewCamera && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3804,12 +3710,12 @@ function Configurator() {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Configurator.jsx",
-                                lineNumber: 1312,
+                                lineNumber: 1226,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Configurator.jsx",
-                            lineNumber: 1308,
+                            lineNumber: 1222,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3826,12 +3732,12 @@ function Configurator() {
                                                 className: "w-full h-full object-contain"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 1319,
+                                                lineNumber: 1233,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 1318,
+                                            lineNumber: 1232,
                                             columnNumber: 17
                                         }, this),
                                         previewCamera.videoUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3845,7 +3751,7 @@ function Configurator() {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1329,
+                                                    lineNumber: 1243,
                                                     columnNumber: 21
                                                 }, this),
                                                 " ",
@@ -3854,20 +3760,20 @@ function Configurator() {
                                                     children: "ಡೆಮೊ ಪ್ಲೇ ಮಾಡಿ"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1329,
+                                                    lineNumber: 1243,
                                                     columnNumber: 50
                                                 }, this),
                                                 " / Play Demo"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 1322,
+                                            lineNumber: 1236,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Configurator.jsx",
-                                    lineNumber: 1317,
+                                    lineNumber: 1231,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3884,7 +3790,7 @@ function Configurator() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1337,
+                                                    lineNumber: 1251,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -3892,7 +3798,7 @@ function Configurator() {
                                                     children: renderProductName(previewCamera.name)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1340,
+                                                    lineNumber: 1254,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3903,7 +3809,7 @@ function Configurator() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1341,
+                                                    lineNumber: 1255,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3911,13 +3817,13 @@ function Configurator() {
                                                     children: renderProductDescription(previewCamera.description || previewCamera.shortDescription)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1343,
+                                                    lineNumber: 1257,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 1336,
+                                            lineNumber: 1250,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3931,7 +3837,7 @@ function Configurator() {
                                                             children: "ರಾತ್ರಿ ದೃಷ್ಟಿ:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1350,
+                                                            lineNumber: 1264,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3939,13 +3845,13 @@ function Configurator() {
                                                             children: renderBilingual(previewCamera.features?.nightVision || 'N/A')
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1351,
+                                                            lineNumber: 1265,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1349,
+                                                    lineNumber: 1263,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3956,7 +3862,7 @@ function Configurator() {
                                                             children: "ಆಪ್ಟಿಕಲ್ ಜೂಮ್:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1354,
+                                                            lineNumber: 1268,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3964,13 +3870,13 @@ function Configurator() {
                                                             children: renderBilingual(previewCamera.features?.zoom || 'N/A')
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1355,
+                                                            lineNumber: 1269,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1353,
+                                                    lineNumber: 1267,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3981,7 +3887,7 @@ function Configurator() {
                                                             children: "ಎಐ ಪತ್ತೆ:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1358,
+                                                            lineNumber: 1272,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3989,13 +3895,13 @@ function Configurator() {
                                                             children: renderBilingual(previewCamera.features?.humanDetection || 'N/A')
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1359,
+                                                            lineNumber: 1273,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1357,
+                                                    lineNumber: 1271,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4006,7 +3912,7 @@ function Configurator() {
                                                             children: "ಚಲನೆಯ ಸಂವೇದಕ:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1362,
+                                                            lineNumber: 1276,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4014,13 +3920,13 @@ function Configurator() {
                                                             children: renderBilingual(previewCamera.features?.motionDetection || 'N/A')
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1363,
+                                                            lineNumber: 1277,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1361,
+                                                    lineNumber: 1275,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4031,7 +3937,7 @@ function Configurator() {
                                                             children: "ಇಂಟರ್‌ಕಾಮ್ ಆಡಿಯೋ:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1366,
+                                                            lineNumber: 1280,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4039,13 +3945,13 @@ function Configurator() {
                                                             children: renderBilingual(previewCamera.features?.twoWayAudio || 'N/A')
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1367,
+                                                            lineNumber: 1281,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1365,
+                                                    lineNumber: 1279,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4056,7 +3962,7 @@ function Configurator() {
                                                             children: "ವಾರಂಟಿ ನಿಯಮಗಳು:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1370,
+                                                            lineNumber: 1284,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4064,19 +3970,19 @@ function Configurator() {
                                                             children: previewCamera.warrantyDetails || renderBilingual(previewCamera.features?.warranty || '5 Years')
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Configurator.jsx",
-                                                            lineNumber: 1371,
+                                                            lineNumber: 1285,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Configurator.jsx",
-                                                    lineNumber: 1369,
+                                                    lineNumber: 1283,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 1348,
+                                            lineNumber: 1262,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4094,48 +4000,48 @@ function Configurator() {
                                                         children: "ಆಯ್ಕೆಮಾಡಿ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Configurator.jsx",
-                                                        lineNumber: 1384,
+                                                        lineNumber: 1298,
                                                         columnNumber: 21
                                                     }, this),
                                                     " / Select Camera Node"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Configurator.jsx",
-                                                lineNumber: 1376,
+                                                lineNumber: 1290,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Configurator.jsx",
-                                            lineNumber: 1375,
+                                            lineNumber: 1289,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Configurator.jsx",
-                                    lineNumber: 1335,
+                                    lineNumber: 1249,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Configurator.jsx",
-                            lineNumber: 1315,
+                            lineNumber: 1229,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Configurator.jsx",
-                    lineNumber: 1307,
+                    lineNumber: 1221,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Configurator.jsx",
-                lineNumber: 1306,
+                lineNumber: 1220,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Configurator.jsx",
-        lineNumber: 375,
+        lineNumber: 289,
         columnNumber: 5
     }, this);
 }

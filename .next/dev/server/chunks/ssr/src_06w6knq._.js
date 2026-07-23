@@ -1196,6 +1196,11 @@ const useConfiguratorStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f
         setActiveTab: (tab)=>set({
                 activeTab: tab
             }),
+        // Language setting: 'kn' (Bilingual Kannada + English), 'en' (English only)
+        language: 'kn',
+        setLanguage: (lang)=>set({
+                language: lang
+            }),
         // Toasts alert array
         toasts: [],
         addToast: (message, type = 'success')=>{

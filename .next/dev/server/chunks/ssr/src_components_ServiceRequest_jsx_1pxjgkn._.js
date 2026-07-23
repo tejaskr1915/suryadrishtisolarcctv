@@ -10,6 +10,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$dbMock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/dbMock.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/store/useConfiguratorStore.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/translate.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield.mjs [app-ssr] (ecmascript) <export default as Shield>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$battery$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Battery$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/battery.mjs [app-ssr] (ecmascript) <export default as Battery>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sun.mjs [app-ssr] (ecmascript) <export default as Sun>");
@@ -25,52 +26,20 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-const renderBilingual = (text)=>{
-    if (typeof text !== 'string') return text;
-    if (text.includes(' / ')) {
-        const [kn, en] = text.split(' / ');
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "font-kannada",
-                    children: kn
-                }, void 0, false, {
-                    fileName: "[project]/src/components/ServiceRequest.jsx",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-zinc-500 font-light mx-1",
-                    children: "/"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/ServiceRequest.jsx",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0)),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    children: en
-                }, void 0, false, {
-                    fileName: "[project]/src/components/ServiceRequest.jsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0))
-            ]
-        }, void 0, true);
-    }
-    return text;
-};
-const renderIssueType = (type)=>{
-    const translations = {
-        'Camera': 'ಕ್ಯಾಮೆರಾ / Camera',
-        'Battery': 'ಬ್ಯಾಟರಿ / Battery',
-        'Solar': 'ಸೌರ ಫಲಕ / Solar',
-        'Recorder': 'ರೆಕಾರ್ಡರ್ / Recorder',
-        'Network': 'ನೆಟ್‌ವರ್ಕ್ / Network'
-    };
-    return renderBilingual(translations[type] || type);
-};
+;
 function ServiceRequest() {
     const store = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$useConfiguratorStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useConfiguratorStore"])();
+    const renderBilingual = (text)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$translate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["t"])(text, store.language);
+    const renderIssueType = (type)=>{
+        const translations = {
+            'Camera': 'ಕ್ಯಾಮೆರಾ / Camera',
+            'Battery': 'ಬ್ಯಾಟರಿ / Battery',
+            'Solar': 'ಸೌರ ಫಲಕ / Solar',
+            'Recorder': 'ರೆಕಾರ್ಡರ್ / Recorder',
+            'Network': 'ನೆಟ್‌ವರ್ಕ್ / Network'
+        };
+        return renderBilingual(translations[type] || type);
+    };
     const [activeReqs, setActiveReqs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [selectedReq, setSelectedReq] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     // Load ticket items
@@ -119,7 +88,7 @@ function ServiceRequest() {
                             children: "ಸಲ್ಲಿಸಲಾಗಿದೆ"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 78,
+                            lineNumber: 66,
                             columnNumber: 17
                         }, this),
                         " / Submitted"
@@ -132,7 +101,7 @@ function ServiceRequest() {
                             children: "ಸೂಪಬೇಸ್‌ನಲ್ಲಿ ಟಿಕೆಟ್ ದಾಖಲಿಸಲಾಗಿದೆ"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 79,
+                            lineNumber: 67,
                             columnNumber: 18
                         }, this),
                         " / Ticket Lodged in Supabase"
@@ -145,7 +114,7 @@ function ServiceRequest() {
                             children: "ಬೆಂಬಲ ಚಾನಲ್‌ಗೆ ಎಚ್ಚರಿಕೆ ಅಧಿಸೂಚನೆಗಳನ್ನು ಕಳುಹಿಸಲಾಗಿದೆ."
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 80,
+                            lineNumber: 68,
                             columnNumber: 17
                         }, this),
                         " / Alert notifications dispatched to support channel."
@@ -161,7 +130,7 @@ function ServiceRequest() {
                             children: "ನಿಯೋಜಿಸಲಾಗಿದೆ"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 84,
+                            lineNumber: 72,
                             columnNumber: 17
                         }, this),
                         " / Assigned"
@@ -174,7 +143,7 @@ function ServiceRequest() {
                             children: "ತಾಂತ್ರಿಕ ಸಿಬ್ಬಂದಿಗೆ ನಿಯೋಜಿಸಲಾಗಿದೆ:"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 85,
+                            lineNumber: 73,
                             columnNumber: 18
                         }, this),
                         " / Assigned to Technical Crew: ",
@@ -188,7 +157,7 @@ function ServiceRequest() {
                             children: "ಸಿಬ್ಬಂದಿ ರವಾನೆ ಲಾಕ್ ಮಾಡಲಾಗಿದೆ. ಜಿಪಿಎಸ್ ನ್ಯಾವಿಗೇಷನ್ ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ."
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 87,
+                            lineNumber: 75,
                             columnNumber: 15
                         }, this),
                         " / Crew dispatch locked. GPS navigation synced."
@@ -200,7 +169,7 @@ function ServiceRequest() {
                             children: "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ನಲ್ಲಿ ನಿಯೋಜನೆಗಾಗಿ ಕಾಯಲಾಗುತ್ತಿದೆ."
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 88,
+                            lineNumber: 76,
                             columnNumber: 15
                         }, this),
                         " / Awaiting assignment in dashboard."
@@ -216,7 +185,7 @@ function ServiceRequest() {
                             children: "ಪ್ರಗತಿಯಲ್ಲಿದೆ"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 92,
+                            lineNumber: 80,
                             columnNumber: 17
                         }, this),
                         " / In Progress"
@@ -229,7 +198,7 @@ function ServiceRequest() {
                             children: "ಸಿಬ್ಬಂದಿ ಸೈಟ್ ಪರಿಶೀಲಿಸುತ್ತಿದ್ದಾರೆ"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 93,
+                            lineNumber: 81,
                             columnNumber: 18
                         }, this),
                         " / Crew Troubleshooting Site"
@@ -242,7 +211,7 @@ function ServiceRequest() {
                             children: "ತಂತ್ರಜ್ಞರು ಜೋಡಣೆ ಮತ್ತು ವೈರಿಂಗ್ ಮಾರ್ಗದರ್ಶಿಗಳನ್ನು ಪರಿಶೀಲಿಸುತ್ತಿದ್ದಾರೆ."
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 94,
+                            lineNumber: 82,
                             columnNumber: 17
                         }, this),
                         " / Technician checking alignment and wiring guides."
@@ -258,7 +227,7 @@ function ServiceRequest() {
                             children: "ಪರಿಹರಿಸಲಾಗಿದೆ"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 98,
+                            lineNumber: 86,
                             columnNumber: 17
                         }, this),
                         " / Resolved"
@@ -271,7 +240,7 @@ function ServiceRequest() {
                             children: "ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಪರಿಶೀಲಿಸಲಾಗಿದೆ"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 99,
+                            lineNumber: 87,
                             columnNumber: 18
                         }, this),
                         " / Diagnostics Verified"
@@ -284,7 +253,7 @@ function ServiceRequest() {
                             children: "ರಿಮೋಟ್ ಪ್ರವೇಶವನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ. ಸಿಸ್ಟಮ್ ಸ್ವಾಯತ್ತತೆಯನ್ನು ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ."
                         }, void 0, false, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 100,
+                            lineNumber: 88,
                             columnNumber: 17
                         }, this),
                         " / Remote access established. System autonomy synced."
@@ -310,14 +279,14 @@ function ServiceRequest() {
                                     children: "ನಿರ್ವಹಣೆ ಮತ್ತು ಬೆಂಬಲ"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                    lineNumber: 113,
+                                    lineNumber: 101,
                                     columnNumber: 13
                                 }, this),
                                 " / Maintenance & Support"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 112,
+                            lineNumber: 100,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -328,14 +297,14 @@ function ServiceRequest() {
                                     children: "ಸೇವಾ ಟಿಕೆಟ್ ಡೆಸ್ಕ್"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                    lineNumber: 116,
+                                    lineNumber: 104,
                                     columnNumber: 13
                                 }, this),
                                 " / Service Ticket Desk"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 115,
+                            lineNumber: 103,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -346,20 +315,20 @@ function ServiceRequest() {
                                     children: "ಸಿಸ್ಟಮ್ ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್ ಅನ್ನು ದಾಖಲಿಸಿ, ಆಫ್-ಗ್ರಿಡ್ ಮಾಡ್ಯೂಲ್‌ಗಳಲ್ಲಿ ತಾಂತ್ರಿಕ ಸಹಾಯವನ್ನು ವಿನಂತಿಸಿ ಅಥವಾ ಸಕ್ರಿಯ ನಿರ್ವಹಣೆ ಒಪ್ಪಂದದ ತಂತ್ರಜ್ಞರ ಪರಿಶೀಲನಾ ಪಟ್ಟಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                    lineNumber: 119,
+                                    lineNumber: 107,
                                     columnNumber: 13
                                 }, this),
                                 " / Lodge system diagnostics, request technical help on off-grid modules, or track active maintenance contract technician checklists."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 118,
+                            lineNumber: 106,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                    lineNumber: 111,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -376,14 +345,14 @@ function ServiceRequest() {
                                             children: "ಸೇವಾ ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸಿ"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 128,
+                                            lineNumber: 116,
                                             columnNumber: 15
                                         }, this),
                                         " / Lodge Maintenance Request"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                    lineNumber: 127,
+                                    lineNumber: 115,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -400,14 +369,14 @@ function ServiceRequest() {
                                                             children: "ಸಮಸ್ಯೆಯಿರುವ ಭಾಗ"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 136,
+                                                            lineNumber: 124,
                                                             columnNumber: 19
                                                         }, this),
                                                         " / Target Issue Module"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 135,
+                                                    lineNumber: 123,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -442,7 +411,7 @@ function ServiceRequest() {
                                                                     className: "w-4 h-4"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 156,
+                                                                    lineNumber: 144,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -450,24 +419,24 @@ function ServiceRequest() {
                                                                     children: renderIssueType(item.type)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 157,
+                                                                    lineNumber: 145,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, item.type, true, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 146,
+                                                            lineNumber: 134,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 138,
+                                                    lineNumber: 126,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 134,
+                                            lineNumber: 122,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -483,14 +452,14 @@ function ServiceRequest() {
                                                                     children: "ಪೂರ್ಣ ಹೆಸರು"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 167,
+                                                                    lineNumber: 155,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 " / Full Name"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 166,
+                                                            lineNumber: 154,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -504,13 +473,13 @@ function ServiceRequest() {
                                                             className: "w-full bg-zinc-900 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-electric-cyan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 169,
+                                                            lineNumber: 157,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 165,
+                                                    lineNumber: 153,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -523,14 +492,14 @@ function ServiceRequest() {
                                                                     children: "ನೋಂದಾಯಿತ ಫೋನ್ ಸಂಖ್ಯೆ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 180,
+                                                                    lineNumber: 168,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 " / Registered Phone"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 179,
+                                                            lineNumber: 167,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -544,19 +513,19 @@ function ServiceRequest() {
                                                             className: "w-full bg-zinc-900 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-electric-cyan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 182,
+                                                            lineNumber: 170,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 178,
+                                                    lineNumber: 166,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 164,
+                                            lineNumber: 152,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -569,14 +538,14 @@ function ServiceRequest() {
                                                             children: "ಸಮಸ್ಯೆಯ ವಿವರಗಳು"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 196,
+                                                            lineNumber: 184,
                                                             columnNumber: 19
                                                         }, this),
                                                         " / Issue Details"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 195,
+                                                    lineNumber: 183,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -588,13 +557,13 @@ function ServiceRequest() {
                                                     className: "w-full bg-zinc-900 border border-zinc-800 rounded-xl p-3 text-xs text-white focus:outline-none resize-none"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 198,
+                                                    lineNumber: 186,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 194,
+                                            lineNumber: 182,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -607,14 +576,14 @@ function ServiceRequest() {
                                                             children: "ಡಯಾಗ್ನೋಸ್ಟಿಕ್ ಮೀಡಿಯಾ ಅಪ್‌ಲೋಡ್"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 211,
+                                                            lineNumber: 199,
                                                             columnNumber: 19
                                                         }, this),
                                                         " / Diagnostic Media Upload"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 210,
+                                                    lineNumber: 198,
                                                     columnNumber: 17
                                                 }, this),
                                                 store.serviceFiles.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -628,7 +597,7 @@ function ServiceRequest() {
                                                                     className: "w-full h-full object-cover"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 218,
+                                                                    lineNumber: 206,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -638,18 +607,18 @@ function ServiceRequest() {
                                                                     children: "✕"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 219,
+                                                                    lineNumber: 207,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, idx, true, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 217,
+                                                            lineNumber: 205,
                                                             columnNumber: 23
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 215,
+                                                    lineNumber: 203,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -659,7 +628,7 @@ function ServiceRequest() {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 232,
+                                                            lineNumber: 220,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -669,14 +638,14 @@ function ServiceRequest() {
                                                                     children: "ಚಿತ್ರಗಳು ಅಥವಾ ವೀಡಿಯೊಗಳನ್ನು ಆರಿಸಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 233,
+                                                                    lineNumber: 221,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / Choose Images or Videos"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 233,
+                                                            lineNumber: 221,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -687,19 +656,19 @@ function ServiceRequest() {
                                                             className: "hidden"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 234,
+                                                            lineNumber: 222,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 231,
+                                                    lineNumber: 219,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 209,
+                                            lineNumber: 197,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -712,7 +681,7 @@ function ServiceRequest() {
                                                         className: "w-4 h-4 animate-spin"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                        lineNumber: 250,
+                                                        lineNumber: 238,
                                                         columnNumber: 21
                                                     }, this),
                                                     " ",
@@ -721,7 +690,7 @@ function ServiceRequest() {
                                                         children: "ಟಿಕೆಟ್ ಉಳಿಸಲಾಗುತ್ತಿದೆ..."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                        lineNumber: 250,
+                                                        lineNumber: 238,
                                                         columnNumber: 68
                                                     }, this),
                                                     " / Saving ticket..."
@@ -733,7 +702,7 @@ function ServiceRequest() {
                                                         children: "ಟಿಕೆಟ್ ಸಲ್ಲಿಸಿ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                        lineNumber: 252,
+                                                        lineNumber: 240,
                                                         columnNumber: 21
                                                     }, this),
                                                     " / File Ticket"
@@ -741,19 +710,19 @@ function ServiceRequest() {
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 244,
+                                            lineNumber: 232,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                    lineNumber: 131,
+                                    lineNumber: 119,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 126,
+                            lineNumber: 114,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -767,14 +736,14 @@ function ServiceRequest() {
                                             children: "ಸಕ್ರಿಯ ಟೆಲಿಮೆಟ್ರಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 261,
+                                            lineNumber: 249,
                                             columnNumber: 15
                                         }, this),
                                         " / Track Active Telemetry"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                    lineNumber: 260,
+                                    lineNumber: 248,
                                     columnNumber: 13
                                 }, this),
                                 selectedReq ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -792,14 +761,14 @@ function ServiceRequest() {
                                                                     children: "ಸೇವಾ ಟಿಕೆಟ್ ಐಡಿ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 269,
+                                                                    lineNumber: 257,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " / Service Ticket ID"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 268,
+                                                            lineNumber: 256,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -807,7 +776,7 @@ function ServiceRequest() {
                                                             children: selectedReq.id
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 271,
+                                                            lineNumber: 259,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -818,7 +787,7 @@ function ServiceRequest() {
                                                                     children: "ಸಲ್ಲಿಸಿದ ದಿನಾಂಕ:"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 273,
+                                                                    lineNumber: 261,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " / Filed Date: ",
@@ -826,13 +795,13 @@ function ServiceRequest() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 272,
+                                                            lineNumber: 260,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 267,
+                                                    lineNumber: 255,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -844,7 +813,7 @@ function ServiceRequest() {
                                                                 children: "ಪರಿಹರಿಸಲಾಗಿದೆ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                lineNumber: 281,
+                                                                lineNumber: 269,
                                                                 columnNumber: 60
                                                             }, this),
                                                             " / Resolved"
@@ -856,7 +825,7 @@ function ServiceRequest() {
                                                                 children: "ಪ್ರಗತಿಯಲ್ಲಿದೆ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                lineNumber: 282,
+                                                                lineNumber: 270,
                                                                 columnNumber: 63
                                                             }, this),
                                                             " / In Progress"
@@ -868,7 +837,7 @@ function ServiceRequest() {
                                                                 children: "ನಿಯೋಜಿಸಲಾಗಿದೆ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                lineNumber: 283,
+                                                                lineNumber: 271,
                                                                 columnNumber: 60
                                                             }, this),
                                                             " / Assigned"
@@ -880,7 +849,7 @@ function ServiceRequest() {
                                                                 children: "ಸಲ್ಲಿಸಲಾಗಿದೆ"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                lineNumber: 284,
+                                                                lineNumber: 272,
                                                                 columnNumber: 24
                                                             }, this),
                                                             " / Submitted"
@@ -888,13 +857,13 @@ function ServiceRequest() {
                                                     }, void 0, true)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 276,
+                                                    lineNumber: 264,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 266,
+                                            lineNumber: 254,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -910,7 +879,7 @@ function ServiceRequest() {
                                                                     children: "ಸಮಸ್ಯೆಯ ವಿವರಗಳು"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 291,
+                                                                    lineNumber: 279,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " / Issue Details (",
@@ -919,7 +888,7 @@ function ServiceRequest() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 290,
+                                                            lineNumber: 278,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -927,13 +896,13 @@ function ServiceRequest() {
                                                             children: selectedReq.description
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 293,
+                                                            lineNumber: 281,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 289,
+                                                    lineNumber: 277,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -946,14 +915,14 @@ function ServiceRequest() {
                                                                     children: "ಡಯಾಗ್ನೋಸ್ಟಿಕ್ ಲಗತ್ತುಗಳು"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 298,
+                                                                    lineNumber: 286,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 " / Diagnostic Attachments"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 297,
+                                                            lineNumber: 285,
                                                             columnNumber: 21
                                                         }, this),
                                                         selectedReq.attachments && selectedReq.attachments.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -964,12 +933,12 @@ function ServiceRequest() {
                                                                     className: "w-16 h-16 object-cover rounded border border-white/5"
                                                                 }, idx, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 303,
+                                                                    lineNumber: 291,
                                                                     columnNumber: 27
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 301,
+                                                            lineNumber: 289,
                                                             columnNumber: 23
                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "text-xs text-zinc-600 block",
@@ -979,26 +948,26 @@ function ServiceRequest() {
                                                                     children: "ಯಾವುದೇ ಡಯಾಗ್ನೋಸ್ಟಿಕ್ ಫೈಲ್‌ಗಳನ್ನು ಲಗತ್ತಿಸಲಾಗಿಲ್ಲ"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                    lineNumber: 308,
+                                                                    lineNumber: 296,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 " / No diagnostic files attached"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 307,
+                                                            lineNumber: 295,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 296,
+                                                    lineNumber: 284,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 288,
+                                            lineNumber: 276,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1012,14 +981,14 @@ function ServiceRequest() {
                                                             children: "ಲೈವ್ ಪ್ರಗತಿ"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 317,
+                                                            lineNumber: 305,
                                                             columnNumber: 21
                                                         }, this),
                                                         " / Live Action Progress"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 316,
+                                                    lineNumber: 304,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1029,7 +998,7 @@ function ServiceRequest() {
                                                             className: "absolute top-1.5 bottom-1.5 left-2 w-0.5 bg-zinc-800"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                            lineNumber: 322,
+                                                            lineNumber: 310,
                                                             columnNumber: 21
                                                         }, this),
                                                         getMilestones(selectedReq).map((step, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1041,18 +1010,18 @@ function ServiceRequest() {
                                                                             className: "w-3 h-3"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                            lineNumber: 330,
+                                                                            lineNumber: 318,
                                                                             columnNumber: 40
                                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
                                                                             className: "w-3 h-3"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                            lineNumber: 330,
+                                                                            lineNumber: 318,
                                                                             columnNumber: 79
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                        lineNumber: 327,
+                                                                        lineNumber: 315,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1062,7 +1031,7 @@ function ServiceRequest() {
                                                                                 children: step.step
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                                lineNumber: 333,
+                                                                                lineNumber: 321,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1070,7 +1039,7 @@ function ServiceRequest() {
                                                                                 children: step.label
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                                lineNumber: 334,
+                                                                                lineNumber: 322,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1078,37 +1047,37 @@ function ServiceRequest() {
                                                                                 children: step.desc
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                                lineNumber: 335,
+                                                                                lineNumber: 323,
                                                                                 columnNumber: 27
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                        lineNumber: 332,
+                                                                        lineNumber: 320,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, idx, true, {
                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                lineNumber: 325,
+                                                                lineNumber: 313,
                                                                 columnNumber: 23
                                                             }, this))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 320,
+                                                    lineNumber: 308,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 315,
+                                            lineNumber: 303,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                    lineNumber: 265,
+                                    lineNumber: 253,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-center py-12 text-xs text-zinc-600",
@@ -1118,14 +1087,14 @@ function ServiceRequest() {
                                             children: "ಯಾವುದೇ ಸಕ್ರಿಯ ನಿರ್ವಹಣೆ ಟಿಕೆಟ್ ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ. ಒಂದನ್ನು ನೋಂದಾಯಿಸಲು ಎಡಭಾಗದ ಫಾರ್ಮ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡಿ."
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 345,
+                                            lineNumber: 333,
                                             columnNumber: 17
                                         }, this),
                                         " / No active maintenance ticket selected. Fill the left form to register one."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                    lineNumber: 344,
+                                    lineNumber: 332,
                                     columnNumber: 15
                                 }, this),
                                 activeReqs.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1139,14 +1108,14 @@ function ServiceRequest() {
                                                     children: "ದಾಖಲಾದ ಟಿಕೆಟ್ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                    lineNumber: 353,
+                                                    lineNumber: 341,
                                                     columnNumber: 19
                                                 }, this),
                                                 " / Lodged Ticket Dashboard"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                                            lineNumber: 352,
+                                            lineNumber: 340,
                                             columnNumber: 17
                                         }, this),
                                         activeReqs.map((req)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1165,7 +1134,7 @@ function ServiceRequest() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                lineNumber: 366,
+                                                                lineNumber: 354,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1176,7 +1145,7 @@ function ServiceRequest() {
                                                                         children: "ಸ್ಥಿತಿ:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                        lineNumber: 368,
+                                                                        lineNumber: 356,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     " / Status: ",
@@ -1187,7 +1156,7 @@ function ServiceRequest() {
                                                                                 children: "ಪರಿಹರಿಸಲಾಗಿದೆ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                                lineNumber: 368,
+                                                                                lineNumber: 356,
                                                                                 columnNumber: 112
                                                                             }, this),
                                                                             " / Resolved"
@@ -1199,7 +1168,7 @@ function ServiceRequest() {
                                                                                 children: "ಪ್ರಗತಿಯಲ್ಲಿದೆ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                                lineNumber: 369,
+                                                                                lineNumber: 357,
                                                                                 columnNumber: 59
                                                                             }, this),
                                                                             " / In Progress"
@@ -1211,7 +1180,7 @@ function ServiceRequest() {
                                                                                 children: "ನಿಯೋಜಿಸಲಾಗಿದೆ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                                lineNumber: 370,
+                                                                                lineNumber: 358,
                                                                                 columnNumber: 56
                                                                             }, this),
                                                                             " / Assigned"
@@ -1223,7 +1192,7 @@ function ServiceRequest() {
                                                                                 children: "ಸಲ್ಲಿಸಲಾಗಿದೆ"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                                lineNumber: 371,
+                                                                                lineNumber: 359,
                                                                                 columnNumber: 28
                                                                             }, this),
                                                                             " / Submitted"
@@ -1232,55 +1201,55 @@ function ServiceRequest() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                                lineNumber: 367,
+                                                                lineNumber: 355,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                        lineNumber: 365,
+                                                        lineNumber: 353,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                                         className: "w-4 h-4 text-zinc-600"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                        lineNumber: 374,
+                                                        lineNumber: 362,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, req.id, true, {
                                                 fileName: "[project]/src/components/ServiceRequest.jsx",
-                                                lineNumber: 356,
+                                                lineNumber: 344,
                                                 columnNumber: 19
                                             }, this))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                                    lineNumber: 351,
+                                    lineNumber: 339,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ServiceRequest.jsx",
-                            lineNumber: 259,
+                            lineNumber: 247,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ServiceRequest.jsx",
-                    lineNumber: 123,
+                    lineNumber: 111,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ServiceRequest.jsx",
-            lineNumber: 108,
+            lineNumber: 96,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/ServiceRequest.jsx",
-        lineNumber: 107,
+        lineNumber: 95,
         columnNumber: 5
     }, this);
 }

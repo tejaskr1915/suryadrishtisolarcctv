@@ -1,4 +1,4 @@
-import { db } from '../utils/dbMock';
+import { db, getCameraFeatures } from '../utils/dbMock';
 import { supabase } from '../utils/supabaseClient';
 
 const isBrowser = typeof window !== 'undefined';
@@ -21,10 +21,19 @@ const safeQuery = async (queryFn, fallbackFn) => {
 export const apiService = {
   // PRODUCTS (PIM)
   getProducts: async () => {
-    return safeQuery(
+    const data = await safeQuery(
       () => supabase.from('products').select('*').order('name'),
       () => db.getProducts()
     );
+    return (data || []).map(p => {
+      if (p.type === 'solar-camera' && !p.features) {
+        return {
+          ...p,
+          features: getCameraFeatures(p)
+        };
+      }
+      return p;
+    });
   },
 
   saveProduct: async (product) => {
